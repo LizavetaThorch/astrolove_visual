@@ -20,11 +20,12 @@ months.forEach((month, index) => {
     monthsSelect.appendChild(option);
 });
 
-// Заполнение списка с годами (от 1920 до 2024)
+// Заполнение списка с годами (от 2024 до 1920)
 const yearsSelect = document.getElementById("year");
-for (let year = 1920; year <= 2024; year++) {
+for (let year = 2024; year >= 1920; year--) {
     const option = document.createElement("option");
     option.value = year;
     option.textContent = year;
     yearsSelect.appendChild(option);
 }
+
