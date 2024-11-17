@@ -35,7 +35,7 @@ img {
 input[type="text"],
 input[type="url"],
 select {
-    width: 100%;
+    width: 50%;
     padding: 10px;
     margin: 10px 0;
     border: 1px solid #ccc;
@@ -99,7 +99,7 @@ button:hover {
     }
 
     #birthday select {
-        width: 100%;  /* Каждое поле select будет занимать всю ширину контейнера */
+        width: 50%;  /* Каждое поле select будет занимать всю ширину контейнера */
         margin-bottom: 10px; /* Отступы между полями */
     }
 
