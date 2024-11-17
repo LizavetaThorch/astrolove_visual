@@ -54,19 +54,16 @@ input::placeholder {
 /* Для поля ввода даты рождения */
 #birthday-container {
     display: flex;
-    justify-content: space-between;
     gap: 5px;
-    width: 30%;
+    justify-content: center;
+    width: 100%; /* Сделать ширину контейнера более гибкой */
     margin: 0 auto;
 }
 
 #birthday-container select {
-    width: 20%;
-    font-size: 12px;
-    padding: 5px;
-    border-radius: 3px;
-    border: 1px solid #ccc;
-    font-family: 'Montserrat Light', sans-serif;
+    width: auto; /* Убираем фиксированную ширину для селектов */
+    flex: 1; /* Равномерное распределение ширины */
+    min-width: 80px; /* Минимальная ширина для удобства чтения */
 }
 
 
