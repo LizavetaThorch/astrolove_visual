@@ -22,7 +22,7 @@ months.forEach((month, index) => {
 
 // Заполнение списка с годами (от 2024 до 1920)
 const yearsSelect = document.getElementById("year");
-for (let year = 2024; year >= 1920; year--) {
+for (let year = 2024; year >= 1924; year--) {
     const option = document.createElement("option");
     option.value = year;
     option.textContent = year;

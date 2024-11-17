@@ -6,7 +6,7 @@ h1 {
 }
 
 p, button {
-    font-family: 'Microsoft YaHei Light', sans-serif;
+    font-family: 'Montserrat Light', Microsoft YaHei Light;
     font-size: 16px;
     color: #555;
     line-height: 1.5;
@@ -45,12 +45,14 @@ select {
 
 /* Для поля ввода имени (когда оно пустое, появляется серый текст) */
 input::placeholder {
+    font-family: 'Montserrat Light', Microsoft YaHei Light;
     color: #ccc;
     font-style: italic;
 }
 
 /* Для поля ввода даты рождения */
 #birthday {
+    font-family: 'Montserrat Light', Microsoft YaHei Light;
     display: flex;
     justify-content: space-between;
 }
@@ -63,12 +65,13 @@ input::placeholder {
 /* Фокус на поле ввода (снимаем серый текст) */
 input:focus, select:focus {
     outline: none;
-    border-color: #007BFF;
+    border-color: #9964b8;
 }
 
 /* Стиль кнопки */
 button {
-    background-color: #007BFF;
+    font-family: 'Montserrat Light', Microsoft YaHei Light;
+    background-color: #9964b8;
     color: white;
     font-size: 16px;
     padding: 10px 20px;
@@ -78,5 +81,5 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #9964b8;
 }
