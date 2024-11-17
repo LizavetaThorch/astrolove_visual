@@ -30,3 +30,53 @@ img {
         width: 30%;
     }
 }
+
+/* Стили для полей ввода */
+input[type="text"],
+input[type="url"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Для поля ввода имени (когда оно пустое, появляется серый текст) */
+input::placeholder {
+    color: #ccc;
+    font-style: italic;
+}
+
+/* Для поля ввода даты рождения */
+#birthday {
+    display: flex;
+    justify-content: space-between;
+}
+
+#birthday select {
+    flex: 1;
+    margin: 0 5px;
+}
+
+/* Фокус на поле ввода (снимаем серый текст) */
+input:focus, select:focus {
+    outline: none;
+    border-color: #007BFF;
+}
+
+/* Стиль кнопки */
+button {
+    background-color: #007BFF;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
