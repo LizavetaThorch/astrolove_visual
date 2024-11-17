@@ -31,7 +31,7 @@ img {
     }
 }
 
-/* Стили для полей ввода */
+/* Поля ввода */
 input[type="text"],
 input[type="url"],
 select {
@@ -41,44 +41,41 @@ select {
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
-    font-family: 'Montserrat Light', sans-serif; /* Добавляем шрифт Montserrat Light */
+    font-family: 'Montserrat Light', sans-serif;
 }
 
 /* Для поля ввода имени (когда оно пустое, появляется серый текст) */
 input::placeholder {
-    font-family: 'Montserrat Light', sans-serif; /* Применяем шрифт для placeholder */
-    color: #ccc; /* Светло-серый цвет для текста до ввода */
+    font-family: 'Montserrat Light', sans-serif;
+    color: #ccc;
     font-style: italic;
 }
 
 /* Для поля ввода даты рождения */
-#birthday {
-    font-family: 'Montserrat Light', Microsoft YaHei Light;
-    color: #ccc;
-    font-style: italic;
+#birthday-container {
     display: flex;
     justify-content: space-between;
-    gap: 5px; /* Убираем промежутки между полями */
-    width: 50%; /* Уменьшаем ширину контейнера для дат */
-    margin: 0 auto; /* Центрируем на экране */
+    gap: 10px;
+    width: 50%;
+    margin: 0 auto;
 }
 
-#birthday select {
-    width: 30%; /* Устанавливаем фиксированную ширину для каждого поля */
-    font-size: 14px; /* Уменьшаем размер шрифта для полей ввода */
-    padding: 5px; /* Уменьшаем внутренние отступы */
+#birthday-container select {
+    width: 32%;
+    font-size: 14px;
+    padding: 5px;
     border-radius: 3px;
     border: 1px solid #ccc;
-    font-family: 'Montserrat Light', sans-serif; /* Применяем шрифт Montserrat Light */
+    font-family: 'Montserrat Light', sans-serif;
 }
 
 /* Для placeholder в селектах (дата рождения) */
-#birthday select::placeholder {
-    font-family: 'Montserrat Light', Microsoft YaHei Light;
+#birthday-container select::placeholder {
+    color: #ccc;
     font-style: italic;
 }
 
-/* Фокус на поле ввода (снимаем серый текст) */
+/* Фокус на поле ввода */
 input:focus, select:focus {
     outline: none;
     border-color: #9964b8;
@@ -103,31 +100,30 @@ button:hover {
 /* Оборачиваем кнопку в контейнер для выравнивания по правому краю */
 #button-container {
     display: flex;
-    justify-content: flex-end; /* Выравниваем кнопку по правому краю */
-    margin-top: 20px;  /* Отступ сверху для разделения с другими элементами */
+    justify-content: flex-end;
+    margin-top: 20px;
 }
 
 /* Адаптивность для мобильных устройств */
 @media (max-width: 768px) {
-    /* Для экранов меньше 768px (мобильные устройства) */
-    #birthday {
-        flex-direction: column;  /* Поля даты рождения будут располагаться вертикально */
+    #birthday-container {
+        flex-direction: column;
     }
 
-    #birthday select {
-        width: 100%;  /* Каждое поле select будет занимать всю ширину контейнера */
-        margin-bottom: 10px; /* Отступы между полями */
+    #birthday-container select {
+        width: 100%;
+        margin-bottom: 10px;
     }
 
     button {
-        width: 100%; /* Кнопка будет занимать всю ширину на мобильных устройствах */
-        margin-top: 20px; /* Отступ сверху */
+        width: 100%;
+        margin-top: 20px;
     }
 }
 
-/* Адаптивность для более широких экранов (например, для планшетов и ПК) */
+/* Адаптивность для более широких экранов */
 @media (min-width: 768px) {
     button {
-        width: auto; /* Кнопка будет занимать только необходимую ширину */
+        width: auto;
     }
 }
