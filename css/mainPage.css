@@ -35,7 +35,7 @@ img {
 input[type="text"],
 input[type="url"],
 select {
-    width: 50%;
+    width: 100%;
     padding: 10px;
     margin: 10px 0;
     border: 1px solid #ccc;
@@ -52,13 +52,20 @@ input::placeholder {
 }
 
 /* Для поля ввода даты рождения */
-#birthday {
-    font-family: 'Montserrat Light', Microsoft YaHei Light;
+#birthday-container {
     display: flex;
+    justify-content: space-between;  /* Располагаем поля даты рождения на одной линии */
+    gap: 10px;  /* Добавляем промежутки между полями */
+    width: 100%;
+    margin: 0 auto;
+}
+
+#birthday {
+    display: flex;
+    width: 100%;
     justify-content: space-between;
-    gap: 5px; /* Убираем промежутки между полями */
-    width: 50%; /* Уменьшаем ширину контейнера для дат */
-    margin: 0 auto; /* Центрируем на экране */
+    gap: 10px;
+    font-family: 'Montserrat Light', Microsoft YaHei Light;
 }
 
 #birthday select {
@@ -108,7 +115,7 @@ button:hover {
 /* Адаптивность для мобильных устройств */
 @media (max-width: 768px) {
     /* Для экранов меньше 768px (мобильные устройства) */
-    #birthday {
+    #birthday-container {
         flex-direction: column;  /* Поля даты рождения будут располагаться вертикально */
     }
 
