@@ -68,7 +68,7 @@ input::placeholder {
 /* Для placeholder в селектах (дата рождения) */
 #birthday selec ::placeholder {
     font-family: 'Montserrat Light', Microsoft YaHei Light;
-    color: #ccc;
+    color: #9964b8;
     font-style: italic;
 }
 
