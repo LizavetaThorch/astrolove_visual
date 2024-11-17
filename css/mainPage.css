@@ -55,19 +55,20 @@ input::placeholder {
 #birthday-container {
     display: flex;
     justify-content: space-between;
-    gap: 10px;
-    width: 20%;
+    gap: 5px;
+    width: 50%;
     margin: 0 auto;
 }
 
 #birthday-container select {
-    width: 18%;
+    width: 30%;
     font-size: 12px;
     padding: 5px;
     border-radius: 3px;
     border: 1px solid #ccc;
     font-family: 'Montserrat Light', sans-serif;
 }
+
 
 /* Для placeholder в селектах (дата рождения) */
 #birthday-container select::placeholder {
