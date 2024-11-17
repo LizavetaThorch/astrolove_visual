@@ -14,7 +14,7 @@ p, button {
 
 img {
     width: 100%;
-    height: auto;   
+    height: auto;
     display: block;
     margin: 20px auto;
 }
@@ -41,12 +41,13 @@ select {
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
+    font-family: 'Montserrat Light', sans-serif; /* Добавляем шрифт Montserrat Light */
 }
 
 /* Для поля ввода имени (когда оно пустое, появляется серый текст) */
 input::placeholder {
-    font-family: 'Montserrat Light', Microsoft YaHei Light;
-    color: #ccc;
+    font-family: 'Montserrat Light', sans-serif; /* Применяем шрифт для placeholder */
+    color: #ccc; /* Светло-серый цвет для текста до ввода */
     font-style: italic;
 }
 
@@ -55,11 +56,24 @@ input::placeholder {
     font-family: 'Montserrat Light', Microsoft YaHei Light;
     display: flex;
     justify-content: space-between;
+    gap: 5px; /* Убираем промежутки между полями */
+    width: 50%; /* Уменьшаем ширину контейнера для дат */
+    margin: 0 auto; /* Центрируем на экране */
 }
 
 #birthday select {
-    flex: 1;
-    margin: 0 5px;
+    width: 30%; /* Устанавливаем фиксированную ширину для каждого поля */
+    font-size: 14px; /* Уменьшаем размер шрифта для полей ввода */
+    padding: 5px; /* Уменьшаем внутренние отступы */
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    font-family: 'Montserrat Light', sans-serif; /* Применяем шрифт Montserrat Light */
+}
+
+/* Для placeholder в селектах (дата рождения) */
+#birthday select::placeholder {
+    color: #ccc; /* Светло-серый цвет для текста до ввода */
+    font-style: italic;
 }
 
 /* Фокус на поле ввода (снимаем серый текст) */
@@ -99,7 +113,7 @@ button:hover {
     }
 
     #birthday select {
-        width: 50%;  /* Каждое поле select будет занимать всю ширину контейнера */
+        width: 100%;  /* Каждое поле select будет занимать всю ширину контейнера */
         margin-bottom: 10px; /* Отступы между полями */
     }
 
