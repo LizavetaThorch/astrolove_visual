@@ -56,12 +56,12 @@ input::placeholder {
     display: flex;
     justify-content: space-between;
     gap: 5px;
-    width: 50%;
+    width: 30%;
     margin: 0 auto;
 }
 
 #birthday-container select {
-    width: 30%;
+    width: 20%;
     font-size: 12px;
     padding: 5px;
     border-radius: 3px;
