@@ -28,4 +28,3 @@ for (let year = 2024; year >= 1924; year--) {
     option.textContent = year;
     yearsSelect.appendChild(option);
 }
-
