@@ -29,24 +29,39 @@ for (let year = 2024; year >= 1924; year--) {
     yearsSelect.appendChild(option);
 }
 
-let tg = window.Telegram.WebApp;
 
-let save = document.getElementById("next");
-save.addEventListener("click", () => {
-    let name = document.getElementById("name").value;
-    let day = document.getElementById("day").value;
-    let month = document.getElementById("month").value;
-    let year = document.getElementById("year").value;
-    let social = document.getElementById("social").value;
+// Обработчик кнопки Save
+const saveButton = document.getElementById("next");
 
-    let birthday = `${day}-${month}-${year}`; // Формат даты рождения
+saveButton.addEventListener("click", () => {
+    const name = document.getElementById("name").value.trim();
+    const day = document.getElementById("day").value;
+    const month = document.getElementById("month").value;
+    const year = document.getElementById("year").value;
+    const social = document.getElementById("social").value.trim();
 
-    let data = {
-        name: name,
-        birthday: birthday,
-        links: social
+    if (!name || !day || !month || !year || !social) {
+        alert("Пожалуйста, заполните все поля!");
+        return;
+    }
+
+    const dateOfBirth = `${day}.${month}.${year}`;
+
+    // Собираем данные в объект
+    const userData = {
+        name,
+        dateOfBirth,
+        social
     };
 
-    tg.sendData(JSON.stringify(data)); // Отправка данных в бота
-});
+    // Проверяем доступность Telegram Web Apps API
+    if (window.Telegram && Telegram.WebApp) {
+        // Отправляем данные через Telegram Web App
+        Telegram.WebApp.sendData(JSON.stringify(userData));
 
+        // Показываем сообщение об успешной отправке
+        alert("Данные отправлены боту!");
+    } else {
+        alert("Ошибка: Telegram Web App не найден!");
+    }
+});
