@@ -44,11 +44,16 @@ saveButton.addEventListener("click", () => {
     const social = document.getElementById("social").value.trim();
 
     if (!name || !day || !month || !year || !social) {
-        tg.showPopup({
-            title: "Ошибка",
-            message: "❌ Пожалуйста, заполните все поля!",
-            buttons: [{ text: "ОК" }]
-        });
+        // Проверка наличия `tg.showPopup` или резервный `alert`
+        if (tg.showPopup) {
+            tg.showPopup({
+                title: "Ошибка",
+                message: "❌ Пожалуйста, заполните все поля!",
+                buttons: [{ text: "ОК" }]
+            });
+        } else {
+            alert("❌ Пожалуйста, заполните все поля!");
+        }
         return;
     }
 
@@ -61,15 +66,23 @@ saveButton.addEventListener("click", () => {
         social
     };
 
+    // Проверяем доступность Telegram Web Apps API
     if (tg) {
+        // Отправляем данные через Telegram Web App
         tg.sendData(JSON.stringify(userData));
 
-        tg.showPopup({
-            title: "Успех",
-            message: "✅ Данные успешно отправлены!",
-            buttons: [{ text: "ОК" }]
-        });
-    } else { 
+        // Проверка наличия `tg.showPopup` или резервный `alert`
+        if (tg.showPopup) {
+            tg.showPopup({
+                title: "Успех",
+                message: "✅ Данные успешно отправлены!",
+                buttons: [{ text: "ОК" }]
+            });
+        } else {
+            alert("✅ Данные успешно отправлены!");
+        }
+    } else {
         alert("Ошибка: Telegram Web App не найден!");
     }
 });
+
