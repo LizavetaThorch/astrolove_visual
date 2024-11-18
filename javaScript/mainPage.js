@@ -31,7 +31,10 @@ for (let year = 2024; year >= 1924; year--) {
 
 
 // Обработчик кнопки Save
+let tg = window.Telegram.WebApp;
 const saveButton = document.getElementById("next");
+
+tg.expand();
 
 saveButton.addEventListener("click", () => {
     const name = document.getElementById("name").value.trim();
@@ -57,11 +60,11 @@ saveButton.addEventListener("click", () => {
     // Проверяем доступность Telegram Web Apps API
     if (window.Telegram && Telegram.WebApp) {
         // Отправляем данные через Telegram Web App
-        Telegram.WebApp.sendData(JSON.stringify(userData));
+        tg.sendData(JSON.stringify(userData));
 
         // Показываем сообщение об успешной отправке
         alert("Данные отправлены боту!");
-    } else {
+    } else { 
         alert("Ошибка: Telegram Web App не найден!");
     }
 });
