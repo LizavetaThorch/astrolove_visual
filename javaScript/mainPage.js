@@ -44,7 +44,11 @@ saveButton.addEventListener("click", () => {
     const social = document.getElementById("social").value.trim();
 
     if (!name || !day || !month || !year || !social) {
-        tg.showAlert("❌ Пожалуйста, заполните все поля!");
+        tg.showPopup({
+            title: "Ошибка",
+            message: "❌ Пожалуйста, заполните все поля!",
+            buttons: [{ text: "ОК" }]
+        });
         return;
     }
 
@@ -57,13 +61,14 @@ saveButton.addEventListener("click", () => {
         social
     };
 
-    // Проверяем доступность Telegram Web Apps API
     if (tg) {
-        // Отправляем данные через Telegram Web App
         tg.sendData(JSON.stringify(userData));
 
-        // Показываем сообщение об успешной отправке
-        tg.showAlert("✅ Данные успешно отправлены!");
+        tg.showPopup({
+            title: "Успех",
+            message: "✅ Данные успешно отправлены!",
+            buttons: [{ text: "ОК" }]
+        });
     } else { 
         alert("Ошибка: Telegram Web App не найден!");
     }
