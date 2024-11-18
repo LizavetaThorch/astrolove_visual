@@ -20,7 +20,7 @@ months.forEach((month, index) => {
     monthsSelect.appendChild(option);
 });
 
-// Заполнение списка с годами (от 2024 до 1920)
+// Заполнение списка с годами (от 2024 до 1924)
 const yearsSelect = document.getElementById("year");
 for (let year = 2024; year >= 1924; year--) {
     const option = document.createElement("option");
@@ -28,3 +28,25 @@ for (let year = 2024; year >= 1924; year--) {
     option.textContent = year;
     yearsSelect.appendChild(option);
 }
+
+let tg = window.Telegram.WebApp;
+
+let save = document.getElementById("next");
+save.addEventListener("click", () => {
+    let name = document.getElementById("name").value;
+    let day = document.getElementById("day").value;
+    let month = document.getElementById("month").value;
+    let year = document.getElementById("year").value;
+    let social = document.getElementById("social").value;
+
+    let birthday = `${day}-${month}-${year}`; // Формат даты рождения
+
+    let data = {
+        name: name,
+        birthday: birthday,
+        links: social
+    };
+
+    tg.sendData(JSON.stringify(data)); // Отправка данных в бота
+});
+

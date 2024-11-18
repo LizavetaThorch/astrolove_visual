@@ -56,6 +56,8 @@ input::placeholder {
     font-family: 'Montserrat Light', Microsoft YaHei Light;
     display: flex;
     justify-content: space-between;
+    color: #9964b8;
+    font-style: italic;
 }
 
 #birthday select {
@@ -66,10 +68,9 @@ input::placeholder {
 
 
 /* Для placeholder в селектах (дата рождения) */
-#birthday selec ::placeholder {
-    font-family: 'Montserrat Light', Microsoft YaHei Light;
-    color: #9964b8;
-    font-style: italic;
+/* Исправленный селектор */
+#birthday select {
+    margin: 0 5px;
 }
 
 /* Фокус на поле ввода */
