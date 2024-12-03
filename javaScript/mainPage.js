@@ -29,43 +29,42 @@ for (let year = 2024; year >= 1924; year--) {
     yearsSelect.appendChild(option);
 }
 
-
 // Обработчик кнопки Save
-let tg = window.Telegram.WebApp;
-const saveButton = document.getElementById("next");
+//let tg = window.Telegram.WebApp; // Telegram API
+let tg = Telegram.WebApp; // Telegram API
+const saveButton = document.getElementById("next"); // ID кнопки Save (или Next)
 
-tg.expand();
+tg.expand(); // Расширяем веб-приложение
 
 saveButton.addEventListener("click", () => {
+    // Получаем значения из полей
     const name = document.getElementById("name").value.trim();
     const day = document.getElementById("day").value;
     const month = document.getElementById("month").value;
     const year = document.getElementById("year").value;
     const social = document.getElementById("social").value.trim();
 
+    // Проверка, заполнены ли все поля
     if (!name || !day || !month || !year || !social) {
-        // Вместо showPopup используем alert
-        alert("❌ Пожалуйста, заполните все поля!");
+        alert("❌ Пожалуйста, заполните все поля!"); // Показываем сообщение об ошибке
         return;
     }
 
+    // Форматируем дату рождения
     const dateOfBirth = `${day}.${month}.${year}`;
 
     // Собираем данные в объект
     const userData = {
-        name,
-        dateOfBirth,
-        social
+        name,        // Имя пользователя
+        dateOfBirth, // Дата рождения в формате DD.MM.YYYY
+        social       // Ссылка на социальную сеть
     };
 
-    // Проверяем доступность Telegram Web Apps API
+    // Проверяем, доступен ли API Telegram Web App
     if (tg) {
-        // Отправляем данные через Telegram Web App
-        tg.sendData(JSON.stringify(userData));
-
-        // Вместо showPopup используем alert
-        alert("✅ Данные успешно отправлены!");
+        tg.sendData(JSON.stringify(userData)); // Отправляем данные боту через Telegram API
+        alert("✅ Данные успешно отправлены!"); // Уведомление об успешной отправке
     } else {
-        alert("Ошибка: Telegram Web App не найден!");
+        alert("Ошибка: Telegram Web App не найден!"); // Ошибка при отсутствии API
     }
 });
