@@ -46,25 +46,23 @@ saveButton.addEventListener("click", () => {
 
     // Проверка, заполнены ли все поля
     if (!name || !day || !month || !year || !social) {
-        alert("❌ Пожалуйста, заполните все поля!"); // Показываем сообщение об ошибке
+        alert("❌ Пожалуйста, заполните все поля!");
         return;
     }
 
-    // Форматируем дату рождения
     const dateOfBirth = `${day}.${month}.${year}`;
 
-    // Собираем данные в объект
     const userData = {
-        name,        // Имя пользователя
-        dateOfBirth, // Дата рождения в формате DD.MM.YYYY
-        social       // Ссылка на социальную сеть
+        name,
+        dateOfBirth,
+        social
     };
 
     // Проверяем, доступен ли API Telegram Web App
     if (tg) {
-        tg.sendData(JSON.stringify(userData)); // Отправляем данные боту через Telegram API
-        alert("✅ Данные успешно отправлены!"); // Уведомление об успешной отправке
+        tg.sendData(JSON.stringify(userData));
+        alert("✅ Данные успешно отправлены!");
     } else {
-        alert("Ошибка: Telegram Web App не найден!"); // Ошибка при отсутствии API
+        alert("Ошибка: Telegram Web App не найден!");
     }
 });
