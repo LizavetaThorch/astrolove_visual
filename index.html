@@ -42,12 +42,11 @@
     <script src="https://telegram.org/js/telegram-web-app.js?56"></script>
     <script src="./javaScript/mainPage.js"></script>
     <script>
-        // Обработчик кнопки Save
-        let tg = window. Telegram.WebApp;
+            // Обработчик кнопки Save
+            document.getElementById("save").addEventListener("click", (event) => {
+            event.preventDefault(); // Останавливаем стандартное поведение
+            console.log("Кнопка Save нажата!");
 
-        tg.expand();
-
-        document.getElementById("save").addEventListener("click", () => {
             const name = document.getElementById("name").value;
             const day = document.getElementById("day").value;
             const month = document.getElementById("month").value;
@@ -59,23 +58,20 @@
                 return;
             }
 
-            console.log({
+            const userData = {
                 name: name,
                 birthday: `${day}.${month}.${year}`,
                 social: social
-            });
+            };
+
+            console.log("Отправляем данные в бота: ", JSON.stringify(userData));
 
             if (window.Telegram.WebApp) {
-                Telegram.WebApp.sendData(JSON.stringify({
-                    name: name,
-                    birthday: `${day}.${month}.${year}`,
-                    social: social
-                }));
+                Telegram.WebApp.sendData(JSON.stringify(userData));
             } else {
                 alert("Telegram WebApp API не доступен!");
             }
         });
-
     </script>
 </body>
 </html>
