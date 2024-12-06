@@ -35,15 +35,20 @@ let save = document.getElementById("save");
 
 tg.expand();
 
-save.addEventListener("click", () => {
-    let name = document.getElementById("name").value;
-    let social = document.getElementById("social").value;
+saveButton.addEventListener("click", () => {
+    let name = document.getElementById("name").value.trim();
+    let day = document.getElementById("day").value;
+    let month = document.getElementById("month").value;
+    let year = document.getElementById("year").value;
+    let social = document.getElementById("social").value.trim();
 
-    let data = {
-        name: name,
-        social: social
+    const dateOfBirth = `${day}.${month}.${year}`;
+
+    const data = {
+        name,
+        dateOfBirth,
+        social
     };
 
-    console.log("Отправляемые данные:", data);
     tg.sendData(JSON.stringify(data));
 });
