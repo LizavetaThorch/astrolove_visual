@@ -33,17 +33,17 @@ for (let year = 2024; year >= 1924; year--) {
 let tg = window. Telegram.WebApp;
 let save = document.getElementById("save");
 
+tg.expand();
+
 save.addEventListener("click", () => {
     let name = document.getElementById("name").value;
     let social = document.getElementById("social").value;
 
     let data = {
-        name : name,
-        social : social
-    }
+        name: name,
+        social: social
+    };
 
+    console.log("Отправляемые данные:", data);
     tg.sendData(JSON.stringify(data));
-
 });
-
-tg.expand();
