@@ -34,8 +34,16 @@ let tg = window. Telegram.WebApp;
 let save = document.getElementById("save");
 
 save.addEventListener("click", () => {
-    document.getElementById("name").value = tg.initDataUnsafe.user.first_name;
-    
+    let name = document.getElementById("name").value;
+    let social = document.getElementById("social").value;
+
+    let data = {
+        name : name,
+        social : social
+    }
+
+    tg.sendData(JSON.stringify(data));
+
 });
 
 tg.expand();
