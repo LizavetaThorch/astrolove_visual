@@ -28,27 +28,3 @@ for (let year = 2024; year >= 1924; year--) {
     option.textContent = year;
     yearsSelect.appendChild(option);
 }
-
-// Обработчик кнопки Save
-let tg = window. Telegram.WebApp;
-let save = document.getElementById("save");
-
-tg.expand();
-
-saveButton.addEventListener("click", () => {
-    let name = document.getElementById("name").value.trim();
-    let day = document.getElementById("day").value;
-    let month = document.getElementById("month").value;
-    let year = document.getElementById("year").value;
-    let social = document.getElementById("social").value.trim();
-
-    const dateOfBirth = `${day}.${month}.${year}`;
-
-    const data = {
-        name,
-        dateOfBirth,
-        social
-    };
-
-    tg.sendData(JSON.stringify(data));
-});
