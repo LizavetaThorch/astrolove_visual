@@ -58,11 +58,14 @@ saveButton.addEventListener("click", () => {
         social
     };
 
-    // Проверяем, доступен ли API Telegram Web App
-    if (tg) {
-        tg.sendData(JSON.stringify(userData));
-        alert("✅ Данные успешно отправлены!");
-    } else {
-        alert("Ошибка: Telegram Web App не найден!");
-    }
+    tg.sendData(JSON.stringify(userData));
+
+
+    // // Проверяем, доступен ли API Telegram Web App
+    // if (tg) {
+    //     tg.sendData(JSON.stringify(userData));
+    //     alert("✅ Данные успешно отправлены!");
+    // } else {
+    //     alert("Ошибка: Telegram Web App не найден!");
+    // }
 });
