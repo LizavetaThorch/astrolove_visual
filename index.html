@@ -1,47 +1,44 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="=IE=edge">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="=IE=edge">
 
-        <title>Astro Love</title>
+    <title>Astro Love</title>
 
-        <link rel="stylesheet" href="./css/mainPage.css">
-    </head>
+    <link rel="stylesheet" href="./css/mainPage.css">
+</head>
 
-    <body>
-        <div id="main">
-            <h1>ASTRO LOVE</h1>
-            <img src="./photos/intro.png" alt="INTRO" />
-            <p> Давай знакомиться </p>
+<body>
+    <div id="main">
+        <h1>ASTRO LOVE</h1>
+        <img src="./photos/intro.png" alt="INTRO" />
+        <p> Давай знакомиться </p>
 
+        <form id="astroForm">
             <!-- Поле для ввода имени -->
-            <input type="text" id="name" placeholder="Введи имя" />
+            <input type="text" id="name" name="name" placeholder="Введи имя" required />
 
             <!-- Поле для ввода даты рождения -->
             <div id="birthday">
-                <select id="day">
+                <select id="day" name="day" required>
                     <option value="">День</option>
                 </select>
-                <select id="month">
+                <select id="month" name="month" required>
                     <option value="">Месяц</option>
                 </select>
-                <select id="year">
+                <select id="year" name="year" required>
                     <option value="">Год</option>
                 </select>
             </div>
 
             <!-- Поле для ссылки на соцсеть -->
-            <input type="url" id="social" placeholder="Твоя соц. сеть" />
-
-            <!-- Контейнер для кнопки -->
-            <div id="button-container">
-                <button id="next">Save</button>
-            </div>
-        </div>
-
-        <script src="https://telegram.org/js/telegram-web-app.js?56"></script>
-        <script src="./javaScript/mainPage.js"></script>
-    </body>
+            <input type="url" id="social" name="social" placeholder="Твоя соц. сеть" required />
+            <button type="submit" id="next">Save</button>
+        </form>
+    </div>
+    <script src="https://telegram.org/js/telegram-web-app.js?56"></script>
+    <script src="./javaScript/mainPage.js"></script>
+</body>
 </html>

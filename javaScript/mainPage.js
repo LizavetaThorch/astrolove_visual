@@ -30,42 +30,12 @@ for (let year = 2024; year >= 1924; year--) {
 }
 
 // Обработчик кнопки Save
-//let tg = window.Telegram.WebApp; // Telegram API
-let tg = Telegram.WebApp; // Telegram API
-const saveButton = document.getElementById("next"); // ID кнопки Save (или Next)
+let tg = window. Telegram.WebApp;
+let save = document.getElementById("save");
 
-tg.expand(); // Расширяем веб-приложение
-
-saveButton.addEventListener("click", () => {
-    // Получаем значения из полей
-    const name = document.getElementById("name").value.trim();
-    const day = document.getElementById("day").value;
-    const month = document.getElementById("month").value;
-    const year = document.getElementById("year").value;
-    const social = document.getElementById("social").value.trim();
-
-    // Проверка, заполнены ли все поля
-    if (!name || !day || !month || !year || !social) {
-        alert("❌ Пожалуйста, заполните все поля!");
-        return;
-    }
-
-    const dateOfBirth = `${day}.${month}.${year}`;
-
-    const userData = {
-        name,
-        dateOfBirth,
-        social
-    };
-
-    tg.sendData(JSON.stringify(userData));
-
-
-    // // Проверяем, доступен ли API Telegram Web App
-    // if (tg) {
-    //     tg.sendData(JSON.stringify(userData));
-    //     alert("✅ Данные успешно отправлены!");
-    // } else {
-    //     alert("Ошибка: Telegram Web App не найден!");
-    // }
+save.addEventListener("click", () => {
+    document.getElementById("name").value = tg.initDataUnsafe.user.first_name;
+    
 });
+
+tg.expand();
