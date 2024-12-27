@@ -47,6 +47,7 @@ select {
     font-family: 'Montserrat Light', sans-serif;
 }
 
+
 /* Для поля ввода имени (когда оно пустое, появляется серый текст) */
 input::placeholder {
     font-family: 'Montserrat Light', sans-serif;
@@ -58,13 +59,13 @@ input::placeholder {
 #birthday {
     font-family: 'Montserrat Light', Microsoft YaHei Light;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 #birthday select {
     font-family: 'Montserrat Light', Microsoft YaHei Light;
     flex: 1;
-    margin: 10px;
+    margin-right: 10px;
 }
 
 
