@@ -4,6 +4,9 @@ h1 {
     text-align: center;
     color: #333;
 }
+body {
+  background:  #efefef;
+}
 
 p, button {
     font-family: 'Montserrat Light', Microsoft YaHei Light;
@@ -61,7 +64,7 @@ input::placeholder {
 #birthday select {
     font-family: 'Montserrat Light', Microsoft YaHei Light;
     flex: 1;
-    margin: 0 5px;
+    margin: 10px;
 }
 
 
@@ -81,7 +84,7 @@ input:focus, select:focus {
 /* Стиль кнопки */
 button {
     font-family: 'Montserrat Light', Microsoft YaHei Light;
-    background-color: #9964b8;
+    background-color: #830b72;
     color: white;
     font-size: 16px;
     padding: 10px 20px;
