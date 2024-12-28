@@ -10,10 +10,13 @@
     <body>
         <div id="main">
             <h1>ASTRO LOVE</h1>
+           
             <img src="./photos/intro.png" alt="INTRO" />
 
             <!-- Поле для ввода имени -->
             <input type="text" id="name" placeholder="Введи имя" />
+            <!-- Поле для пола -->
+            <input type="text" id="sex" placeholder="Введи пол" />
 
             <!-- Поле для ввода даты рождения -->
             <div id="birthday">
@@ -30,13 +33,16 @@
 
             <!-- Поле для ссылки на соцсеть -->
             <input type="url" id="social" placeholder="Твоя соц. сеть" />
-
-            <!-- Контейнер для кнопки -->
+            <!-- Контейнер для кнопки для загрузки фото -->
+            <div id="button-photos">
+                <buttonnew id="next">Загрузить фото</buttonnew>
+            </div>
+        </div>
+        <!-- Контейнер для кнопки -->
             <div id="button-container">
                 <button id="next">Save</button>
             </div>
-        </div>
-
+        
         <script src="https://telegram.org/js/telegram-web-app.js?56"></script>
         <script src="./javaScript/mainPage.js"></script>
     </body>

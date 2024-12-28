@@ -1,25 +1,39 @@
+@font-face {
+    font-family: "Mulish";
+    font-style: normal;
+    src: local("Mulish"),
+        local("Mulish-Bold"),
+        url("/fonts/Mulish-Bold.ttf") format("ttf");   
+    font-family: "Futura PT";
+    font-style: normal;
+    src: local("Futura PT"),
+        local("Futura PT Medium"),
+        url("/fonts/Futura PT Medium.otf") format("otf");  
+}
+body {
+  background:  #efefef;
+  font-size: 24px;
+  font-family: Futura PT, sans-serif;
+  
+}
 h1 {
-    font-family: 'Montserrat Black', Ink Free;
+    font-family: 'Montserrat Light', Microsoft YaHei Light;
     font-weight: bold;
     text-align: center;
     color: #333;
 }
-body {
-  background:  #efefef;
-}
-
-p, button {
+ button {
     font-family: 'Montserrat Light', Microsoft YaHei Light;
     font-size: 16px;
     color: #555;
     line-height: 1.5;
 }
-
 img {
     width: 100%;
     height: auto;
     display: block;
     margin: 20px auto;
+    
 }
 
 @media (min-width: 768px) {
@@ -93,8 +107,22 @@ button {
     border-radius: 5px;
     cursor: pointer;
 }
-
+/* Стиль еще одной кнопки */
+buttonnew {
+    font-family: 'Montserrat Light', Microsoft YaHei Light;
+    background-color: #d880d1;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
 button:hover {
+    background-color: #9964b8;
+}
+buttonnew:hover {
     background-color: #9964b8;
 }
 
@@ -103,6 +131,9 @@ button:hover {
     display: flex;
     justify-content: flex-end;
     margin-top: 20px;
+}
+#button-photos {
+    margin-top: 10px;
 }
 
 /* Адаптивность для мобильных устройств */
