@@ -18,192 +18,64 @@
  </tbody>
 </table>
             <h1>ASTRO LOVE</h1>
-            
-            
 <ul class="nav menu">
-<li>Ваша полная дата рождения 
-(дата, время и место)
-например, 18.08.1999 22:40 Москва
-            <input type="text" id="date" placeholder="Введи дату рождения" />
-           </li>
-<li>Место вашего пребывания 
-(подбирается человек по локации; если вы постоянно путешествуете и перемещаетесь; пишите между какими точками и городами) 
-например, живу в Москве,часто езжу в командировки в Китай
-            <input type="text" id="place" placeholder="Введи место" /></li>
-<li>Чем вы занимаетесь? Кем работаете?
-(не обязательный вопрос)
-    <input type="text" id="place" placeholder="Введи место" />
-</li>
- <li>Ваш рост и вес?
-(не обязательный вопрос)
-     <input type="text" id="place" placeholder="Введи место" />
-</li>   
-<li>Ваша ориентация?
-(выбор ответа) 
-Я гетеросексуал (обычная общепринятая ориентация)
-Я биссекусуал (интересуют парни и девушки)
-Я гей
-Я лесбиянка
-    <!-- Поле для ввода даты рождения -->
-            <div id="birthday">
-                <select id="day">
-                    <option value="">День</option>
+<table class="table-bordered" >
+ <tbody>
+<tr style="width: 100%; text-align: center;"><strong><span style="font-size: 15pt;">Ваша полная дата рождения (дата, время и место) например, 18.08.1999 22:40 Москва <div><input type="text" id="date" placeholder="Введи дату рождения" /></div></span></strong></tr>
+<tr style="width: 100%; text-align: center;"><strong><span style="font-size: 15pt;">Место вашего пребывания (подбирается человек по локации; если вы постоянно путешествуете и перемещаетесь; пишите между какими точками и городами) например, живу в Москве,часто езжу в командировки в Китай
+            <div><input type="text" id="place" placeholder="Введи место"/></div></span></strong></tr>
+<tr style="width: 100%; text-align: center;"><strong><span style="font-size: 15pt;">Чем вы занимаетесь? Кем работаете? (не обязательный вопрос)<div><input type="text" id="job" placeholder="Введи работу" /></div></span></strong></tr>
+     <tr style="width: 100%; text-align: center;"><strong><span style="font-size: 15pt;">Ваш рост и вес? (не обязательный вопрос)<div><input type="text" id="height" placeholder="Введи рост и вес" /></div></span></strong></tr>
+     <tr style="width: 100%; text-align: center;"><strong><span style="font-size: 15pt;">Ваша ориентация?<div id="birthday">
+                <select id="orientation">
+                    <option value="">Ориентация</option>
                 </select>
-                <select id="month">
-                    <option value="">Месяц</option>
+            </div></span></strong></tr>
+     <tr style="width: 100%; text-align: center;"><strong><span style="font-size: 15pt;">Ваша цель астро-любви?<div id="birthday">
+                <select id="searching">
+                    <option value="">Найти...</option>
                 </select>
-                <select id="year">
-                    <option value="">Год</option>
+            </div></span></strong></tr>
+     <tr style="width: 100%; text-align: center;"><strong><span style="font-size: 15pt;">Допустимая разница в возрасте? (старше вас)<div id="birthday">
+                <select id="gapage">
+                    <option value="">Выбор ответа</option>
                 </select>
-            </div>
-</li>   
- <li>Ваша цель астро-любви?
-(выбор ответа) 
-Найти друга (дружеские отношения)
-Найти подругу (дружеские отношения)
-Найти бизнес-партнера//коллегу
-Найти врага
-Найти человека для путешествий 
-Найти любовь всей жизни
-Построить отношения 
-Построить серьезные отношения
-Найти мужа
-Найти жену
-Найти парня
-Найти девушку
-Подыскать полового без обязательств 
-(вам должно быть больше 18+)
-     <div id="birthday">
-                <select id="day">
-                    <option value="">День</option>
+            </div></span></strong></tr>
+     <tr style="width: 100%; text-align: center;"><strong><span style="font-size: 15pt;">Допустимая разница в возрасте? (младше вас)<div id="birthday">
+                <select id="agegap">
+                    <option value="">Выбор ответа</option>
                 </select>
-                <select id="month">
-                    <option value="">Месяц</option>
+            </div></span></strong></tr>
+     <tr style="width: 100%; text-align: center;"><strong><span style="font-size: 15pt;">В каком статусе вы находитесь?<div id="birthday">
+                <select id="status">
+                    <option value="">Выбор статуса</option>
                 </select>
-                <select id="year">
-                    <option value="">Год</option>
+            </div></span></strong></tr>
+     <tr style="width: 100%; text-align: center;"><strong><span style="font-size: 15pt;">Имеете ли вы детей? И ваше отношение к ним?<div id="birthday">
+                <select id="children">
+                    <option value="">Отношение к детям</option>
                 </select>
-            </div>
-</li>   
- <li>Допустимая разница в возрасте? 
-(старше вас)
-(выбор ответа) 
-Категорическое нет
-1-3 года
-4-7 лет
-8-11 лет
-12 и больше
-Не имеет значения
-     <div id="birthday">
-                <select id="day">
-                    <option value="">День</option>
+            </div></span></strong></tr>
+     <tr style="width: 100%; text-align: center;"><strong><span style="font-size: 15pt;">Готовы ли вы к отношениям на расстоянии?<div id="birthday">
+                <select id="distance">
+                    <option value="">Выбор ответа</option>
                 </select>
-                <select id="month">
-                    <option value="">Месяц</option>
-                </select>
-                <select id="year">
-                    <option value="">Год</option>
-                </select>
-            </div>
-</li>   
-    <li>Допустимая разница в возрасте?
-(младше вас)
-(выбор ответа) 
-Категорическое нет
-1-3 года
-4-7 лет
-8-11 лет
-12 и больше
-        <div id="birthday">
-                <select id="day">
-                    <option value="">День</option>
-                </select>
-                <select id="month">
-                    <option value="">Месяц</option>
-                </select>
-                <select id="year">
-                    <option value="">Год</option>
-                </select>
-            </div>
-</li>   
-    <li>В каком статусе вы находитесь?
-(выбор ответа) 
-В активном поиске 
-Свободна/Свободен
-В отношениях
-Замужем/Женат
-Развод/В разводе
-        <div id="birthday">
-                <select id="day">
-                    <option value="">День</option>
-                </select>
-                <select id="month">
-                    <option value="">Месяц</option>
-                </select>
-                <select id="year">
-                    <option value="">Год</option>
-                </select>
-            </div>
-</li>   
-    <li>Имеете ли вы детей? 
-И ваше отношение к ним?
-(выбор ответа) 
-Дети имеются, хорошо к ним отношусь
-Дети есть, больше не хочу детей
-Детей нет, хорошо к ним отношусь
-Детей нет, не хочу детей
-        <div id="birthday">
-                <select id="day">
-                    <option value="">День</option>
-                </select>
-                <select id="month">
-                    <option value="">Месяц</option>
-                </select>
-                <select id="year">
-                    <option value="">Год</option>
-                </select>
-            </div>
-</li>   
-     <li>Готовы ли вы к отношениям на
-расстоянии?
-(выбор ответа) 
-Да
-Нет
-Не уверен(а)
-        <div id="birthday">
-                <select id="day">
-                    <option value="">День</option>
-                </select>
-                <select id="month">
-                    <option value="">Месяц</option>
-                </select>
-                <select id="year">
-                    <option value="">Год</option>
-                </select>
-            </div>
-</li> 
-    <li>Как бы вы описали самого себя? 
-Например, тип личности - ENFP, истероидный нарцисс и работаю фрилансером
-        <input type="text" id="place" placeholder="Введи место" />
-</li>
-    <li>Что вы бы могли предложить будущему подобранному человеку? 
-Например, заботу , ласку ,поддержку или финансы
-        <input type="text" id="place" placeholder="Введи место" />
-</li>
-    <li>Что вы бы хотели получить от подобранного человека? 
-Например, «поддержка во всех начинаниях
-        <input type="text" id="place" placeholder="Введи место" />
-</li>
-    
-    <li>Опишите свой идеальный тип
-Какие качества хотели бы видеть в подобранном человеке?
-Это может быть внешность, характер и тд. 
-Например, внешность Ким МинГю , характер Ким МинГю или же он(а) смотрел(а) все сезоны «как я встретил вашу маму»
-        <input type="text" id="place" placeholder="Введи место" />
-</li>
-    <li>Пришлите 3 фото вашего идеального типажа (максимум 5)
-</li>
-                                </ul>
+            </div></span></strong></tr>
+     <tr style="width: 100%; text-align: center;"><strong><span style="font-size: 15pt;">Как бы вы описали самого себя? Например, тип личности - ENFP, истероидный нарцисс и работаю фрилансером<div><input type="text" id="place" placeholder="Введи место" />
+            </div></span></strong></tr>
+     <tr style="width: 100%; text-align: center;"><strong><span style="font-size: 15pt;">Что вы бы могли предложить будущему подобранному человеку? Например, заботу , ласку ,поддержку или финансы<div><input type="text" id="place" placeholder="Введи место" />
+            </div></span></strong></tr>
+     <tr style="width: 100%; text-align: center;"><strong><span style="font-size: 15pt;">Что вы бы хотели получить от подобранного человека? Например, «поддержка во всех начинаниях<div><input type="text" id="place" placeholder="Введи место" />
+            </div></span></strong></tr>
+     <tr style="width: 100%; text-align: center;"><strong><span style="font-size: 15pt;">Опишите свой идеальный тип. Какие качества хотели бы видеть в подобранном человеке? Это может быть внешность, характер и тд. Например, внешность Ким МинГю , характер Ким МинГю или же он(а) смотрел(а) все сезоны «как я встретил вашу маму»<div><input type="text" id="place" placeholder="Введи место" />
+            </div></span></strong></tr>
+     <tr style="width: 100%; text-align: center;"><strong><span style="font-size: 15pt;">Пришлите 3 фото вашего идеального типажа (максимум 5)<div id="button-photos">
+                <buttonnew id="next">Загрузить фото</buttonnew>
+            </div></span></strong></tr>
+ </tbody>
+</table>
+ 
+
             
            
 <a href="payment.htm"><button id="next">Пока что переход на след стр</button></a>
