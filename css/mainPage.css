@@ -105,7 +105,8 @@ img {
 input[type="text"],
 input[type="url"],
 select {
-    width: 40%;
+    width: 50%; /* Используется вся доступная ширина */
+  max-width: 768px; /* Ограничение на максимальную ширину */
     padding: 10px;
     margin: 10px 0;
     border: 1px solid #ccc;
