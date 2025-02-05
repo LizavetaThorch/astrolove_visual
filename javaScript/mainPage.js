@@ -20,7 +20,7 @@ months.forEach((month, index) => {
     monthsSelect.appendChild(option);
 });
 
-// Заполнение списка с годами (от 2024 до 1920)
+// Заполнение списка с годами (от 2024 до 1924)
 const yearsSelect = document.getElementById("year");
 for (let year = 2024; year >= 1924; year--) {
     const option = document.createElement("option");
@@ -28,3 +28,36 @@ for (let year = 2024; year >= 1924; year--) {
     option.textContent = year;
     yearsSelect.appendChild(option);
 }
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    document.getElementById("save").addEventListener("click", (event) => {
+        event.preventDefault();
+        console.log("Кнопка Save нажата!");
+
+        const name = document.getElementById("name").value;
+        const day = document.getElementById("day").value;
+        const month = document.getElementById("month").value;
+        const year = document.getElementById("year").value;
+        const social = document.getElementById("social").value;
+
+        if (!name || !day || !month || !year || !social) {
+            alert("Заполните все поля!");
+            return;
+        }
+
+        const userData = {
+            name: name,
+            birthday: `${day}.${month}.${year}`,
+            social: social
+        };
+
+        console.log("Отправляем данные в бота: ", JSON.stringify(userData));
+
+        if (window.Telegram.WebApp) {
+            Telegram.WebApp.sendData(JSON.stringify(userData));
+        } else {
+            alert("Telegram WebApp API не доступен!");
+        }
+    });
+});
