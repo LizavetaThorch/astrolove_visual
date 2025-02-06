@@ -10,7 +10,7 @@ for (let i = 1; i <= 31; i++) {
 // Заполнение списка с месяцами
 const monthsSelect = document.getElementById("month");
 const months = [
-    "Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", 
+    "Январь", "Февраль", "Март", "Апрель", "Май", "Июнь",
     "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"
 ];
 months.forEach((month, index) => {
@@ -31,7 +31,7 @@ for (let year = 2024; year >= 1924; year--) {
 
 
 document.addEventListener("DOMContentLoaded", () => {
-    document.getElementById("save").addEventListener("click", (event) => {
+    document.getElementById("next").addEventListener("click", (event) => {
         event.preventDefault();
         console.log("Кнопка Save нажата!");
 
@@ -39,6 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const day = document.getElementById("day").value;
         const month = document.getElementById("month").value;
         const year = document.getElementById("year").value;
+        const sex = document.getElementById("sex").value;
         const social = document.getElementById("social").value;
 
         if (!name || !day || !month || !year || !social) {
@@ -49,6 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const userData = {
             name: name,
             birthday: `${day}.${month}.${year}`,
+            sex: sex,
             social: social
         };
 
