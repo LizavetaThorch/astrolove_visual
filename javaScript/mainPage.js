@@ -31,7 +31,7 @@ for (let year = 2024; year >= 1924; year--) {
 
 
 document.addEventListener("DOMContentLoaded", () => {
-    document.getElementById("next").addEventListener("click", (event) => {
+    document.getElementById("save").addEventListener("click", (event) => {
         event.preventDefault();
         console.log("Кнопка Save нажата!");
 
@@ -56,9 +56,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
         console.log("Отправляем данные в бота: ", JSON.stringify(userData));
 
-        if (window.Telegram.WebApp) {
+        if (window.Telegram && window.Telegram.WebApp) {
+            Telegram.WebApp.ready();
+            console.log("Telegram WebApp инициализирован!");
+
             Telegram.WebApp.sendData(JSON.stringify(userData));
+            console.log("Данные отправлены в бота!");
         } else {
+            console.error("Telegram WebApp API не доступен!");
             alert("Telegram WebApp API не доступен!");
         }
     });
