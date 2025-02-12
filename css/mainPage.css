@@ -51,19 +51,49 @@ a {
     text-align: center;
     text-decoration: none;
 }
-a.active {
-    background-color:#830b72;
-    color:white;
-}
-/* стиль списка анкеты*/
-.nav-menu {
+/* части анкеты прячутся и показываются тут*/
+#regist2 {
+    display:none;
     list-style-type:none;
-    text-align: center;
+    text-align: center; 
+}
+#next1 {
+    display:none;
+    list-style-type:none;
+    text-align: center; 
+}
+#next {
+    display:block;
+    list-style-type:none;
+    text-align: center; 
+}
+#regist3 {
+    display:none;
+    list-style-type:none;
+    text-align: center; 
+}
+#rectangle1 {
+    width: 100%;
+    height: 20px;
+    background: #830b72;
+}
+#rectangle2 {
+    display:none;
+    width: 100%;
+    height: 20px;
+    background: #830b72;
     
 }
-li :hover {
-    color:black;
+#rectangle3 {
+    display:none;
+    width: 100%;
+    height: 20px;
+    background: #830b72;
     
+}
+/* это анкета тут выделяется черным*/
+li :hover {
+    color:black;  
 }
 li {
     color:lightgray;
@@ -72,17 +102,16 @@ li a.active {
     background-color:transparent;
     color:black;
 }
-/* также для меню*/
+ 
 .table-bordered {
-    border-collapse: collapse; 
+    border-collapse: separate; 
     width: 100%; 
     height: 10%; 
     background-color: transparent;  
     border-style: hidden; 
     margin-left: auto; 
-    margin-right: auto;
-    
-}
+    margin-right: auto;}
+
 img {
     width: 100%;
     height: auto;

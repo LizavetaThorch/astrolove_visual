@@ -8,56 +8,109 @@
         <link rel="stylesheet" href="./css/mainPage.css">
  </head>
 <body>
-<div id="main">
- 
- <table class="table-bordered" >
+    <table class="table-bordered" >
  <tbody>
-<td style="width: 33%; text-align: center;"><strong><span style="font-size: 10pt;"><a class="active" href="registration.html" style="color:transparent">1</a></span></strong></td>
-<td style="width: 33%; ; text-align: center; "><strong><span style="font-size: 10pt;"><a href="form.html"style="color:transparent">2</a></span></strong></td>
-<td style="width: 33%;  text-align: center; "><strong><span style="font-size: 10pt;"><a href="payment.htm"style="color:transparent">3</a></span></strong></td>
+<td style="width: 33%; text-align: center;"><div id="rectangle1"></div></td>
+<td style="width: 33%;  text-align: center; "><div id="rectangle2"></div></td>
+<td style="width: 33%;  text-align: center; "><div id="rectangle3"></div></td>
  </tbody>
 </table>
-     <!-- Поле для ввода даты рождения <ul class="nav menu">
-                <li><a class="active" href="registration.html">1</a></li>
-                <li><a href="form.html"></a></li>
-                <li><a href="payment.htm"></a></li>
-                </ul>
-            </nav>
-            </div>-->
+
             <h1>ASTRO LOVE</h1>
           
-           
+           <div id="regist1">
             <!-- Поле для ввода имени -->
             <input type="text" id="name" placeholder="Введи имя" />
             <!-- Поле для пола -->
             <input type="text" id="sex" placeholder="Введи пол" />
-
-            <!-- Поле для ввода даты рождения -->
-            <div id="birthday">
-                <select id="day">
-                    <option value="">День</option>
-                </select>
-                <select id="month">
-                    <option value="">Месяц</option>
-                </select>
-                <select id="year">
-                    <option value="">Год</option>
-                </select>
-            </div>
-
             <!-- Поле для ссылки на соцсеть -->
             <input type="url" id="social" placeholder="Твоя соц. сеть" />
-    <form>
-    <input type="URL" id="social" placeholder="Твоя соц. сеть" pattern="https://.+" required title="Requires https://" />
-    <input type="submit" value="Проверить ссылку">
-</form>
-            <!-- Контейнер для кнопки для загрузки фото -->
+       <!-- Контейнер для кнопки для загрузки фото -->
             <div id="button-photos">
-                <buttonnew id="next">Загрузить фото</buttonnew>
+                <buttonnew id="yourphoto">Загрузить фото</buttonnew>
             </div>
-                <a href="form.html"><button id="next">Пока что переход на след стр</button></a>
+    </div>
+    
+    <div id="regist2">
+<table class="table-bordered" >
+ <tbody>
+<tr style="width: 100%; text-align: center;"><strong><li><span style="font-size: 15pt;">Ваша полная дата рождения (дата, время и место) например, 18.08.1999 22:40 Москва<div><div><input type="text" id="datebirth" placeholder="Введи дату в формате дд.мм.гг."/></div> 
+    <div><input type="text" id="birthtime" placeholder="Введи время рождения"/></div><input type="text" id="birthplace" placeholder="Введи место рождения" /></div></span></strong></tr>
+<tr style="width: 100%; text-align: center;"><strong><li><span style="font-size: 15pt;">Место вашего пребывания (подбирается человек по локации; если вы постоянно путешествуете и перемещаетесь; пишите между какими точками и городами) например, живу в Москве,часто езжу в командировки в Китай
+            <div><input type="text" id="place" placeholder="Введи место"/></div></span></strong></tr>
+<tr style="width: 100%; text-align: center;"><strong><li><span style="font-size: 15pt;">Чем вы занимаетесь? Кем работаете? (не обязательный вопрос)<div><input type="text" id="job" placeholder="Введи работу" /></div></span></strong></tr>
+     <tr style="width: 100%; text-align: center;"><strong><li><span style="font-size: 15pt;">Ваш рост и вес? (не обязательный вопрос)<div><input type="text" id="height" placeholder="Введи рост и вес" /></div></span></strong></tr>
+     <tr style="width: 100%; text-align: center;"><strong><li><span style="font-size: 15pt;">Ваша ориентация?<div id="birthday">
+                <select id="orientation">
+                    <option value="">Ориентация</option>
+                </select>
+            </div></span></strong></tr>
+     <tr style="width: 100%; text-align: center;"><strong><li><span style="font-size: 15pt;">Ваша цель астро-любви?<div id="birthday">
+                <select id="searching">
+                    <option value="">Найти...</option>
+                </select>
+            </div></span></strong></tr>
+     <tr style="width: 100%; text-align: center;"><strong><li><span style="font-size: 15pt;">Допустимая разница в возрасте? (старше вас)<div id="birthday">
+                <select id="gapage">
+                    <option value="">Выбор ответа</option>
+                </select>
+            </div></span></strong></tr>
+     <tr style="width: 100%; text-align: center;"><strong><li><span style="font-size: 15pt;">Допустимая разница в возрасте? (младше вас)<div id="birthday">
+                <select id="agegap">
+                    <option value="">Выбор ответа</option>
+                </select>
+            </div></span></strong></tr>
+     <tr style="width: 100%; text-align: center;"><strong><li><span style="font-size: 15pt;">В каком статусе вы находитесь?<div id="birthday">
+                <select id="status">
+                    <option value="">Выбор статуса</option>
+                </select>
+            </div></span></strong></tr>
+     <tr style="width: 100%; text-align: center;"><strong><li><span style="font-size: 15pt;">Имеете ли вы детей? И ваше отношение к ним?<div id="birthday">
+                <select id="children">
+                    <option value="">Отношение к детям</option>
+                </select>
+            </div></span></strong></tr>
+     <tr style="width: 100%; text-align: center;"><strong><li><span style="font-size: 15pt;">Готовы ли вы к отношениям на расстоянии?<div id="birthday">
+                <select id="distance">
+                    <option value="">Выбор ответа</option>
+                </select>
+            </div></span></strong></tr>
+     <tr style="width: 100%; text-align: center;"><strong><li><span style="font-size: 15pt;">Как бы вы описали самого себя? Например, тип личности - ENFP, истероидный нарцисс и работаю фрилансером<div><input type="text" id="describe" placeholder="Опиши себя" />
+            </div></span></strong></tr>
+     <tr style="width: 100%; text-align: center;"><strong><li><span style="font-size: 15pt;">Что вы бы могли предложить будущему подобранному человеку? Например, заботу , ласку ,поддержку или финансы<div><input type="text" id="give" placeholder="Могу предложить..." />
+            </div></span></strong></tr>
+     <tr style="width: 100%; text-align: center;"><strong><li><span style="font-size: 15pt;">Что вы бы хотели получить от подобранного человека? Например, «поддержка во всех начинаниях<div><input type="text" id="get" placeholder="Хочу получить..." />
+            </div></span></strong></tr>
+     <tr style="width: 100%; text-align: center;"><strong><li><span style="font-size: 15pt;">Опишите свой идеальный тип. Какие качества хотели бы видеть в подобранном человеке? Это может быть внешность, характер и тд. Например, внешность Ким МинГю , характер Ким МинГю или же он(а) смотрел(а) все сезоны «как я встретил вашу маму»<div><input type="text" id="ideal" placeholder="Мой идеал..." />
+            </div></span></strong></tr>
+     <tr style="width: 100%; text-align: center;"><strong><li><span style="font-size: 15pt;">Пришлите 3 фото вашего идеального типажа (максимум 5)<div id="button-photos">
+                <buttonnew id="idealphoto">Загрузить фото</buttonnew>
+            </div></span></strong></tr>
+ </tbody>
+</table>
+    </div>
+       <div id="regist3">        
+ <p>Чтобы ваша анкета зашла в базу данных, ее нужно оплатить</p>
+         <p>Это сделано во избежание фейков, мимопроходящих крокодилов и жадных мужчин/женщин.</p>
             
-            <a href="index.html"><button id="next">Назад</button></a>
+            <div class="details"><details>
+<summary><span><strong>Информация об оплате</strong></span></summary>
+<div ><p>300р - совместимость проверяется по нумерологии и астрологии (3 мэтча)</p>
+<p>500р - совместимость проверяется по нумерологии и астрологии (3-4 мэтча)</p>
+            <p>1000р - совместимость проверяется по всем программам (5-6 мэтчей)</p>
+            <p>3000р - подбор совместимости по всем программам без очереди.(Т.е.приходит новая анкета и сразу проверяется с вами) (неограниченное количество мэтчей)</p></div>
+</details></div>
+                  <!-- Контейнер для кнопки -->
+            <div id="button-container">
+                <button id="pay">Оплатить</button>
+            </div>
+            <a href="profile.htm"><button id="profile">Переход в созданный профиль</button></a>
+            </div>
+                <button id="next" onclick="regist();">Далее</button>
+    
+    <button id="next1" onclick="reg();">Далее</button>
+            
+            <a href="index.html"><button id="return">Назад</button></a>
         
             <div id="button-container">
                 <button id="save">Save</button>
