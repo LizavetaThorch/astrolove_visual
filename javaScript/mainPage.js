@@ -29,7 +29,6 @@ for (let year = 2024; year >= 1924; year--) {
     yearsSelect.appendChild(option);
 }
 
-
 document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("save").addEventListener("click", (event) => {
         event.preventDefault();
@@ -42,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const sex = document.getElementById("sex").value;
         const social = document.getElementById("social").value;
 
-        if (!name || !day || !month || !year || !social) {
+        if (!name || !day || !month || !year || !sex ||!social) {
             alert("Заполните все поля!");
             return;
         }
@@ -53,6 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
             sex: sex,
             social: social
         };
+        
 
         console.log("Отправляем данные в бота: ", JSON.stringify(userData));
 
@@ -68,3 +68,5 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
+
+

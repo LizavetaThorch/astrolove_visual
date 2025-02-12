@@ -25,7 +25,7 @@
             </nav>
             </div>-->
             <h1>ASTRO LOVE</h1>
-            <img src="./photos/intro.png" alt="INTRO" />
+          
            
             <!-- Поле для ввода имени -->
             <input type="text" id="name" placeholder="Введи имя" />
@@ -47,6 +47,10 @@
 
             <!-- Поле для ссылки на соцсеть -->
             <input type="url" id="social" placeholder="Твоя соц. сеть" />
+    <form>
+    <input type="URL" id="social" placeholder="Твоя соц. сеть" pattern="https://.+" required title="Requires https://" />
+    <input type="submit" value="Проверить ссылку">
+</form>
             <!-- Контейнер для кнопки для загрузки фото -->
             <div id="button-photos">
                 <buttonnew id="next">Загрузить фото</buttonnew>
