@@ -104,23 +104,53 @@ document.addEventListener("DOMContentLoaded", () => {
         console.log("Кнопка Save нажата!");
 
         const name = document.getElementById("name").value;
-        const day = document.getElementById("day").value;
-        const month = document.getElementById("month").value;
-        const year = document.getElementById("year").value;
         const sex = document.getElementById("sex").value;
         const social = document.getElementById("social").value;
+        const datebirth = document.getElementById("datebirth").value;
+        const birthplace = document.getElementById("birthplace").value;
+        const birthtime = document.getElementById("birthtime").value;
+        const place = document.getElementById("place").value;
+        const job = document.getElementById("job").value;
+        const height = document.getElementById("height").value;
+        const orientation = document.getElementById("orientation").value;
+        const searching = document.getElementById("searching").value;
+        const gapage = document.getElementById("gapage").value;
+        const agegap = document.getElementById("agegap").value;
+        const status = document.getElementById("status").value;
+        const children = document.getElementById("children").value;
+        const distance = document.getElementById("distance").value;
+        const describe = document.getElementById("describe").value;
+        const give = document.getElementById("give").value;
+        const get = document.getElementById("get").value;
+        const ideal = document.getElementById("ideal").value;
 
-        if (!name || !day || !month || !year || !sex ||!social) {
+        if (!name || !sex ||!social || !datebirth ||!birthplace || !place ||!job || !orientation ||!searching || !gapage ||!agegap || !status ||!children || !distance||!describe || !give ||!get ||!ideal ) {
             alert("Заполните все поля!");
             return;
         }
 
         const userData = {
             name: name,
-            birthday: `${day}.${month}.${year}`,
             sex: sex,
-            social: social
-        };
+            social: social,
+            datebirth: datebirth,
+            birthplace: birthplace,
+            birthtime: birthtime,
+            place: place,
+            job: job,
+            height: height,
+            orientation: orientation,
+            searching: searching,
+            gapage: gapage,
+            agegap: agegap,
+            status: status,
+            children: children,
+            distance: distance,
+            describe: describe,
+            give: give,
+            get: get,
+            ideal: ideal
+          };
         
 
         console.log("Отправляем данные в бота: ", JSON.stringify(userData));
