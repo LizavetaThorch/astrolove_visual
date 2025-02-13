@@ -164,10 +164,10 @@ document.addEventListener("DOMContentLoaded", () => {
         const get = document.getElementById("get").value;
         const ideal = document.getElementById("ideal").value;
 
-        if (!name || !sex || !social || !datebirth || !birthplace || !place || !job || !orientation || !searching || !gapage || !agegap || !status || !children || !distance || !describe || !give || !get || !ideal) {
-            alert("Заполните все поля!");
-            return;
-        }
+        // if (!name || !sex || !social || !datebirth || !birthplace || !place || !job || !orientation || !searching || !gapage || !agegap || !status || !children || !distance || !describe || !give || !get || !ideal) {
+        //     alert("Заполните все поля!");
+        //     return;
+        // }
 
         userData = {
             name: name,
