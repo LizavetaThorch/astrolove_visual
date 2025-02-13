@@ -107,6 +107,7 @@ document.getElementById("next1").addEventListener("click",
         document.getElementById("rectangle3").style.display = "block";
         document.getElementById("return").style.display = "none";
         document.getElementById("return1").style.display = "block";
+        document.getElementById("next1").style.display = "none";
     });
 // Первая кнопка назад к вводу имени
 document.getElementById("return").addEventListener("click",
@@ -122,6 +123,7 @@ document.getElementById("return").addEventListener("click",
 // Вторая кнопка назад к анкете
 document.getElementById("return1").addEventListener("click",
     function back2() {
+        document.getElementById("next1").style.display = "block";
         document.getElementById("regist2").style.display = "block";
         document.getElementById("regist3").style.display = "none";
         document.getElementById("rectangle2").style.display = "block";
