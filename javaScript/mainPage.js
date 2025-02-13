@@ -110,10 +110,10 @@ document.getElementById("next1").addEventListener("click",
 // // Функция загрузки фото
 async function uploadPhoto() {
     const fileInput = document.getElementById("photoInput").files[0];
-    // if (!fileInput) {
-    //     alert("Выберите фото!");
-    //     return;
-    // }
+    if (!fileInput) {
+        alert("Выберите фото!");
+        return;
+    }
 
     const formData = new FormData();
     formData.append("photo", fileInput);
