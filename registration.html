@@ -34,12 +34,22 @@
         <input type="text" id="sex" placeholder="Введи пол" />
         <!-- Поле для ссылки на соцсеть -->
         <input type="url" id="social" placeholder="Твоя соц. сеть" />
+
+
         <!-- Контейнер для кнопки для загрузки фото -->
         <div id="button-photos">
-            <!-- <buttonnew id="yourphoto">Загрузить фото</buttonnew> -->
             <input type="file" id="photoInput">
             <button id="yourphoto">Загрузить фото</button>
         </div>
+
+        <script>
+            document.getElementById("yourphoto").addEventListener("click", () => {
+                uploadPhoto(); // Вызываем функцию загрузки
+            });
+        </script>
+
+
+
     </div>
 
     <div id="regist2">

@@ -126,12 +126,16 @@ async function uploadPhoto() {
         });
 
         const result = await response.json();
-        if (result.ok) {
-            userData.photo_id = result.result.photo.pop().file_id;
+        
+        console.log("Ответ API Telegram:", result); // Логируем весь ответ API
+
+        if (result.ok && result.result.photo) {
+            userData.photo_id = result.result.photo[result.result.photo.length - 1].file_id;
             console.log("file_id:", userData.photo_id);
         } else {
-            console.error("Ошибка загрузки фото:", result);
+            console.error("Не удалось получить file_id. Ответ API:", result);
         }
+
     } catch (error) {
         console.error("Ошибка запроса:", error);
     }
