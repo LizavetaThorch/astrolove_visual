@@ -1,12 +1,12 @@
 const tg = window.Telegram.WebApp;
-// let userData = {}; // Объект для хранения данных
-// const userId = 898641850; // ID пользователя
+let userData = {}; // Объект для хранения данных
+const userId = 898641850; // ID пользователя
 
-// if (!userId) {
-//     console.error("Не удалось получить user_id. Убедитесь, что пользователь авторизован.");
-// }
+if (!userId) {
+    console.error("Не удалось получить user_id. Убедитесь, что пользователь авторизован.");
+}
 
-// console.log("user_id:", userId); // Проверка user_id
+console.log("user_id:", userId); // Проверка user_id
 
 
 // Заполнение списка с разницей в возрасте старше
@@ -108,34 +108,34 @@ document.getElementById("next1").addEventListener("click",
     });
 
 // // Функция загрузки фото
-// async function uploadPhoto() {
-//     const fileInput = document.getElementById("photoInput").files[0];
-//     if (!fileInput) {
-//         alert("Выберите фото!");
-//         return;
-//     }
+async function uploadPhoto() {
+    const fileInput = document.getElementById("photoInput").files[0];
+    // if (!fileInput) {
+    //     alert("Выберите фото!");
+    //     return;
+    // }
 
-//     const formData = new FormData();
-//     formData.append("photo", fileInput);
-//     formData.append("chat_id", userId); // Используем user_id как chat_id
+    const formData = new FormData();
+    formData.append("photo", fileInput);
+    formData.append("chat_id", userId); // Используем user_id как chat_id
 
-//     try {
-//         const response = await fetch(`https://api.telegram.org/bot7566850087:AAFv7vWuzj60esH234Lx16Ox9-okcYH9fnY/sendPhoto`, {
-//             method: "POST",
-//             body: formData
-//         });
+    try {
+        const response = await fetch(`https://api.telegram.org/bot7566850087:AAFv7vWuzj60esH234Lx16Ox9-okcYH9fnY/sendPhoto`, {
+            method: "POST",
+            body: formData
+        });
 
-//         const result = await response.json();
-//         if (result.ok) {
-//             userData.photo_id = result.result.photo.pop().file_id;
-//             console.log("file_id:", userData.photo_id);
-//         } else {
-//             console.error("Ошибка загрузки фото:", result);
-//         }
-//     } catch (error) {
-//         console.error("Ошибка запроса:", error);
-//     }
-// }
+        const result = await response.json();
+        if (result.ok) {
+            userData.photo_id = result.result.photo.pop().file_id;
+            console.log("file_id:", userData.photo_id);
+        } else {
+            console.error("Ошибка загрузки фото:", result);
+        }
+    } catch (error) {
+        console.error("Ошибка запроса:", error);
+    }
+}
 
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -190,7 +190,7 @@ document.addEventListener("DOMContentLoaded", () => {
             give: give,
             get: get,
             ideal: ideal,
-
+            photo_id: userData.photo_id
         };
 
 
