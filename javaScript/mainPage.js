@@ -108,7 +108,8 @@ document.getElementById("next1").addEventListener("click",
 
     });
 
-// Выбор фото
+
+// Функция выбора фото
 document.getElementById("yourphoto").addEventListener("click", () => {
     const fileInput = document.getElementById("photoInput");
 
