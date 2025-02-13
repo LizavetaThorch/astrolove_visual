@@ -11,7 +11,7 @@
         url("/fonts/Futura PT Medium.otf") format("otf");  
 }
 body {
-  background:  #efefef;
+  background:  #0f3a27;
   font-size: 24px;
   font-family: Mulish, sans-serif;
 }
@@ -28,7 +28,8 @@ h1 {
     line-height: 1.5;
 }
 /* Для что-то вроде меню наверху, будут полоски или номера для навигации*
- /* в ul background-color: #830b72;/
+ /* в ul background-color: #830b72;/6c1343бордо  0d1d32синий  fae1e5нежно-розовый  efefefбазовый d2cc5fзолотой  ff4dffрозовый  840b72розово-бордовый  0f3a27зеленый
+#efefef; обычный цвет за
 ul {
     list-style-type: none;
     margin:0;
@@ -75,7 +76,7 @@ a {
 #rectangle1 {
     width: 100%;
     height: 20px;
-    background: #830b72;
+    background: #d880d1;
 }
 #rectangle2 {
     display:none;
@@ -183,7 +184,7 @@ input:focus, select:focus {
 /* Стиль кнопки */
 button {
     font-family: 'Montserrat Light', Microsoft YaHei Light;
-    background-color: #830b72;
+    background-color: #d2cc5f;
     color: white;
     font-size: 16px;
     padding: 10px 20px;
