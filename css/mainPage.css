@@ -243,6 +243,9 @@ buttonnew:hover {
 #return{
      display: none;
 }
+#return1{
+     display: none;
+}
 #button-photos {
     margin-top: 10px;
 }

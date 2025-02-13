@@ -105,15 +105,29 @@ document.getElementById("next1").addEventListener("click",
         document.getElementById("regist2").style.display = "none";
         document.getElementById("regist3").style.display = "block";
         document.getElementById("rectangle3").style.display = "block";
+        document.getElementById("return").style.display = "none";
+        document.getElementById("return1").style.display = "block";
     });
 // Первая кнопка назад к вводу имени
 document.getElementById("return").addEventListener("click",
-    function back() {
+    function back1() {
         document.getElementById("regist1").style.display = "block";
         document.getElementById("regist2").style.display = "none";
         document.getElementById("next").style.display = "block";
         document.getElementById("next1").style.display = "none";
         document.getElementById("rectangle2").style.display = "none";
+        document.getElementById("return").style.display = "none";
+      
+   });
+// Вторая кнопка назад к анкете
+document.getElementById("return1").addEventListener("click",
+    function back2() {
+        document.getElementById("regist2").style.display = "block";
+        document.getElementById("regist3").style.display = "none";
+        document.getElementById("rectangle2").style.display = "block";
+        document.getElementById("rectangle3").style.display = "none";
+        document.getElementById("return").style.display = "block";
+        document.getElementById("return1").style.display = "none";
     });
 
 // Функция выбора фото
