@@ -1,6 +1,7 @@
 const tg = window.Telegram.WebApp;
 let userData = {}; // Объект для хранения данных
-const userId = 898641850; // ID пользователя
+//const userId = 898641850; // ID пользователя
+const userId = -4770779801;
 
 if (!userId) {
     console.error("Не удалось получить user_id. Убедитесь, что пользователь авторизован.");
@@ -126,7 +127,7 @@ async function uploadPhoto() {
         });
 
         const result = await response.json();
-        
+
         console.log("Ответ API Telegram:", result); // Логируем весь ответ API
 
         if (result.ok && result.result.photo) {
