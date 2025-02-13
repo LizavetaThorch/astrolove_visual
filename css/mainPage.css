@@ -10,31 +10,25 @@
         local("Futura PT Medium"),
         url("/fonts/Futura PT Medium.otf") format("otf");
 }
-
 body {
-
   background:  #fae1e5;
   font-size: 24px;
   font-family: Mulish, sans-serif;
-
 }
-
 h1 {
     font-family: 'Montserrat Light', Microsoft YaHei Light;
     font-weight: bold;
     text-align: center;
     color: #333;
 }
-
 button {
     font-family: 'Montserrat Light', Microsoft YaHei Light;
     font-size: 16px;
     color: #555;
     line-height: 1.5;
 }
-
 /* Для что-то вроде меню наверху, будут полоски или номера для навигации*
- /* в ul background-color: #830b72;/6c1343бордо  0d1d32синий  fae1e5нежно-розовый  efefefбазовый d2cc5fзолотой  ff4dffрозовый  840b72розово-бордовый  0f3a27зеленый
+ /* в ul background-color: #830b72обычный цвет кнопок;/6c1343бордо  0d1d32синий  fae1e5нежно-розовый  efefefбазовый d2cc5fзолотой  ff4dffрозовый  840b72розово-бордовый  0f3a27зеленый  9964b8сиреневый
 #efefef; 
 ul {
     list-style-type: none;
@@ -94,7 +88,7 @@ a {
     display: none;
     width: 100%;
     height: 20px;
-    background: #830b72;
+    background: #d880d1;
 
 }
 
@@ -102,7 +96,7 @@ a {
     display: none;
     width: 100%;
     height: 20px;
-    background: #830b72;
+    background: #d880d1;
 
 }
 
@@ -227,7 +221,7 @@ buttonnew {
 }
 
 button:hover {
-    background-color: #9964b8;
+    background-color: #d880d1;
 }
 
 buttonnew:hover {
