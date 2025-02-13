@@ -109,7 +109,7 @@ document.getElementById("next1").addEventListener("click",
         document.getElementById("return1").style.display = "block";
         document.getElementById("next1").style.display = "none";
     });
-// Первая кнопка назад к вводу имени
+// Первая кнопка назад к вводу имени со страницы анкеты
 document.getElementById("return").addEventListener("click",
     function back1() {
         document.getElementById("regist1").style.display = "block";
@@ -120,7 +120,7 @@ document.getElementById("return").addEventListener("click",
         document.getElementById("return").style.display = "none";
       
    });
-// Вторая кнопка назад к анкете
+// Вторая кнопка назад к анкете со страницы оплаты
 document.getElementById("return1").addEventListener("click",
     function back2() {
         document.getElementById("next1").style.display = "block";
