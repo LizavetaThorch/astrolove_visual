@@ -96,7 +96,7 @@ document.getElementById("next").addEventListener("click",
         document.getElementById("next").style.display = "none";
         document.getElementById("next1").style.display = "block";
         document.getElementById("rectangle2").style.display = "block";
-
+        document.getElementById("return").style.display = "block";
     });
 // Вторая кнопка далее с открыванием оплаты
 document.getElementById("next1").addEventListener("click",
@@ -104,7 +104,15 @@ document.getElementById("next1").addEventListener("click",
         document.getElementById("regist2").style.display = "none";
         document.getElementById("regist3").style.display = "block";
         document.getElementById("rectangle3").style.display = "block";
-
+    });
+// Первая кнопка назад к вводу имени
+document.getElementById("return").addEventListener("click",
+    function back() {
+        document.getElementById("regist1").style.display = "block";
+        document.getElementById("regist2").style.display = "none";
+        document.getElementById("next").style.display = "block";
+        document.getElementById("next1").style.display = "none";
+        document.getElementById("rectangle2").style.display = "none";
     });
 
 // Функция загрузки фото
