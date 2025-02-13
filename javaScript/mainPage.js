@@ -1,6 +1,7 @@
 const tg = window.Telegram.WebApp;
 let userData = {}; // Объект для хранения данных
-const userId = 898641850; // ID пользователя
+//const userId = 898641850; // ID пользователя
+const userId = -4770779801;
 
 if (!userId) {
     console.error("Не удалось получить user_id. Убедитесь, что пользователь авторизован.");
@@ -107,6 +108,22 @@ document.getElementById("next1").addEventListener("click",
 
     });
 
+// Функция выбора фото
+document.getElementById("yourphoto").addEventListener("click", () => {
+    const fileInput = document.getElementById("photoInput");
+
+    // Открываем окно выбора файла
+    fileInput.click();
+
+    // Ждем выбора файла и загружаем его
+    fileInput.onchange = async () => {
+        if (fileInput.files.length > 0) {
+            await uploadPhoto();
+        }
+    };
+});
+
+
 // Функция загрузки фото
 async function uploadPhoto() {
     const fileInput = document.getElementById("photoInput").files[0];
@@ -117,21 +134,25 @@ async function uploadPhoto() {
 
     const formData = new FormData();
     formData.append("photo", fileInput);
-    formData.append("chat_id", userId); // Используем user_id как chat_id
+    formData.append("chat_id", userId);
 
     try {
-        const response = await fetch(`https://api.telegram.org/bot7566850087:AAFv7vWuzj60esH234Lx16Ox9-okcYH9fnY/sendPhoto`, {
+        const response = await fetch(`https://api.telegram.org/bot7835102368:AAGjWAbwPn6bVVg5OC8X2O-UzD-dxdx_1h4/sendPhoto`, {
             method: "POST",
             body: formData
         });
 
         const result = await response.json();
-        if (result.ok) {
-            userData.photo_id = result.result.photo.pop().file_id;
+
+        console.log("Ответ API Telegram:", result);
+
+        if (result.ok && result.result.photo) {
+            userData.photo_id = result.result.photo[result.result.photo.length - 1].file_id;
             console.log("file_id:", userData.photo_id);
         } else {
-            console.error("Ошибка загрузки фото:", result);
+            console.error("Не удалось получить file_id. Ответ API:", result);
         }
+
     } catch (error) {
         console.error("Ошибка запроса:", error);
     }
@@ -164,10 +185,10 @@ document.addEventListener("DOMContentLoaded", () => {
         const get = document.getElementById("get").value;
         const ideal = document.getElementById("ideal").value;
 
-        if (!name || !sex || !social || !datebirth || !birthplace || !place || !job || !orientation || !searching || !gapage || !agegap || !status || !children || !distance || !describe || !give || !get || !ideal) {
-            alert("Заполните все поля!");
-            return;
-        }
+        // if (!name || !sex || !social || !datebirth || !birthplace || !place || !job || !orientation || !searching || !gapage || !agegap || !status || !children || !distance || !describe || !give || !get || !ideal) {
+        //     alert("Заполните все поля!");
+        //     return;
+        // }
 
         const userData = {
             name: name,
