@@ -3,30 +3,34 @@
     font-style: normal;
     src: local("Mulish"),
         local("Mulish-Bold"),
-        url("/fonts/Mulish-Bold.ttf") format("ttf");   
+        url("/fonts/Mulish-Bold.ttf") format("ttf");
     font-family: "Futura PT";
     font-style: normal;
     src: local("Futura PT"),
         local("Futura PT Medium"),
-        url("/fonts/Futura PT Medium.otf") format("otf");  
+        url("/fonts/Futura PT Medium.otf") format("otf");
 }
+
 body {
-  background:  #0f3a27;
-  font-size: 24px;
-  font-family: Mulish, sans-serif;
+    background: #0f3a27;
+    font-size: 24px;
+    font-family: Mulish, sans-serif;
 }
+
 h1 {
     font-family: 'Montserrat Light', Microsoft YaHei Light;
     font-weight: bold;
     text-align: center;
     color: #333;
 }
- button {
+
+button {
     font-family: 'Montserrat Light', Microsoft YaHei Light;
     font-size: 16px;
     color: #555;
     line-height: 1.5;
 }
+
 /* Для что-то вроде меню наверху, будут полоски или номера для навигации*
  /* в ul background-color: #830b72;/6c1343бордо  0d1d32синий  fae1e5нежно-розовый  efefefбазовый d2cc5fзолотой  ff4dffрозовый  840b72розово-бордовый  0f3a27зеленый
 #efefef; обычный цвет за
@@ -52,74 +56,86 @@ a {
     text-align: center;
     text-decoration: none;
 }
+
 /* части анкеты прячутся и показываются тут*/
 #regist2 {
-    display:none;
-    list-style-type:none;
-    text-align: center; 
+    display: none;
+    list-style-type: none;
+    text-align: center;
 }
+
 #next1 {
-    display:none;
-    list-style-type:none;
-    text-align: center; 
+    display: none;
+    list-style-type: none;
+    text-align: center;
 }
+
 #next {
-    display:block;
-    list-style-type:none;
-    text-align: center; 
+    display: block;
+    list-style-type: none;
+    text-align: center;
 }
+
 #regist3 {
-    display:none;
-    list-style-type:none;
-    text-align: center; 
+    display: none;
+    list-style-type: none;
+    text-align: center;
 }
+
 #rectangle1 {
     width: 100%;
     height: 20px;
     background: #d880d1;
 }
+
 #rectangle2 {
-    display:none;
+    display: none;
     width: 100%;
     height: 20px;
     background: #830b72;
-    
+
 }
+
 #rectangle3 {
-    display:none;
+    display: none;
     width: 100%;
     height: 20px;
     background: #830b72;
-    
+
 }
+
 /* это анкета тут выделяется черным*/
 li :hover {
-    color:black;  
+    color: black;
 }
+
 li {
-    color:lightgray;
+    color: lightgray;
 }
+
 li a.active {
-    background-color:transparent;
-    color:black;
+    background-color: transparent;
+    color: black;
 }
- 
+
 .table-bordered {
-    border-collapse: separate; 
-    width: 100%; 
-    height: 10%; 
-    background-color: transparent;  
-    border-style: hidden; 
-    margin-left: auto; 
-    margin-right: auto;}
+    border-collapse: separate;
+    width: 100%;
+    height: 10%;
+    background-color: transparent;
+    border-style: hidden;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 img {
     width: 100%;
     height: auto;
     display: block;
     margin: 20px auto;
-    
+
 }
+
 @media (min-width: 768px) {
     img {
         width: 50%;
@@ -136,8 +152,10 @@ img {
 input[type="text"],
 input[type="url"],
 select {
-    width: 50%; /* Используется вся доступная ширина */
-  max-width: 768px; /* Ограничение на максимальную ширину */
+    width: 50%;
+    /* Используется вся доступная ширина */
+    max-width: 768px;
+    /* Ограничение на максимальную ширину */
     padding: 10px;
     margin: 10px 0;
     border: 1px solid #ccc;
@@ -176,7 +194,8 @@ input::placeholder {
 }
 
 /* Фокус на поле ввода */
-input:focus, select:focus {
+input:focus,
+select:focus {
     outline: none;
     border-color: #9964b8;
 }
@@ -192,6 +211,7 @@ button {
     border-radius: 5px;
     cursor: pointer;
 }
+
 /* Стиль еще одной кнопки */
 buttonnew {
     font-family: 'Montserrat Light', Microsoft YaHei Light;
@@ -202,11 +222,13 @@ buttonnew {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    
+
 }
+
 button:hover {
     background-color: #9964b8;
 }
+
 buttonnew:hover {
     background-color: #9964b8;
 }
@@ -217,6 +239,7 @@ buttonnew:hover {
     justify-content: flex-end;
     margin-top: 20px;
 }
+
 #button-photos {
     margin-top: 10px;
 }
