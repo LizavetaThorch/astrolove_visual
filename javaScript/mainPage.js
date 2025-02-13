@@ -190,7 +190,7 @@ document.addEventListener("DOMContentLoaded", () => {
         //     return;
         // }
 
-        const userData = {
+        userData = {
             name: name,
             sex: sex,
             social: social,
