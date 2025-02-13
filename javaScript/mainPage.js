@@ -2,11 +2,11 @@ const tg = window.Telegram.WebApp;
 // let userData = {}; // Объект для хранения данных
 // const userId = 898641850; // ID пользователя
 
-if (!userId) {
-    console.error("Не удалось получить user_id. Убедитесь, что пользователь авторизован.");
-}
+// if (!userId) {
+//     console.error("Не удалось получить user_id. Убедитесь, что пользователь авторизован.");
+// }
 
-console.log("user_id:", userId); // Проверка user_id
+// console.log("user_id:", userId); // Проверка user_id
 
 
 // Заполнение списка с разницей в возрасте старше
