@@ -37,7 +37,13 @@
 
 
         <!-- Контейнер для кнопки для загрузки фото -->
+         <!-- Контейнер для загрузки фото -->
         <div id="button-photos">
+            <input type="file" id="photoInput" style="display: none;"> 
+            <button id="yourphoto">Загрузить фото</button>
+        </div>
+
+        <!-- <div id="button-photos">
             <input type="file" id="photoInput">
             <button id="yourphoto">Загрузить фото</button>
         </div>
@@ -46,7 +52,7 @@
             document.getElementById("yourphoto").addEventListener("click", () => {
                 uploadPhoto(); // Вызываем функцию загрузки
             });
-        </script>
+        </script> -->
 
 
 

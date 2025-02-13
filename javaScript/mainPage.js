@@ -108,7 +108,23 @@ document.getElementById("next1").addEventListener("click",
 
     });
 
-// // Функция загрузки фото
+// Выбор фото
+document.getElementById("yourphoto").addEventListener("click", () => {
+    const fileInput = document.getElementById("photoInput");
+
+    // Открываем окно выбора файла
+    fileInput.click();
+
+    // Ждем выбора файла и загружаем его
+    fileInput.onchange = async () => {
+        if (fileInput.files.length > 0) {
+            await uploadPhoto();
+        }
+    };
+});
+
+
+// Функция загрузки фото
 async function uploadPhoto() {
     const fileInput = document.getElementById("photoInput").files[0];
     if (!fileInput) {
@@ -118,7 +134,7 @@ async function uploadPhoto() {
 
     const formData = new FormData();
     formData.append("photo", fileInput);
-    formData.append("chat_id", userId); // Используем user_id как chat_id
+    formData.append("chat_id", userId);
 
     try {
         const response = await fetch(`https://api.telegram.org/bot7566850087:AAFv7vWuzj60esH234Lx16Ox9-okcYH9fnY/sendPhoto`, {
@@ -128,7 +144,7 @@ async function uploadPhoto() {
 
         const result = await response.json();
 
-        console.log("Ответ API Telegram:", result); // Логируем весь ответ API
+        console.log("Ответ API Telegram:", result);
 
         if (result.ok && result.result.photo) {
             userData.photo_id = result.result.photo[result.result.photo.length - 1].file_id;
