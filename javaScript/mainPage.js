@@ -70,7 +70,7 @@ orientations.forEach((orientation, index) => {
 // Заполнение списка с целью поисков
 const searchingsSelect = document.getElementById("searching");
 const searchings = [
-    "Найти друга (дружеские отношения)", "Найти подругу (дружеские отношения)", "Найти бизнес-партнера//коллегу ", "Найти врага","Найти человека для путешествий", "Найти любовь всей жизни", "Построить отношения ", "Построить серьезные отношения","Найти мужа", "Найти жену", "Найти парня ", "Найти девушку","Подыскать полового партнера без обязательств (вам должно быть больше 18+)"
+    "Найти друга (дружеские отношения)", "Найти подругу (дружеские отношения)", "Найти бизнес-партнера//коллегу ", "Найти врага", "Найти человека для путешествий", "Найти любовь всей жизни", "Построить отношения ", "Построить серьезные отношения", "Найти мужа", "Найти жену", "Найти парня ", "Найти девушку", "Подыскать полового партнера без обязательств (вам должно быть больше 18+)"
 ];
 searchings.forEach((searching, index) => {
     const option = document.createElement("option");
@@ -79,24 +79,24 @@ searchings.forEach((searching, index) => {
     searchingsSelect.appendChild(option);
 });
 // Первая кнопка далее с открыванием анкеты
-document.getElementById("next").addEventListener("click", 
+document.getElementById("next").addEventListener("click",
     function regist() {
-    document.getElementById("regist1").style.display="none";
-    document.getElementById("regist2").style.display="block";
-    document.getElementById("next").style.display="none";
-    document.getElementById("next1").style.display="block";
-    document.getElementById("rectangle2").style.display="block";
-    
-});
-  // Вторая кнопка далее с открыванием оплаты
-document.getElementById("next1").addEventListener("click", 
+        document.getElementById("regist1").style.display = "none";
+        document.getElementById("regist2").style.display = "block";
+        document.getElementById("next").style.display = "none";
+        document.getElementById("next1").style.display = "block";
+        document.getElementById("rectangle2").style.display = "block";
+
+    });
+// Вторая кнопка далее с открыванием оплаты
+document.getElementById("next1").addEventListener("click",
     function reg() {
-    document.getElementById("regist2").style.display="none";
-    document.getElementById("regist3").style.display="block";
-    document.getElementById("rectangle3").style.display="block";
-    
-});
-  
+        document.getElementById("regist2").style.display = "none";
+        document.getElementById("regist3").style.display = "block";
+        document.getElementById("rectangle3").style.display = "block";
+
+    });
+
 
 document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("save").addEventListener("click", (event) => {
@@ -124,7 +124,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const get = document.getElementById("get").value;
         const ideal = document.getElementById("ideal").value;
 
-        if (!name || !sex ||!social || !datebirth ||!birthplace || !place ||!job || !orientation ||!searching || !gapage ||!agegap || !status ||!children || !distance||!describe || !give ||!get ||!ideal ) {
+        if (!name || !sex || !social || !datebirth || !birthplace || !place || !job || !orientation || !searching || !gapage || !agegap || !status || !children || !distance || !describe || !give || !get || !ideal) {
             alert("Заполните все поля!");
             return;
         }
@@ -149,9 +149,10 @@ document.addEventListener("DOMContentLoaded", () => {
             describe: describe,
             give: give,
             get: get,
-            ideal: ideal
-          };
-        
+            ideal: ideal,
+            photo_id: photo_id
+        };
+
 
         console.log("Отправляем данные в бота: ", JSON.stringify(userData));
 
