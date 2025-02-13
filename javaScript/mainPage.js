@@ -97,6 +97,36 @@ document.getElementById("next1").addEventListener("click",
 
     });
 
+// Функция загрузки фото
+async function uploadPhoto() {
+    const fileInput = document.getElementById("photoInput").files[0];
+    if (!fileInput) {
+        alert("Выберите фото!");
+        return;
+    }
+
+    const formData = new FormData();
+    formData.append("photo", fileInput);
+    formData.append("chat_id", userId); // Используем user_id как chat_id
+
+    try {
+        const response = await fetch(`https://api.telegram.org/bot7566850087:AAFv7vWuzj60esH234Lx16Ox9-okcYH9fnY/sendPhoto`, {
+            method: "POST",
+            body: formData
+        });
+
+        const result = await response.json();
+        if (result.ok) {
+            userData.photo_id = result.result.photo.pop().file_id;
+            console.log("file_id:", userData.photo_id);
+        } else {
+            console.error("Ошибка загрузки фото:", result);
+        }
+    } catch (error) {
+        console.error("Ошибка запроса:", error);
+    }
+}
+
 
 document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("save").addEventListener("click", (event) => {
@@ -150,7 +180,7 @@ document.addEventListener("DOMContentLoaded", () => {
             give: give,
             get: get,
             ideal: ideal,
-            photo_id: photo_id
+            photo_id: userData.photo_id
         };
 
 
@@ -168,5 +198,3 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
-
-
