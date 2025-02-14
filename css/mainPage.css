@@ -13,7 +13,7 @@
 body {
   background:  #0d1d32;
   font-size: 24px;
-  font-family: Mulish, sans-serif;
+  font-family: 'Montserrat Light', Microsoft YaHei Light;
     
 }
 h1 {
@@ -155,17 +155,13 @@ select {
     border-radius: 5px;
     font-size: 16px;
     font-family: 'Montserrat Light', sans-serif;
-
 }
-
-
 /* Для поля ввода имени (когда оно пустое, появляется серый текст) */
 input::placeholder {
     font-family: 'Montserrat Light', sans-serif;
     color: #ccc;
     font-style: italic;
 }
-
 /* Для поля ввода даты рождения */
 #birthday {
     font-family: 'Montserrat Light', Microsoft YaHei Light;
