@@ -4,11 +4,7 @@
     src: local("Mulish"),
         local("Mulish-Bold"),
         url("/fonts/Mulish-Bold.ttf") format("ttf");
-    font-family: "Futura PT";
-    font-style: normal;
-    src: local("Futura PT"),
-        local("Futura PT Medium"),
-        url("/fonts/Futura PT Medium.otf") format("otf");
+    
 }
 body {
   background:  #0d1d32;
