@@ -11,9 +11,10 @@
         url("/fonts/Futura PT Medium.otf") format("otf");
 }
 body {
-  background:  #fae1e5;
+  background:  #0d1d32;
   font-size: 24px;
   font-family: Mulish, sans-serif;
+    
 }
 h1 {
     font-family: 'Montserrat Light', Microsoft YaHei Light;
@@ -46,24 +47,21 @@ li a:hover {
     color:white;
 }*/
 /* это для верхнего типа меню*/
-a {
-    display: block;
-    color: black;
-    text-align: center;
-    text-decoration: none;
-}
+
 
 /* части анкеты прячутся и показываются тут*/
 #regist2 {
     display: none;
     list-style-type: none;
-    text-align: center;
+    text-align: left;
+    color:lightgray;
 }
 
 #next1 {
     display: none;
     list-style-type: none;
     text-align: center;
+   
 }
 
 #next {
@@ -76,18 +74,19 @@ a {
     display: none;
     list-style-type: none;
     text-align: center;
+    color:lightgray;
 }
 
 #rectangle1 {
     width: 100%;
-    height: 20px;
+    height: 3px;
     background: #d880d1;
 }
 
 #rectangle2 {
     display: none;
     width: 100%;
-    height: 20px;
+    height: 3px;
     background: #d880d1;
 
 }
@@ -95,25 +94,21 @@ a {
 #rectangle3 {
     display: none;
     width: 100%;
-    height: 20px;
+    height: 3px;
     background: #d880d1;
 
 }
 
-/* это анкета тут выделяется черным*/
+/* это анкета тут выделяется черным
 li :hover {
-    color: black;
-}
-
-li {
     color: lightgray;
 }
 
-li a.active {
-    background-color: transparent;
+li {
     color: black;
+   
 }
-
+*/
 .table-bordered {
     border-collapse: separate;
     width: 100%;
@@ -122,6 +117,7 @@ li a.active {
     border-style: hidden;
     margin-left: auto;
     margin-right: auto;
+    text-align: left;
 }
 
 img {
@@ -158,6 +154,7 @@ select {
     border-radius: 5px;
     font-size: 16px;
     font-family: 'Montserrat Light', sans-serif;
+
 }
 
 

@@ -44,17 +44,7 @@ statuss.forEach((status, index) => {
     option.textContent = status;
     statussSelect.appendChild(option);
 });
-// Заполнение списка про детей
-const childrensSelect = document.getElementById("children");
-const childrens = [
-    "Дети имеются, хорошо к ним отношусь", "Дети есть, больше не хочу детей", "Детей нет, хорошо к ним отношусь", "Детей нет, не хочу детей"
-];
-childrens.forEach((children, index) => {
-    const option = document.createElement("option");
-    option.value = index + 1;
-    option.textContent = children;
-    childrensSelect.appendChild(option);
-});
+
 // Заполнение списка про отношения на расстоянии
 const distancesSelect = document.getElementById("distance");
 const distances = [
@@ -81,7 +71,7 @@ orientations.forEach((orientation, index) => {
 // Заполнение списка с целью поисков
 const searchingsSelect = document.getElementById("searching");
 const searchings = [
-    "Найти друга (дружеские отношения)", "Найти подругу (дружеские отношения)", "Найти бизнес-партнера//коллегу ", "Найти врага", "Найти человека для путешествий", "Найти любовь всей жизни", "Построить отношения ", "Построить серьезные отношения", "Найти мужа", "Найти жену", "Найти парня ", "Найти девушку", "Подыскать полового партнера без обязательств (вам должно быть больше 18+)"
+    "Найти друга (дружеские отношения)//Найти подругу (дружеские отношения)", "Найти бизнес-партнера//коллегу ", "Найти человека для путешествий", "Построить отношения ", "Найти мужа//Найти жену", "Найти парня//Найти девушку", "Подыскать полового партнера без обязательств (вам должно быть больше 18+)"
 ];
 searchings.forEach((searching, index) => {
     const option = document.createElement("option");
@@ -199,21 +189,18 @@ document.addEventListener("DOMContentLoaded", () => {
         const birthplace = document.getElementById("birthplace").value;
         const birthtime = document.getElementById("birthtime").value;
         const place = document.getElementById("place").value;
-        const job = document.getElementById("job").value;
-        const height = document.getElementById("height").value;
         const orientation = document.getElementById("orientation").value;
         const searching = document.getElementById("searching").value;
         const gapage = document.getElementById("gapage").value;
         const agegap = document.getElementById("agegap").value;
         const status = document.getElementById("status").value;
-        const children = document.getElementById("children").value;
         const distance = document.getElementById("distance").value;
         const describe = document.getElementById("describe").value;
         const give = document.getElementById("give").value;
         const get = document.getElementById("get").value;
         const ideal = document.getElementById("ideal").value;
 
-        // if (!name || !sex || !social || !datebirth || !birthplace || !place || !job || !orientation || !searching || !gapage || !agegap || !status || !children || !distance || !describe || !give || !get || !ideal) {
+        // if (!name || !sex || !social || !datebirth || !birthplace || !place  || !orientation || !searching || !gapage || !agegap || !status || !distance || !describe || !give || !get || !ideal) {
         //     alert("Заполните все поля!");
         //     return;
         // }
@@ -226,8 +213,6 @@ document.addEventListener("DOMContentLoaded", () => {
             birthplace: birthplace,
             birthtime: birthtime,
             place: place,
-            job: job,
-            height: height,
             orientation: orientation,
             searching: searching,
             gapage: gapage,
