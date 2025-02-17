@@ -210,6 +210,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const name = document.getElementById("name").value;
         const sex = document.getElementById("sex").value;
         const social = document.getElementById("social").value;
+        const sign = document.getElementById("sign").value;
         const datebirth = document.getElementById("datebirth").value;
         const birthplace = document.getElementById("birthplace").value;
         const birthtime = document.getElementById("birthtime").value;
@@ -225,7 +226,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const get = document.getElementById("get").value;
         const ideal = document.getElementById("ideal").value;
 
-         if (!name || !sex || !social || !datebirth || !birthplace || !place  || !orientation || !searching || !gapage || !agegap || !status || !distance || !describe || !give || !get || !ideal) {
+         if (!name || !sex || !social || !datebirth || !sign || !birthplace || !place  || !orientation || !searching || !gapage || !agegap || !status || !distance || !describe || !give || !get || !ideal) {
              alert("Заполните все поля!");
              return;
          }
@@ -233,6 +234,7 @@ document.addEventListener("DOMContentLoaded", () => {
         userData = {
             name: name,
             sex: sex,
+            sign: sign,
             social: social,
             datebirth: datebirth,
             birthplace: birthplace,
