@@ -34,80 +34,53 @@
         <!-- Поле для ввода имени -->
         <input type="text" id="name" placeholder="Введи имя" />
         <!-- Поле для пола -->
-        
-        <div id="birthday">
-              
-                <select id="sex">
-                    <option value="">Выбери свой пол</option>
-                </select>
-                
-            </div>
+        <input type="text" id="sex" placeholder="Введи пол" />
         <!-- Контейнер для кнопки для загрузки фото -->
         <!-- <div id="button-photos">
             <input type="file" id="photoInput" style="display: none;">
             <button id="yourphoto">Загрузить фото</button>
         </div> -->
+         <button id="next" onclick="regist();">Далее</button>
     </div>
     <div id="regist2">
         <table class="table-bordered">
             <tbody>
                 <tr style="width: 100%; "><strong>
-                       <li style="margin:10px;"> <span style="font-size: 15pt; ">1. Ваша полная дата рождения (дата, время и место) <div>(например, 18.08.1999 22:40 Москва)</div><div>
-                                   <div id="birthday">
-                <select id="day">
-                    <option value="">День</option>
-                </select>
-                <select id="month">
-                    <option value="">Месяц</option>
-                </select>
-                <select id="year">
-                    <option value="">Год</option>
-                </select>
-            </div>
+                       <li style="margin:10px;"> <span style="font-size: 15pt; ">1. Ваша полная дата рождения (дата, время и место) <div>(например,18.08.1999 22:40 Москва)</div><div>
+                                    <div><input type="text" id="datebirth"
+                                            placeholder="Введи дату в формате дд.мм.гг." /></div>
                                     <div><input type="text" id="birthtime" placeholder="Введи время рождения" /></div>
                                     <input type="text" id="birthplace" placeholder="Введи место рождения" />
                                 </div></span>
                     </strong></tr>
-                
                 <tr style="width: 100%; "><strong>
-                       <li style="margin:10px;"> <span style="font-size: 15pt; ">2. Ваш знак зодиака<div>
-                                   <div id="birthday">
-              
-                <select id="sign">
-                    <option value="">Выбери свой знак зодиака</option>
-                </select>
-                
-            </div>
-                                </div></span>
-                    </strong></tr>
-                <tr style="width: 100%; "><strong>
-                        <li style="margin:10px;"><span style="font-size: 15pt;">3. Место вашего пребывания <div>(подбирается человек по локации)</div>
+                        <li style="margin:10px;"><span style="font-size: 15pt;">2. Место вашего пребывания <div>(подбирается человек по локации)</div>
                                 <div><input type="text" id="place" placeholder="Введи место" /></div>
                             </span>
                     </strong></tr>
                 <tr style="width: 100%; "><strong>
-                        <li style="margin:10px;"><span style="font-size: 15pt;">4. Ваша ориентация?<div id="birthday">
+                        <li style="margin:10px;"><span style="font-size: 15pt;">3. Ваша ориентация?<div id="birthday">
                                     <select id="orientation">
                                         <option value="">Ориентация</option>
                                     </select>
                                 </div></span>
                     </strong></tr>
                 <tr style="width: 100%; "><strong>
-                        <li style="margin:10px;"><span style="font-size: 15pt;">5. Ваша цель астро-любви?<div id="birthday">
+                        <li style="margin:10px;"><span style="font-size: 15pt;">4. Ваша цель астро-любви?<div id="birthday">
                                     <select id="searching">
                                         <option value="">Найти...</option>
                                     </select>
                                 </div></span>
                     </strong></tr>
                 <tr style="width: 100%; "><strong>
-                        <li style="margin:10px;"><span style="font-size: 15pt;">6. В каком статусе вы находитесь?<div id="birthday">
+                        <li style="margin:10px;"><span style="font-size: 15pt;">5. В каком статусе вы находитесь?<div id="birthday">
                                     <select id="status">
                                         <option value="">Выбор статуса</option>
                                     </select>
                                 </div></span>
                     </strong></tr>
                 <tr style="width: 100%; "><strong>
-                       <li style="margin:10px;"><span style="font-size: 15pt;">7. Допустимая разница в возрасте? (старше вас)<div
+                       <li style="margin:10px;"><span style="font-size: 15pt;">6. Допустимая разница в возрасте? (старше вас)<div
                                     id="birthday">
                                     <select id="gapage">
                                         <option value="">Выбор ответа</option>
@@ -115,7 +88,7 @@
                                 </div></span>
                     </strong></tr>
                 <tr style="width: 100%; "><strong>
-                        <li style="margin:10px;"><span style="font-size: 15pt;">8. Допустимая разница в возрасте? (младше вас)<div
+                        <li style="margin:10px;"><span style="font-size: 15pt;">7. Допустимая разница в возрасте? (младше вас)<div
                                     id="birthday">
                                     <select id="agegap">
                                         <option value="">Выбор ответа</option>
@@ -123,32 +96,32 @@
                                 </div></span>
                     </strong></tr>
                 <tr style="width: 100%; "><strong>
-                        <li style="margin:10px;"><span style="font-size: 15pt;">9. Готовы ли вы к отношениям на расстоянии?<div id="birthday">
+                        <li style="margin:10px;"><span style="font-size: 15pt;">8. Готовы ли вы к отношениям на расстоянии?<div id="birthday">
                                     <select id="distance">
                                         <option value="">Выбор ответа</option>
                                     </select>
                                 </div></span>
                     </strong></tr>
                 <tr style="width: 100%; "><strong>
-                        <li style="margin:10px;"><span style="font-size: 15pt;">10. Как бы вы описали самого себя? <div>(Например, тип личности - ENFP,
+                        <li style="margin:10px;"><span style="font-size: 15pt;">9. Как бы вы описали самого себя? <div>(Например, тип личности - ENFP,
                                 истероидный нарцисс и работаю фрилансером)</div><div><input type="text" id="describe"
                                         placeholder="Опиши себя" />
                                 </div></span>
                     </strong></tr>
                 <tr style="width: 100%; "><strong>
-                        <li style="margin:10px;"><span style="font-size: 15pt;">11. Что вы бы могли предложить будущему подобранному
+                        <li style="margin:10px;"><span style="font-size: 15pt;">10. Что вы бы могли предложить будущему подобранному
                                 человеку? <div>(Например, заботу , ласку ,поддержку или финансы)</div><div><input type="text"
                                         id="give" placeholder="Могу предложить..." />
                                 </div></span>
                     </strong></tr>
                 <tr style="width: 100%; "><strong>
-                        <li style="margin:10px;"><span style="font-size: 15pt;">12. Что вы бы хотели получить от подобранного человека?<div> (Например,
+                        <li style="margin:10px;"><span style="font-size: 15pt;">11. Что вы бы хотели получить от подобранного человека?<div> (Например,
                                 «поддержка во всех начинаниях)</div><div><input type="text" id="get"
                                         placeholder="Хочу получить..." />
                                 </div></span>
                     </strong></tr>
                 <tr style="width: 100%; "><strong>
-                        <li style="margin:10px;"><span style="font-size: 15pt;">13. Опишите свой идеальный тип. Какие качества хотели бы видеть в
+                        <li style="margin:10px;"><span style="font-size: 15pt;">12. Опишите свой идеальный тип. Какие качества хотели бы видеть в
                                 подобранном человеке? Это может быть внешность, характер и тд. <div>(Например, важно, чтобы человек был заботливый)</div>
                                 <div><input type="text" id="ideal" placeholder="Мой идеал..." />
                                 </div>
@@ -156,19 +129,21 @@
                     </strong></tr>
                  <!-- Поле для ссылки на соцсеть -->
                 <tr style="width: 100%; "><strong>
-                       <li style="margin:10px;"><span style="font-size: 15pt;">14. Введите ссылку на соц.сеть
+                       <li style="margin:10px;"><span style="font-size: 15pt;">13. Введите ссылку на соц.сеть
         <input type="url" id="social" placeholder="Ссылка на соц. сеть" />
                             </span>
                     </strong></tr>
                 <!-- Если что поменять: просить не фото а ссылки на фото из соцсетей -->
                 <tr style="width: 100%; "><strong>
-                        <li style="margin:10px;"><span style="font-size: 15pt;">15. Загрузите свою фотографию<div id="button-photos">
+                        <li style="margin:10px;"><span style="font-size: 15pt;">14. Загрузите свою фотографию<div id="button-photos">
                                     <input type="file" id="photoInput" style="display: none;">
                                     <button id="yourphoto">Загрузить фото</button>
                                 </div></span>
                     </strong></tr>
             </tbody>
         </table>
+        <button id="next1" onclick="reg();">Далее</button>
+        <button id="return" onclick="back1();">Назад</button>
     </div>
     <div id="regist3">
         <p><span style="font-size: 15pt;">Вы почти справились!👏🏻
@@ -195,20 +170,20 @@
                 </div>
             </details>
         </div>
-        <!-- Контейнер для кнопки -->
         <div id="button-container">
             <button id="pay">Оплатить</button>
         </div>
-        <a href="profile.htm"><button id="profile ">Переход в созданный профиль</button></a>
+        <button id="profile" onclick="profile();">Переход в созданный профиль</button>
+        
         <div id="button-container">
         <button id="save">Save</button>
     </div>
-    </div>
-    <button id="next" onclick="regist();">Далее</button>
+    
+   
 
     <button id="next1" onclick="reg();">Далее</button>
 
-   <button id="return" onclick="back1();">Назад</button>
+   
     <button id="return1" onclick="back2();">Назад</button>
     
     <script src="https://telegram.org/js/telegram-web-app.js?56"></script>

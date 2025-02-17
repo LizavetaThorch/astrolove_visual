@@ -1,3 +1,4 @@
+
 const tg = window.Telegram.WebApp;
 let userData = {}; // Объект для хранения данных
 //const userId = 898641850; // ID пользователя
@@ -9,60 +10,6 @@ if (!userId) {
 
 console.log("user_id:", userId); // Проверка user_id
 
-// Заполнение списка с днями (от 1 до 31)
-const daysSelect = document.getElementById("day");
-for (let i = 1; i <= 31; i++) {
-    const option = document.createElement("option");
-    option.value = i;
-    option.textContent = i;
-    daysSelect.appendChild(option);
-}
-
-// Заполнение списка с месяцами
-const monthsSelect = document.getElementById("month");
-const months = [
-    "Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", 
-    "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"
-];
-months.forEach((month, index) => {
-    const option = document.createElement("option");
-    option.value = index + 1;
-    option.textContent = month;
-    monthsSelect.appendChild(option);
-});
-
-// Заполнение списка с выбором пола
-const sexsSelect = document.getElementById("sex");
-const sexs = [
-    "Мужской", "Женский"
-];
-sexs.forEach((sex, index) => {
-    const option = document.createElement("option");
-    option.value = index + 1;
-    option.textContent = sex;
-    sexsSelect.appendChild(option);
-});
-
-// Заполнение списка со знаками зодиака
-const signsSelect = document.getElementById("sign");
-const signs = [
-    "Овен", "Телец", "Близнецы", "Рак", "Лев", "Дева", 
-    "Весы", "Скорпион", "Стрелец", "Козерог", "Водолей", "Рыбы"
-];
-signs.forEach((sign, index) => {
-    const option = document.createElement("option");
-    option.value = index + 1;
-    option.textContent = sign;
-    signsSelect.appendChild(option);
-});
-// Заполнение списка с годами (от 2024 до 1920)
-const yearsSelect = document.getElementById("year");
-for (let year = 2024; year >= 1924; year--) {
-    const option = document.createElement("option");
-    option.value = year;
-    option.textContent = year;
-    yearsSelect.appendChild(option);
-}
 
 // Заполнение списка с разницей в возрасте старше
 const gapagesSelect = document.getElementById("gapage");
@@ -175,6 +122,7 @@ document.getElementById("return1").addEventListener("click",
         document.getElementById("return").style.display = "block";
         document.getElementById("return1").style.display = "none";
     });
+
 // Профиль в разработке
 document.getElementById("profile").addEventListener("click",
     function profile() {
@@ -240,10 +188,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const name = document.getElementById("name").value;
         const sex = document.getElementById("sex").value;
         const social = document.getElementById("social").value;
-        const sign = document.getElementById("sign").value;
-        const day = document.getElementById("day").value;
-        const month = document.getElementById("month").value;
-        const year = document.getElementById("year").value;
+        const datebirth = document.getElementById("datebirth").value;
         const birthplace = document.getElementById("birthplace").value;
         const birthtime = document.getElementById("birthtime").value;
         const place = document.getElementById("place").value;
@@ -258,7 +203,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const get = document.getElementById("get").value;
         const ideal = document.getElementById("ideal").value;
 
-         if (!name || !sex || !social || !birthday || !sign || !birthplace || !place  || !orientation || !searching || !gapage || !agegap || !status || !distance || !describe || !give || !get || !ideal) {
+         if (!name || !sex || !social || !datebirth || !birthplace || !place  || !orientation || !searching || !gapage || !agegap || !status || !distance || !describe || !give || !get || !ideal) {
              alert("Заполните все поля!");
              return;
          }
@@ -266,11 +211,8 @@ document.addEventListener("DOMContentLoaded", () => {
         userData = {
             name: name,
             sex: sex,
-            sign: sign,
             social: social,
-            day: day,
-            month:month,
-            year:year,
+            datebirth: datebirth,
             birthplace: birthplace,
             birthtime: birthtime,
             place: place,
@@ -279,6 +221,7 @@ document.addEventListener("DOMContentLoaded", () => {
             gapage: gapage,
             agegap: agegap,
             status: status,
+            children: children,
             distance: distance,
             describe: describe,
             give: give,
