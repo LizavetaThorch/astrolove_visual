@@ -58,6 +58,17 @@ distances.forEach((distance, index) => {
     distancesSelect.appendChild(option);
 });
 
+// Заполнение списка про выбор пола
+const sexsSelect = document.getElementById("sex");
+const sexs = [
+    "Мужской", "Женский"
+];
+sexs.forEach((sex, index) => {
+    const option = document.createElement("option");
+    option.value = index + 1;
+    option.textContent = sex;
+    sexsSelect.appendChild(option);
+});
 // Заполнение списка с ориентацией
 const orientationsSelect = document.getElementById("orientation");
 const orientations = [
@@ -221,7 +232,6 @@ document.addEventListener("DOMContentLoaded", () => {
             gapage: gapage,
             agegap: agegap,
             status: status,
-            children: children,
             distance: distance,
             describe: describe,
             give: give,
