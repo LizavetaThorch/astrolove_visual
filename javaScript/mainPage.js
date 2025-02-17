@@ -121,11 +121,12 @@ document.getElementById("return1").addEventListener("click",
         document.getElementById("return").style.display = "block";
         document.getElementById("return1").style.display = "none";
     });
-
+// Профиль в разработке
 document.getElementById("profile").addEventListener("click",
     function profile() {
     alert("Раздел находится в разработке");
     });
+
 // Функция выбора фото
 document.getElementById("yourphoto").addEventListener("click", () => {
     const fileInput = document.getElementById("photoInput");

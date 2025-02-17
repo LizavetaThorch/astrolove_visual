@@ -8,12 +8,14 @@
         <link rel="stylesheet" href="./css/mainPage.css">
     </head>
     <body>
-        
-            
-            
- <p>У вас совместимость с Овном! 60%</p>
-            <p>Знакомимся</p>
-         <p>Не Знакомимся</p>
+        <div id="confirm" > <p style="text-align:center; color:#d880d1;">У Вас есть мэтч!</p>
+             <p style="text-align:center; color:#d880d1;">Ваша совместимость с Овном 60%</p>
+    <p style="text-align:center; color:#d880d1;">Посмотреть профиль?</p>
+    <button onclick="confirmYes()">Да</button>
+    <button onclick="confirmNo()">Нет</button>  
+               </div>
+    <div id="username" hidden><p>Ссылка на соцсеть</p></div>
+  
             
    
             <div id="main">
@@ -28,6 +30,6 @@
        
          </div>
         <script src="https://telegram.org/js/telegram-web-app.js?56"></script>
-        <script src="./javaScript/mainPage.js"></script>
+        <script src="./javaScript/match.js"></script>
     </body>
 </html>
