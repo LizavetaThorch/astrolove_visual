@@ -91,6 +91,17 @@ searchings.forEach((searching, index) => {
     option.textContent = searching;
     searchingsSelect.appendChild(option);
 });
+// Заполнение списка с выбором знака зодиака
+const signsSelect = document.getElementById("sign");
+const signs = [
+    "Овен", "Телец", "Близнецы", "Рак ", "Лев", "Дева", "Весы", "Скорпион", "Стрелец", "Козерог ", "Водолей", "Рыбы"
+];
+signs.forEach((sign, index) => {
+    const option = document.createElement("option");
+    option.value = index + 1;
+    option.textContent = sign;
+    signsSelect.appendChild(option);
+});
 // Первая кнопка далее с открыванием анкеты
 document.getElementById("next").addEventListener("click",
     function regist() {
