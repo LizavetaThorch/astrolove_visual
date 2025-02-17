@@ -7,6 +7,8 @@ if (!userId) {
     console.error("Не удалось получить user_id. Убедитесь, что пользователь авторизован.");
 }
 
+console.log("user_id:", userId); // Проверка user_id
+
 // Заполнение списка с днями (от 1 до 31)
 const daysSelect = document.getElementById("day");
 for (let i = 1; i <= 31; i++) {
