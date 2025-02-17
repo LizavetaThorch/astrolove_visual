@@ -241,7 +241,9 @@ document.addEventListener("DOMContentLoaded", () => {
         const sex = document.getElementById("sex").value;
         const social = document.getElementById("social").value;
         const sign = document.getElementById("sign").value;
-        const datebirth = document.getElementById("birthday").value;
+        const day = document.getElementById("day").value;
+        const month = document.getElementById("month").value;
+        const year = document.getElementById("year").value;
         const birthplace = document.getElementById("birthplace").value;
         const birthtime = document.getElementById("birthtime").value;
         const place = document.getElementById("place").value;
@@ -256,17 +258,19 @@ document.addEventListener("DOMContentLoaded", () => {
         const get = document.getElementById("get").value;
         const ideal = document.getElementById("ideal").value;
 
-        // if (!name || !sex || !social || !birthday || !sign || !birthplace || !place  || !orientation || !searching || !gapage || !agegap || !status || !distance || !describe || !give || !get || !ideal) {
-        //     alert("Заполните все поля!");
-        //     return;
-        // }
+         if (!name || !sex || !social || !birthday || !sign || !birthplace || !place  || !orientation || !searching || !gapage || !agegap || !status || !distance || !describe || !give || !get || !ideal) {
+             alert("Заполните все поля!");
+             return;
+         }
 
         userData = {
             name: name,
             sex: sex,
             sign: sign,
             social: social,
-            birthday: birthday,
+            day: day,
+            month:month,
+            year:year,
             birthplace: birthplace,
             birthtime: birthtime,
             place: place,
@@ -275,7 +279,6 @@ document.addEventListener("DOMContentLoaded", () => {
             gapage: gapage,
             agegap: agegap,
             status: status,
-            children: children,
             distance: distance,
             describe: describe,
             give: give,
