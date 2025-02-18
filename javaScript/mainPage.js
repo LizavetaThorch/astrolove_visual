@@ -269,7 +269,6 @@ document.addEventListener("DOMContentLoaded", () => {
             sign: sign,
             month: month,
             social: social,
-            
             birthplace: birthplace,
             birthtime: birthtime,
             place: place,
