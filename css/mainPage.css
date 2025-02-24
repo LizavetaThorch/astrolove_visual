@@ -1,9 +1,6 @@
 @font-face {
-    font-family: "Mulish";
-    font-style: normal;
-    src: local("Mulish"),
-        local("Mulish-Bold"),
-        url("/fonts/Mulish-Bold.ttf") format("ttf");
+    font-family: 'ofont.ru_Montserrat';
+    src: url('/fonts/ofont.ru_Montserrat.ttf') format('truetype');
     
 }
 body {
@@ -19,6 +16,12 @@ h1 {
     color: #333;
 }
 button {
+    font-family: 'Montserrat Light', Microsoft YaHei Light;
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+}
+buttonnew {
     font-family: 'Montserrat Light', Microsoft YaHei Light;
     font-size: 16px;
     color: #555;
@@ -176,14 +179,11 @@ input::placeholder {
             flex-direction: column; 
         }
         .bottom-nav {
-           
             display: flex;
             right:0px;
-            position: fixed;
+ 
             bottom: 10px;
             width: 100%;
-            
-         
         }
 
 /* Для placeholder в селектах (дата рождения) */
@@ -263,11 +263,18 @@ buttonnew:hover {
         width: 100%;
         margin-top: 20px;
     }
+    buttonnew  {
+        width: 100%;
+        margin-top: 20px;
+    }
 }
 
 /* Адаптивность для более широких экранов (например, для планшетов и ПК) */
 @media (min-width: 768px) {
     button {
+        width: auto;
+    }
+     buttonnew {
         width: auto;
     }
 }
