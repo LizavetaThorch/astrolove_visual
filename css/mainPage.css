@@ -1,10 +1,15 @@
 @font-face {
-    font-family: 'ofont.ru_Montserrat';
-    src: url('/fonts/ofont.ru_Montserrat.ttf') format('truetype');
-    
+    font-family: font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Light.eot');
+    src: local('Montserrat-Light'), local('Montserrat-Light'),
+       url('../fonts/Montserrat-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/Montserrat-Light.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/Montserrat-Light.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/Montserrat-Light.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/Montserrat-Light.svg#Montserrat-Light') format('svg'); /* Legacy iOS */
 }
 body {
-  background:  #0d1d32;
+  background:  #321332;
   font-size: 24px;
   font-family: 'Montserrat Light', Microsoft YaHei Light;
 }
@@ -27,7 +32,7 @@ buttonnew {
     line-height: 1.5;
 }
 /* Для что-то вроде меню наверху, будут полоски или номера для навигации*
- /* в ul background-color: #830b72обычный цвет кнопок;/6c1343бордо  0d1d32синий  fae1e5нежно-розовый  efefefбазовый d2cc5fзолотой  ff4dffрозовый  840b72розово-бордовый  0f3a27зеленый  9964b8сиреневый
+ /* в ul background-color: #830b72обычный цвет кнопок;/6c1343бордо  0d1d32синий  fae1e5нежно-розовый  efefefбазовый d2cc5fзолотой  ff4dffрозовый  840b72розово-бордовый  0f3a27зеленый  9964b8сиреневый  321332баклажан
 #efefef; 
 ul {
     list-style-type: none;
@@ -230,12 +235,9 @@ buttonnew:hover {
     background-color: #9964b8;
 }
 
-
 details {
   display:block;
   margin-bottom:.5rem;
-    
-
 }
 
 /* Оборачиваем кнопку в контейнер для выравнивания по правому краю */
