@@ -1,5 +1,6 @@
 @font-face {
     font-family: font-family: 'Montserrat';
+    
     src: url('../fonts/Montserrat-Light.eot');
     src: local('Montserrat-Light'), local('Montserrat-Light'),
        url('../fonts/Montserrat-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
@@ -17,7 +18,7 @@ h1 {
     font-family: 'Montserrat Light', Microsoft YaHei Light;
     font-weight: bold;
     text-align: center;
-    color: #333;
+    color: white;
 }
 button {
     font-family: 'Montserrat Light', Microsoft YaHei Light;
@@ -33,7 +34,7 @@ buttonnew {
 }
 /* Для что-то вроде меню наверху, будут полоски или номера для навигации*
  /* в ul background-color: #830b72обычный цвет кнопок;/6c1343бордо  0d1d32синий  fae1e5нежно-розовый  efefefбазовый d2cc5fзолотой  ff4dffрозовый  840b72розово-бордовый  0f3a27зеленый  9964b8сиреневый  321332баклажан
-#efefef; 
+#efefef; d2ccff к баклажану и золоту  d880d1
 ul {
     list-style-type: none;
     margin:0;
@@ -57,7 +58,7 @@ li a:hover {
     display: none;
     list-style-type: none;
     text-align: left;
-    color:lightgray;
+    color:#d2ccff;
 }
 
 #next1 {
@@ -77,7 +78,7 @@ li a:hover {
     display: none;
     list-style-type: none;
     text-align: center;
-    color:lightgray;
+    color:#d2ccff;
 }
 
 #rectangle1 {
