@@ -8,21 +8,53 @@
         <link rel="stylesheet" href="./css/mainPage.css">
     </head>
     <body>  
+        <div id="prof1">
  <img src="./photos/logo_neon_cut.png" alt="INTRO" />
             <p style="text-align:center; color:#d880d1;">Имя, возраст, знак зодиака- это берем из инфы о пользователе</p>
-            <buttonnew id="change">Редактировать профиль</buttonnew >
+        <p style="text-align:center; font-size: 15pt;color:#d2ccff;">Описание себя - это берем из анкеты пользователя</p>
+        <p style="text-align:center; font-size: 15pt;color:#d2ccff;">Тут короче вся анкета должна быть по списку</p>
+            <buttonnew id="change">Редактировать профиль</buttonnew>
+            </div>
+        <div id="prof2">
+            <img src="./photos/logo_neon_cut.png" alt="INTRO" /> 
+        <p style="text-align:center; color:#d880d1;"><strong>Тут указан тариф пользователя</strong></p>
+        <div button-container>
+            <p style=" font-size: 15pt;color:#d2ccff;">Осталось мэтчей: сколько-то там</p>
+            <buttonnew id="change">Докупить мэтчи</buttonnew >
+        <p style=" font-size: 15pt;color:#d2ccff;">Ввести промокод и получить скидку:</p>
+        <input type="text" id="promocode" placeholder="Мой промокод..." />
+        <buttonnew id="change">Сменить тариф</buttonnew ></div>
+            <div class="details">
+            <details style="color: #d880d1;">
+                <summary><span style="font-size: 15pt; "><strong>Тарифы оплаты</strong></span></summary>
+                <div style="border: 3px solid #d880d1;">
+                    <p><span style="font-size: 15pt; ">
+🔢300₽ - совместимость проверяется по нумерологии и астрологии.
+(3 мэтча)</span>
+
+<p><span style="font-size: 15pt;">🧿500₽ - совместимость проверяется по нумерологии и астрологии.
+(4-5 мэтча)</span></p>
+
+<p><span style="font-size: 15pt;">🔮1000₽ - совместимость проверяется по всем программам.
+(6 - 10 мэтчей)</span> </p>
+
+<p><span style="font-size: 15pt;">💎3000₽ - подбор совместимости по всем программам без очереди.
+то есть приходит новая анкета и сразу проверяется с вами 
+(неограниченное количество мэтчей)</span></p>
+                </div>
+            </details>
+                </div>
+             </div>
             <div class="bottom-nav">
  <table class="table-bordered">
  <tbody>
-<td style="width: 33%; text-align: center; "><strong><span style="font-size: 15pt;"><a href="profile.htm" ><button id="profile">Анкета</button></a></span></strong></td>
+<td style="width: 33%; text-align: center; "><span style="font-size: 15pt;"><button id="profile" onclick="prof();">Анкета</button></span></td>
 <td style="width: 33%; ; text-align: center; "><strong><span style="font-size: 15pt;"><a href="match.htm"><button id="match">Мэтчи</button></a></span></strong></td>
-<td style="width: 33%;  text-align: center; "><strong><span style="font-size: 15pt;"><a href="balance.htm"><button id="payment">Тариф</button></a></span></strong></td>
+<td style="width: 33%;  text-align: center; "><span style="font-size: 15pt;"><button id="payment" onclick="tarif();">Тариф</button></span></td>
  </tbody>
 </table>
-        
-       
          </div>
         <script src="https://telegram.org/js/telegram-web-app.js?56"></script>
-        <script src="./javaScript/mainPage.js"></script>
+        <script src="./javaScript/match.js"></script>
     </body>
 </html>

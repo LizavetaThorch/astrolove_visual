@@ -10,6 +10,18 @@ if (!userId) {
 console.log("user_id:", userId); // Проверка user_id
 
 
+//перелистывание профиля
+
+document.getElementById("payment").addEventListener("click",
+    function tarif() {
+        document.getElementById("prof1").style.display = "none";
+        document.getElementById("prof2").style.display = "block";
+    });
+ document.getElementById("profile").addEventListener("click",
+    function prof() {
+        document.getElementById("prof2").style.display = "none";
+        document.getElementById("prof1").style.display = "block";
+    });
 //это про мэтчи. если жмет да, тут даем ссылку на профиль второго юзера и заносим данные в таблицу мэтчей, что этот юзер ответил да
   function confirmYes() {
         document.getElementById("username").hidden=false
