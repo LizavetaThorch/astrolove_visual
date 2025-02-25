@@ -11,7 +11,8 @@
     font-style: normal;
 }
 body {
-  background:  #321332;
+  
+background: linear-gradient(#001332, #321332);
   font-size: 24px;
   font-family: 'Montserrat Light', Microsoft YaHei Light, sans-serif !important;
   text-rendering: optimizeLegibility;
