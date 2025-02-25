@@ -19,7 +19,7 @@ body {
   text-rendering: optimizeLegibility;
 }
 h1 {
-    font-family: 'Montserrat Light', Microsoft YaHei Light;
+    font-family: 'Montserrat Light',Microsoft YaHei Light, sans-serif !important;
     font-weight: bold;
     text-align: center;
     color: white;
@@ -34,13 +34,13 @@ li {
     
 }
 button {
-    font-family: 'Montserrat Light', Microsoft YaHei Light;
+    font-family: 'Montserrat Light', Microsoft YaHei Light, sans-serif !important;
     font-size: 16px;
     color: #555;
     line-height: 1.5;
 }
 buttonnew {
-    font-family: 'Montserrat Light', Microsoft YaHei Light;
+    font-family: 'Montserrat Light', Microsoft YaHei Light, sans-serif !important;
     font-size: 16px;
     color: #555;
     line-height: 1.5;
@@ -142,23 +142,23 @@ select {
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
-    font-family: 'Montserrat Light', sans-serif;
+    font-family: 'Montserrat Light', Microsoft YaHei Light, sans-serif !important;
 }
 /* Для поля ввода имени (когда оно пустое, появляется серый текст) */
 input::placeholder {
-    font-family: 'Montserrat Light', sans-serif;
+    font-family: 'Montserrat Light', Microsoft YaHei Light, sans-serif !important;
     color: #ccc;
     font-style: italic;
 }
 /* Для поля ввода даты рождения */
 #birthday {
-    font-family: 'Montserrat Light', Microsoft YaHei Light;
+    font-family: 'Montserrat Light', Microsoft YaHei Light, sans-serif !important;
     display: flex;
     justify-content: center;
 }
 
 #birthday select {
-    font-family: 'Montserrat Light', Microsoft YaHei Light;
+    font-family: 'Montserrat Light', Microsoft YaHei Light, sans-serif !important;
     flex: 1;
     margin-right: 10px;
 }
@@ -176,7 +176,7 @@ input::placeholder {
 
 /* Для placeholder в селектах (дата рождения) */
 #birthday selec ::placeholder {
-    font-family: 'Montserrat Light', Microsoft YaHei Light;
+    font-family: 'Montserrat Light', Microsoft YaHei Light, sans-serif !important;
     color: #9964b8;
     font-style: italic;
 }
@@ -190,7 +190,7 @@ select:focus {
 
 /* Стиль кнопки */
 button {
-    font-family: 'Montserrat Light', Microsoft YaHei Light;
+    font-family: 'Montserrat Light', Microsoft YaHei Light, sans-serif !important;
     background-color: #d2cc5f;
     color: white;
     font-size: 16px;
@@ -202,7 +202,7 @@ button {
 
 /* Стиль еще одной кнопки */
 buttonnew {
-    font-family: 'Montserrat Light', Microsoft YaHei Light;
+    font-family: 'Montserrat Light', Microsoft YaHei Light, sans-serif !important;
     background-color: #d880d1;
     color: white;
     font-size: 16px;
