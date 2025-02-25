@@ -10,9 +10,10 @@
     font-weight: normal;
     font-style: normal;
 }
+html, 
 body {
-  
-background: linear-gradient(#001332, #321332);
+    min-height: 100%;
+  background: linear-gradient(#001332, #321332);
   font-size: 24px;
   font-family: 'Montserrat Light', Microsoft YaHei Light, sans-serif !important;
   text-rendering: optimizeLegibility;
@@ -45,7 +46,7 @@ buttonnew {
     line-height: 1.5;
 }
 /* Для что-то вроде меню наверху, будут полоски или номера для навигации*
- /* в ul background-color: #830b72обычный цвет кнопок;/6c1343бордо  0d1d32синий  fae1e5нежно-розовый  efefefбазовый d2cc5fзолотой  ff4dffрозовый  840b72розово-бордовый  0f3a27зеленый  9964b8сиреневый  321332баклажан
+ /* в ul background-color: #830b72обычный цвет кнопок;/6c1343бордо  0d1d32синий  fae1e5нежно-розовый d2cc5fзолотой  ff4dffрозовый  840b72розово-бордовый  0f3a27зеленый  9964b8сиреневый  321332баклажан чистый-синий 001332
 #efefef; d2ccff к баклажану и золоту  d880d1
 
 /* части анкеты прячутся и показываются тут*/
