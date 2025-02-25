@@ -1,5 +1,5 @@
 @font-face {
-    font-family: font-family: 'Montserrat';
+    font-family: 'Montserrat';
     src: url('../fonts/Montserrat-Light.eot');
     src: local('Montserrat-Light'), local('Montserrat-Light'),
        url('../fonts/Montserrat-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
@@ -13,7 +13,7 @@
 body {
   background:  #321332;
   font-size: 24px;
-  font-family: 'Montserrat Light', Microsoft YaHei Light;
+  font-family: 'Montserrat Light', Microsoft YaHei Light, sans-serif !important;
   text-rendering: optimizeLegibility;
 }
 h1 {
@@ -25,8 +25,10 @@ h1 {
 li {
     list-style-type: none;
     margin:0;
-    padding:0;
     overflow: hidden;
+    border:1px solid #d880d1; 
+    padding:10px;
+    border-radius: 10px;
     
 }
 button {
