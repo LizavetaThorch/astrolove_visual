@@ -47,7 +47,7 @@ buttonnew {
 }
 /* Для что-то вроде меню наверху, будут полоски или номера для навигации*
  /* в ul background-color: #830b72обычный цвет кнопок;/6c1343бордо  0d1d32синий  fae1e5нежно-розовый d2cc5fзолотой  ff4dffрозовый  840b72розово-бордовый  0f3a27зеленый  9964b8сиреневый  321332баклажан чистый-синий 001332
-#efefef; d2ccff к баклажану и золоту  d880d1
+#efefef; d2ccff к баклажану и золоту  d880d1  f2ce84золото
 
 /* части анкеты прячутся и показываются тут*/
 #regist2 {
@@ -147,14 +147,14 @@ select {
     margin: 10px 0;
     border: 1px solid #ccc;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 15px;
     font-family: 'Montserrat Light', Microsoft YaHei Light, sans-serif !important;
 }
 /* Для поля ввода имени (когда оно пустое, появляется серый текст) */
 input::placeholder {
     font-family: 'Montserrat Light', Microsoft YaHei Light, sans-serif !important;
     color: #ccc;
-    font-style: italic;
+    font-style: normal;
 }
 /* Для поля ввода даты рождения */
 #birthday {
@@ -167,7 +167,56 @@ input::placeholder {
     font-family: 'Montserrat Light', Microsoft YaHei Light, sans-serif !important;
     flex: 1;
     margin-right: 10px;
+    color: #001332;
 }
+<!-- HTML !-->
+<button class="button-28" role="button">Button 28</button>
+
+/* CSS кнопка новая как вариант */
+.button-28 {
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #1A1A1A;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #3B3B3B;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 60px;
+  min-width: 0;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%;
+  will-change: transform;
+}
+
+.button-28:disabled {
+  pointer-events: none;
+}
+
+.button-28:hover {
+  color: #fff;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.button-28:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
 /* Нижнее меню в профиле */
 .container {
             display: flex;
@@ -184,7 +233,7 @@ input::placeholder {
 #birthday selec ::placeholder {
     font-family: 'Montserrat Light', Microsoft YaHei Light, sans-serif !important;
     color: #9964b8;
-    font-style: italic;
+    font-style: normal;
 }
 
 /* Фокус на поле ввода */
