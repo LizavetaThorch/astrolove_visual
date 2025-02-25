@@ -108,6 +108,12 @@ buttonnew {
     text-align: left;
 }
 
+.card {
+  background-image: url("../photos/stars.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 100%;
+}
 img {
     width: 100%;
     height: auto;
