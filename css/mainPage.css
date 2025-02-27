@@ -17,6 +17,7 @@ body {
   font-size: 24px;
   font-family: 'Montserrat Light', Microsoft YaHei Light, sans-serif !important;
   text-rendering: optimizeLegibility;
+    font-weight: 600;
 }
 h1 {
     font-family: 'Montserrat Light',Microsoft YaHei Light, sans-serif !important;
@@ -38,12 +39,14 @@ button {
     font-size: 16px;
     color: #555;
     line-height: 1.5;
+    font-weight: 600;
 }
 buttonnew {
     font-family: 'Montserrat Light', Microsoft YaHei Light, sans-serif !important;
     font-size: 16px;
     color: #555;
     line-height: 1.5;
+    font-weight: 600;
 }
 /* Для что-то вроде меню наверху, будут полоски или номера для навигации*
  /* в ul background-color: #830b72обычный цвет кнопок;/6c1343бордо  0d1d32синий  fae1e5нежно-розовый d2cc5fзолотой  ff4dffрозовый  840b72розово-бордовый  0f3a27зеленый  9964b8сиреневый  321332баклажан чистый-синий 001332
@@ -106,6 +109,7 @@ buttonnew {
     margin-left: auto;
     margin-right: auto;
     text-align: left;
+    font-weight: 600;
 }
 .card {
   background-image: url("../photos/stars.png");
@@ -149,18 +153,21 @@ select {
     border-radius: 5px;
     font-size: 15px;
     font-family: 'Montserrat Light', Microsoft YaHei Light, sans-serif !important;
+    font-weight: 600;
 }
 /* Для поля ввода имени (когда оно пустое, появляется серый текст) */
 input::placeholder {
     font-family: 'Montserrat Light', Microsoft YaHei Light, sans-serif !important;
     color: #ccc;
     font-style: normal;
+    font-weight: 600;
 }
 /* Для поля ввода даты рождения */
 #birthday {
     font-family: 'Montserrat Light', Microsoft YaHei Light, sans-serif !important;
     display: flex;
     justify-content: center;
+    font-weight: 600;
 }
 
 #birthday select {
@@ -168,6 +175,7 @@ input::placeholder {
     flex: 1;
     margin-right: 10px;
     color: #001332;
+    font-weight: 600;
 }
 
 /* CSS кнопка новая как вариант */
@@ -177,7 +185,7 @@ input::placeholder {
   border: 2px solid #d880d1;
   border-radius: 10px;
   box-sizing: border-box;
-  color: #d880d1;
+  color: #d2ccff;
   cursor: pointer;
   display: inline-block;
   font-family: 'Montserrat Light', Microsoft YaHei Light, sans-serif !important;
@@ -230,6 +238,7 @@ input::placeholder {
     font-family: 'Montserrat Light', Microsoft YaHei Light, sans-serif !important;
     color: #9964b8;
     font-style: normal;
+    font-weight: 600;
 }
 
 /* Фокус на поле ввода */
@@ -249,6 +258,7 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-weight: 600;
 }
 
 /* Стиль еще одной кнопки */
@@ -261,6 +271,7 @@ buttonnew {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-weight: 600;
 }
 
 button:hover {
