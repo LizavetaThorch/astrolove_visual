@@ -29,10 +29,10 @@
     <img src="./photos/logo_neon_cut.png" alt="INTRO" />
 
     <div id="regist1">
-        <p style="text-align:center;color:#d880d1;font-size: 15pt;">Всего у нас 3 раздела☝🏻</p>
-<p style="text-align:center;color:#d2ccff;font-size: 15pt;">1 - общая информация,чтобы мы проверили на фейковость</p>
-<p style="text-align:center;color:#d2ccff;font-size: 15pt;">2 - полная анкета для заполнения</p>
-<p style="text-align:center;color:#d2ccff;font-size: 15pt;">3 - оплата и просмотр личного кабинета</p>
+        <p style="text-align:center;color:#d880d1;font-size: 13pt;">Всего у нас 3 раздела☝🏻</p>
+<p style="text-align:center;color:#d2ccff;font-size: 13pt;">1 - общая информация,чтобы мы проверили на фейковость</p>
+<p style="text-align:center;color:#d2ccff;font-size: 13pt;">2 - полная анкета для заполнения</p>
+<p style="text-align:center;color:#d2ccff;font-size: 13pt;">3 - оплата и просмотр личного кабинета</p>
         <!-- Поле для ввода имени -->
         <input type="text" id="name" placeholder="Введи имя" />
         <!-- Поле для пола -->
@@ -41,6 +41,10 @@
                                         <option value="">Выбери пол</option>
                                     </select>
                                 </div>
+        <input type="url" id="social" placeholder="Ссылка на соц. сеть" />
+                                    <input type="file" id="photoInput" style="display: none;">
+                                    <buttonnew id="yourphoto" >Загрузить фото</buttonnew>
+                                </div> 
         <!-- Контейнер для кнопки для загрузки фото -->
         <!-- <div id="button-photos">
             <input type="file" id="photoInput" style="display: none;">
@@ -52,7 +56,7 @@
         <table class="table-bordered">
             <tbody>
                 <tr style="width: 100%; "><strong>
-                       <li style="margin:10px;"> <span style="font-size: 15pt; ">1. Ваша полная дата рождения (дата, время и место) <div>(например, 18.08.1999 22:40 Москва)</div><div>
+                       <li style="margin:10px;"> <span style="font-size: 13pt; ">1. Ваша полная дата рождения (дата, время и место) <div>(например, 18.08.1999 22:40 Москва)</div><div>
                                    
                             <div id="birthday">
                 <select id="day">
@@ -70,40 +74,40 @@
                                 </div></span>
                     </strong></tr>
                 <tr style="width: 100%; "><strong>
-                        <li style="margin:10px;"><span style="font-size: 15pt;">2. Ваш знак зодиака?<div id="birthday">
+                        <li style="margin:10px;"><span style="font-size: 13pt;">2. Ваш знак зодиака?<div id="birthday">
                                     <select id="sign">
                                         <option value="">Выбери знак зодиака</option>
                                     </select>
                                 </div></span>
                     </strong></tr>
                 <tr style="width: 100%; "><strong>
-                        <li style="margin:10px;"><span style="font-size: 15pt;">3. Место вашего пребывания <div>(подбирается человек по локации)</div>
+                        <li style="margin:10px;"><span style="font-size: 13pt;">3. Место вашего пребывания <div>(подбирается человек по локации)</div>
                                 <div><input type="text" id="place" placeholder="Введи место" /></div>
                             </span>
                     </strong></tr>
                 <tr style="width: 100%; "><strong>
-                        <li style="margin:10px;"><span style="font-size: 15pt;">4. Ваша ориентация?<div id="birthday">
+                        <li style="margin:10px;"><span style="font-size: 13pt;">4. Ваша ориентация?<div id="birthday">
                                     <select id="orientation">
                                         <option value="">Ориентация</option>
                                     </select>
                                 </div></span>
                     </strong></tr>
                 <tr style="width: 100%; "><strong>
-                        <li style="margin:10px;"><span style="font-size: 15pt;">5. Ваша цель астро-любви?<div id="birthday">
+                        <li style="margin:10px;"><span style="font-size: 13pt;">5. Ваша цель астро-любви?<div id="birthday">
                                     <select id="searching">
                                         <option value="">Найти...</option>
                                     </select>
                                 </div></span>
                     </strong></tr>
                 <tr style="width: 100%; "><strong>
-                        <li style="margin:10px;"><span style="font-size: 15pt;">6. В каком статусе вы находитесь?<div id="birthday">
+                        <li style="margin:10px;"><span style="font-size: 13pt;">6. В каком статусе вы находитесь?<div id="birthday">
                                     <select id="status">
                                         <option value="">Выбор статуса</option>
                                     </select>
                                 </div></span>
                     </strong></tr>
                 <tr style="width: 100%; "><strong>
-                       <li style="margin:10px;"><span style="font-size: 15pt;">7. Допустимая разница в возрасте? (старше вас)<div
+                       <li style="margin:10px;"><span style="font-size: 13pt;">7. Допустимая разница в возрасте? (старше вас)<div
                                     id="birthday">
                                     <select id="gapage">
                                         <option value="">Выбор ответа</option>
@@ -111,7 +115,7 @@
                                 </div></span>
                     </strong></tr>
                 <tr style="width: 100%; "><strong>
-                        <li style="margin:10px;"><span style="font-size: 15pt;">8. Допустимая разница в возрасте? (младше вас)<div
+                        <li style="margin:10px;"><span style="font-size: 13pt;">8. Допустимая разница в возрасте? (младше вас)<div
                                     id="birthday">
                                     <select id="agegap">
                                         <option value="">Выбор ответа</option>
@@ -119,77 +123,67 @@
                                 </div></span>
                     </strong></tr>
                 <tr style="width: 100%; "><strong>
-                        <li style="margin:10px;"><span style="font-size: 15pt;">9. Готовы ли вы к отношениям на расстоянии?<div id="birthday">
+                        <li style="margin:10px;"><span style="font-size: 13pt;">9. Готовы ли вы к отношениям на расстоянии?<div id="birthday">
                                     <select id="distance">
                                         <option value="">Выбор ответа</option>
                                     </select>
                                 </div></span>
                     </strong></tr>
                 <tr style="width: 100%; "><strong>
-                        <li style="margin:10px;"><span style="font-size: 15pt;">10. Как бы вы описали самого себя? <div>(Например, тип личности - ENFP,
+                        <li style="margin:10px;"><span style="font-size: 13pt;">10. Как бы вы описали самого себя? <div>(Например, тип личности - ENFP,
                                 истероидный нарцисс и работаю фрилансером)</div><div><input type="text" id="describe"
                                         placeholder="Опиши себя" />
                                 </div></span>
                     </strong></tr>
                 <tr style="width: 100%; "><strong>
-                        <li style="margin:10px;"><span style="font-size: 15pt;">11. Что вы бы могли предложить будущему подобранному
+                        <li style="margin:10px;"><span style="font-size: 13pt;">11. Что вы бы могли предложить будущему подобранному
                                 человеку? <div>(Например, заботу , ласку ,поддержку или финансы)</div><div><input type="text"
                                         id="give" placeholder="Могу предложить..." />
                                 </div></span>
                     </strong></tr>
                 <tr style="width: 100%; "><strong>
-                        <li style="margin:10px;"><span style="font-size: 15pt;">12. Что вы бы хотели получить от подобранного человека?<div> (Например,
+                        <li style="margin:10px;"><span style="font-size: 13pt;">12. Что вы бы хотели получить от подобранного человека?<div> (Например,
                                 «поддержка во всех начинаниях)</div><div><input type="text" id="get"
                                         placeholder="Хочу получить..." />
                                 </div></span>
                     </strong></tr>
                 <tr style="width: 100%; "><strong>
-                        <li style="margin:10px;"><span style="font-size: 15pt;">13. Опишите свой идеальный тип. Какие качества хотели бы видеть в
+                        <li style="margin:10px;"><span style="font-size: 13pt;">13. Опишите свой идеальный тип Какие качества хотели бы видеть в
                                 подобранном человеке? Это может быть внешность, характер и тд. <div>(Например, важно, чтобы человек был заботливый)</div>
                                 <div><input type="text" id="ideal" placeholder="Мой идеал..." />
                                 </div>
                             </span>
                     </strong></tr>
                  <!-- Поле для ссылки на соцсеть -->
-                <tr style="width: 100%; "><strong>
-                       <li style="margin:10px;"><span style="font-size: 15pt;">14. Введите ссылку на соц.сеть
-        <input type="url" id="social" placeholder="Ссылка на соц. сеть" />
-                            </span>
-                    </strong></tr>
                 <!-- Если что поменять: просить не фото а ссылки на фото из соцсетей -->
-                <tr style="width: 100%; "><strong>
-                        <li style="margin:10px;"><span style="font-size: 15pt;">15. Загрузите свою фотографию<div id="button-photos">
-                                    <input type="file" id="photoInput" style="display: none;">
-                                    <button id="yourphoto" class="button-28" role="button">Загрузить фото</button>
-                                </div></span>
-                    </strong></tr>
+                
             </tbody>
         </table>
         <button id="next1" class="button-28" role="button" onclick="reg();">Далее</button>
         <button id="return"  class="button-28" role="button" onclick="back1();">Назад</button>
     </div>
     <div id="regist3">
-        <p><span style="font-size: 15pt;">Вы почти справились!👏🏻
+        <p><span style="font-size: 13pt;">Вы почти справились!👏🏻
     Анкету нужно оплатить,чтобы она попала в базу данных и вам приходили МЭТЧИ🔥</span></p>
-        <p><span style="font-size: 15pt;">Это сделано во избежание фейков, мимопроходящих крокодилов и людей с нищебродским мышлением.</span></p>
+        <p><span style="font-size: 13pt;">Это сделано во избежание фейков, мимопроходящих крокодилов и жадных людей.</span></p>
 
         <div class="details"  >
             <details style="color: #d880d1;">
                 <summary><span style="font-size: 15pt; "><strong>Тарифы оплаты</strong></span></summary>
                 <div style="border: 1px solid #d880d1; border-radius:10px;">
-                    <p><span style="font-size: 15pt; ">
-🔢300₽ - совместимость проверяется по нумерологии и астрологии.
-(3 мэтча)</span>
+                    <p><span style="font-size: 13pt; ">
+🔢300₽ - совместимость проверяется по нумерологии и астрологии
+(3 мэтча в месяц)</span>
 
-<p><span style="font-size: 15pt;">🧿500₽ - совместимость проверяется по нумерологии и астрологии.
-(4-5 мэтча)</span></p>
+<p><span style="font-size: 13pt;">🧿500₽ - совместимость проверяется по нумерологии и астрологии
+(4-5 мэтча в месяц)</span></p>
 
-<p><span style="font-size: 15pt;">🔮1000₽ - совместимость проверяется по всем программам.
-(6 - 10 мэтчей)</span> </p>
+<p><span style="font-size: 13pt;">🔮1000₽ - совместимость проверяется по всем программам
+(6 - 10 мэтчей в месяц)</span> </p>
 
-<p><span style="font-size: 15pt;">💎3000₽ - подбор совместимости по всем программам без очереди.
-то есть приходит новая анкета и сразу проверяется с вами 
-(неограниченное количество мэтчей)</span></p>
+<p><span style="font-size: 13pt;">💎3000₽ - подбор мэтчей без очереди,
+то есть появляется новая анкета и сразу проверяется с вами 
+(неограниченное количество мэтчей в месяц)</span></p>
                 </div>
             </details>
         </div>
