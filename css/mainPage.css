@@ -18,6 +18,12 @@ body {
   font-family: 'Montserrat Light', Microsoft YaHei Light, sans-serif !important;
   text-rendering: optimizeLegibility;
     font-weight: 600;
+     flex: 1; 
+    display: flex; 
+    flex-direction: column;
+}
+footer { 
+    margin-top: auto;
 }
 h1 {
     font-family: 'Montserrat Light',Microsoft YaHei Light, sans-serif !important;
@@ -231,6 +237,7 @@ input::placeholder {
             right:0px;
             bottom: 10px;
             width: 100%;
+            
         }
 
 /* Для placeholder в селектах (дата рождения) */
