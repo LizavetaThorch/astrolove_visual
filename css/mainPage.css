@@ -105,6 +105,10 @@ buttonnew {
 #prof2{
     display: none;
 }
+#changeprof{
+    display: none;
+    color:#d2ccff;
+}
 /* стиль таблицы*/
 .table-bordered {
     border-collapse: separate;
