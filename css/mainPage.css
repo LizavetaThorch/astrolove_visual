@@ -193,7 +193,8 @@ input::placeholder {
   flex-wrap: wrap;
   flex-direction: row;
   align-content: space-around;
-  gap:10px;
+  grid-row-gap: 10px;
+  font-size: 15px;
 }
 .radio-buttons input[type="radio"] {
   display: none;

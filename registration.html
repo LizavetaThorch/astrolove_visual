@@ -133,7 +133,8 @@
                         <li style="margin:10px;"><span style="font-size: 13pt;">10. Как бы вы описали самого себя? <div>(Например, тип личности - ENFP,
                                 истероидный нарцисс и работаю фрилансером)</div>
                              <p></p>
-            <div class="radio-buttons">
+    <div class="radio-buttons">
+    <div style=" display:flex; flex-wrap: wrap; flex-direction: row; align-content: space-around; ">
   <input type="radio" id="tall" name="height">
   <label for="tall" class="button">Высокий</label>
 
@@ -142,7 +143,9 @@
 
   <input type="radio" id="short" name="height">
   <label for="short" class="button">Низкий</label>
-                <p></p>
+                </div>
+         
+   <div style=" display:flex; flex-wrap: wrap; flex-direction: row; align-content: space-around; ">
   <input type="radio" id="slim" name="bodytype">
   <label for="slim" class="button">Стройный</label>
 
@@ -151,7 +154,9 @@
 
   <input type="radio" id="thick" name="bodytype">
   <label for="thick" class="button">Полный</label>  
-                <p></p>
+             </div>    
+               
+  <div style=" display:flex; flex-wrap: wrap; flex-direction: row; align-content: space-around;">
   <input type="radio" id="blonde" name="haircolor">
   <label for="blonde" class="button">Блондин</label>
 
@@ -164,8 +169,45 @@
    <input type="radio" id="red" name="haircolor">
   <label for="red" class="button">Рыжий</label>  
                                </div>
-                                
-                                
+                
+   <div style=" display:flex; flex-wrap: wrap; flex-direction: row; align-content: space-around;">
+  <input type="radio" id="straight" name="hairtype">
+  <label for="straight" class="button">Прямые</label>
+
+  <input type="radio" id="wavy" name="hairtype">
+  <label for="wavy" class="button">Волнистые</label>
+
+  <input type="radio" id="curly" name="hairtype">
+  <label for="curly" class="button">Кудрявые</label>  
+                               </div>
+        <div style=" display:flex; flex-wrap: wrap; flex-direction: row; align-content: space-around;">
+  <input type="radio" id="blue" name="eyecolor">
+  <label for="blue" class="button">Голубые</label>
+
+  <input type="radio" id="browneye" name="eyecolor">
+  <label for="browneye" class="button">Карие</label>
+
+  <input type="radio" id="green" name="eyecolor">
+  <label for="green" class="button">Зеленые</label>  
+                
+   <input type="radio" id="grey" name="eyecolor">
+  <label for="grey" class="button">Серые</label>  
+                               </div>
+        <div style=" display:flex; flex-wrap: wrap; flex-direction: row; align-content: space-around;">
+  <input type="radio" id="fairskin" name="skin">
+  <label for="fairskin" class="button">Светлая кожа</label>
+
+  <input type="radio" id="darkskin" name="skin">
+  <label for="darkskin" class="button">Темная кожа</label>
+                               </div>                        
+        <div style=" display:flex; flex-wrap: wrap; flex-direction: row; align-content: space-around;">
+  <input type="radio" id="slimface" name="facetype">
+  <label for="slimface" class="button">Выразительные скулы</label>
+
+  <input type="radio" id="puffyface" name="facetype">
+  <label for="puffyface" class="button">Пухлые щеки</label>
+                               </div>       
+                                </div>
                            
                             <div><input type="text" id="describe"
                                         placeholder="Опиши себя" />
