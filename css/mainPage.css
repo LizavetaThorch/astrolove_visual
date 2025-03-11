@@ -148,7 +148,6 @@ img {
     }
 }
 
- 
 /* Поля ввода */
 input[type="text"],
 input[type="url"],
@@ -188,6 +187,35 @@ input::placeholder {
     color: #001332;
     font-weight: 600;
 }
+/* выборные кнопки */
+.radio-buttons {
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: space-around;
+  gap:10px;
+}
+.radio-buttons input[type="radio"] {
+  display: none;
+}
+.radio-buttons .button {
+  padding: 10px 20px;
+  border: 1px solid #d880d1;
+  border-radius: 5px;
+  color: #d2ccff;
+  cursor: pointer;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+}
+/* Checked */
+.radio-buttons input[type="radio"]:checked + .button {
+  background-color: #d880d1;
+  color: #fff;
+}
+/* Hover */
+.radio-buttons .button:hover {
+  background-color: #9964b8;
+  color: #fff;
+}
 
 /* CSS кнопка новая как вариант */
 .button-28 {
@@ -203,7 +231,6 @@ input::placeholder {
   font-size: 16px;
   font-weight: 600;
   line-height: normal;
-  
   min-width: 0;
   outline: none;
   padding: 15px 20px;
