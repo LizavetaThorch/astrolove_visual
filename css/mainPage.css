@@ -189,7 +189,7 @@ input::placeholder {
 }
 /* выборные кнопки */
 .radio-buttons {
-  display:flex;
+  
   flex-wrap: wrap;
   flex-direction: row;
   align-content: space-around;
@@ -202,7 +202,7 @@ input::placeholder {
 .radio-buttons .button {
   padding: 10px 20px;
   border: 1px solid #d880d1;
-  border-radius: 5px;
+  border-radius: 15px;
   color: #d2ccff;
   cursor: pointer;
   transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
