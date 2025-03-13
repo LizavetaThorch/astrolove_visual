@@ -130,24 +130,252 @@
                                 </div></span>
                     </strong></tr>
                 <tr style="width: 100%; "><strong>
-                        <li style="margin:10px;"><span style="font-size: 13pt;">10. Как бы вы описали самого себя? <div>(Например, тип личности - ENFP,
-                                истероидный нарцисс и работаю фрилансером)</div>
+                        <li style="margin:10px;"><span style="font-size: 13pt;">10. Как бы вы описали самого себя? <div>Выберите слова, подходящие вам</div>
                              <p></p>
-    <div class="radio-buttons"><div>Рост</div>
-    <div style=" display:flex; flex-wrap: wrap; flex-direction: row; align-content: space-around;">
+                           <div class="details">
+            <details style="color: #d880d1;">
+                <summary><span style="font-size: 13pt;"><strong>Внешность</strong></span></summary>
+                 <p></p>
+<div class="radio-buttons"><div>Рост</div>
+    <div style=" display:flex; flex-wrap: wrap; flex-direction: row; align-content: space-around; gap:2px 2px;">
         
-  <input type="radio" id="tall" name="height">
+  <input type="radio" id="ytall" name="yourheight">
+  <label for="ytall" class="button">Высокий</label>
+
+  <input type="radio" id="ymid" name="yourheight">
+  <label for="ymid" class="button">Средний</label>
+
+  <input type="radio" id="yshort" name="yourheight">
+  <label for="yshort" class="button">Низкий</label>
+                </div>
+         <p></p>
+         <div>Телосложение</div>
+   <div style=" display:flex; flex-wrap: wrap; flex-direction: row; align-content: space-around;gap:2px 2px; ">
+ 
+	   <input type="radio" id="yslim" name="yourbodytype">
+  <label for="yslim" class="button">Стройное</label>
+
+  <input type="radio" id="ysporty" name="yourbodytype">
+  <label for="ysporty" class="button">Спортивное</label>
+
+  <input type="radio" id="ynormal" name="yourbodytype">
+  <label for="ynormal" class="button">Обычное</label>
+       
+   <input type="radio" id="ythick" name="yourbodytype">
+  <label for="ythick" class="button">Полное</label>  
+             </div>    
+         <p></p>
+               <div>Цвет волос</div>
+  <div style=" display:flex; flex-wrap: wrap; flex-direction: row; align-content: space-around;gap:2px 2px;">
+  
+	  <input type="radio" id="yblonde" name="yourhaircolor">
+  <label for="yblonde" class="button">Блондин</label>
+
+  <input type="radio" id="yblack" name="yourhaircolor">
+  <label for="yblack" class="button">Брюнет</label>
+
+  <input type="radio" id="ybrown" name="yourhaircolor">
+  <label for="ybrown" class="button">Шатен/русый</label>  
+                
+   <input type="radio" id="yred" name="yourhaircolor">
+  <label for="yred" class="button">Рыжий</label>  
+                               </div>
+         <p></p>
+        <div>Тип волос</div>
+   <div style=" display:flex; flex-wrap: wrap; flex-direction: row; align-content: space-around;gap:2px 2px;">
+  
+	   <input type="radio" id="ystraight" name="yourhairtype">
+  <label for="ystraight" class="button">Прямые</label>
+
+  <input type="radio" id="ywavy" name="yourhairtype">
+  <label for="ywavy" class="button">Волнистые</label>
+
+  <input type="radio" id="ycurly" name="yourhairtype">
+  <label for="ycurly" class="button">Кудрявые</label>  
+                               </div>
+         <p></p>
+         <div>Цвет глаз</div>
+        <div style=" display:flex; flex-wrap: wrap; flex-direction: row; align-content: space-around;gap:2px 2px;">
+  
+			<input type="radio" id="yblue" name="youreyecolor">
+  <label for="yblue" class="button">Голубые</label>
+
+  <input type="radio" id="ybrowneye" name="youreyecolor">
+  <label for="ybrowneye" class="button">Карие</label>
+
+  <input type="radio" id="ygreen" name="youreyecolor">
+  <label for="ygreen" class="button">Зеленые</label>  
+                
+   <input type="radio" id="ygrey" name="youreyecolor">
+  <label for="ygrey" class="button">Серые</label>  
+                               </div>
+         <p></p>
+         <div>Цвет кожи</div>
+        <div style=" display:flex; flex-wrap: wrap; flex-direction: row; align-content: space-around;gap:2px 2px;">
+ 
+			<input type="radio" id="yfair" name="yourskin">
+  <label for="yfair" class="button">Очень светлая</label>
+
+  <input type="radio" id="yolive" name="yourskin">
+  <label for="yolive" class="button">Средняя</label>
+   <input type="radio" id="ydark" name="yourskin">
+  <label for="ydark" class="button">Темная</label>
+                               </div>    
+         <p></p>
+         <div>Тип лица</div>
+        <div style=" display:flex; flex-wrap: wrap; flex-direction: row; align-content: space-around;gap:2px 2px;">
+  <input type="radio" id="yslimface" name="yourfacetype">
+  <label for="yslimface" class="button">Выразительные скулы</label>
+
+  <input type="radio" id="ypuffyface" name="yourfacetype">
+  <label for="ypuffyface" class="button">Пухлые щеки</label>
+                               </div> 
+        <p></p>
+        <div>Татуировки</div>
+        <div style=" display:flex; flex-wrap: wrap; flex-direction: row; align-content: space-around;gap:2px 2px;">
+  <input type="radio" id="ytatooyes" name="yourtatoo">
+  <label for="ytatooyes" class="button">Есть</label>
+
+  <input type="radio" id="ytatoono" name="yourtatoo">
+  <label for="ytatoono" class="button">Нет</label>
+                               </div>       
+                                </div>
+            </details>
+                            </div>
+
+                            <div class="details">
+            <details style="color: #d880d1;">
+                <summary><span style="font-size: 13pt;"><strong>Характер</strong></span></summary>
+                 <p></p>
+<div class="radio-buttons">
+    <div style=" display:flex; flex-wrap: wrap; flex-direction: row; align-content: space-around; gap:2px 2px;">
+        
+  <input type="radio" id="ykind" name="yourchar">
+  <label for="ykind" class="button">Отзывчивый</label>
+
+  <input type="radio" id="yego" name="yourchar">
+  <label for="yego" class="button">Эгоцентричный</label>
+                </div> 
+                  <p></p>
+  <div style=" display:flex; flex-wrap: wrap; flex-direction: row; align-content: space-around; gap:2px 2px;">
+        
+  <input type="radio" id="yhappy" name="yourfun">
+  <label for="yhappy" class="button">Веселый</label>
+
+  <input type="radio" id="yserious" name="yourfun">
+  <label for="yserious" class="button">Серьезный</label>
+                </div> 
+                <p></p>
+  <div style=" display:flex; flex-wrap: wrap; flex-direction: row; align-content: space-around; gap:2px 2px;">
+        
+  <input type="radio" id="yextravert" name="yourintroextra">
+  <label for="yextravert" class="button">Открытый</label>
+
+  <input type="radio" id="yintrovert" name="yourintroextra">
+  <label for="yintrovert" class="button">Замкнутый</label>
+                </div> 
+    <p></p>
+  <div style=" display:flex; flex-wrap: wrap; flex-direction: row; align-content: space-around; gap:2px 2px;">
+        
+  <input type="radio" id="yambitious" name="yourachieve">
+  <label for="yambitious" class="button">Амбициозный</label>
+
+  <input type="radio" id="yrelaxed" name="yourachieve">
+  <label for="yrelaxed" class="button">Расслабленный</label>
+                </div> 
+                 <p></p>
+  <div style=" display:flex; flex-wrap: wrap; flex-direction: row; align-content: space-around; gap:2px 2px;">
+        
+  <input type="radio" id="yromantic" name="yourlifestyle">
+  <label for="yromantic" class="button">Романтичный</label>
+
+  <input type="radio" id="ypractic" name="yourlifestyle">
+  <label for="ypractic" class="button">Практичный</label>
+                </div> 
+     <p></p>
+  <div style=" display:flex; flex-wrap: wrap; flex-direction: row; align-content: space-around; gap:2px 2px;">
+        
+  <input type="radio" id="ycalm" name="yourenergy">
+  <label for="ycalm" class="button">Спокойный</label>
+
+  <input type="radio" id="yenergetic" name="yourenergy">
+  <label for="yenergetic" class="button">Энергичный</label>
+                </div>
+    <p></p>
+  <div style=" display:flex; flex-wrap: wrap; flex-direction: row; align-content: space-around; gap:2px 2px;">
+        
+  <input type="radio" id="ypatient" name="yourtemperament">
+  <label for="ypatient" class="button">Терпеливый</label>
+
+  <input type="radio" id="yboom" name="yourtemperament">
+  <label for="yboom" class="button">Вспыльчивый</label>
+                </div>
+    <p></p>
+  <div style=" display:flex; flex-wrap: wrap; flex-direction: row; align-content: space-around; gap:2px 2px;">
+        
+  <input type="radio" id="yhappy" name="yourpersonality">
+  <label for="yhappy" class="button">Ответственный</label>
+
+  <input type="radio" id="yserious" name="yourpersonality">
+  <label for="yserious" class="button">Легкий на подъем</label>
+                </div>
+    <p></p>
+  <div style=" display:flex; flex-wrap: wrap; flex-direction: row; align-content: space-around; gap:2px 2px;">
+        
+  <input type="radio" id="ybright" name="yourcharisma">
+  <label for="ybright" class="button">Уверенный</label>
+
+  <input type="radio" id="yshy" name="yourcharisma">
+  <label for="yshy" class="button">Скромный</label>
+                </div>
+    <p></p>
+  <div style=" display:flex; flex-wrap: wrap; flex-direction: row; align-content: space-around; gap:2px 2px;">
+        
+  <input type="radio" id="yloner" name="yourmotto">
+  <label for="yloner" class="button">Независимый</label>
+
+  <input type="radio" id="yfamily" name="yourmotto">
+  <label for="yfamily" class="button">Семейный</label>
+                </div>
+    
+                </div>
+            </details>
+                            </div>    
+                </span>
+                    </strong></tr>
+                <tr style="width: 100%; "><strong>
+                        <li style="margin:10px;"><span style="font-size: 13pt;">11. Что вы бы могли предложить будущему подобранному
+                                человеку? <div>Выберите слова, подходящие вам</div><div><input type="text"
+                                        id="give" placeholder="Могу предложить..." />
+                                </div></span>
+                    </strong></tr>
+                <tr style="width: 100%; "><strong>
+                        <li style="margin:10px;"><span style="font-size: 13pt;">12. Что вы бы хотели получить от подобранного человека?<div>Выберите слова, подходящие вам</div><div><input type="text" id="get"
+                                        placeholder="Хочу получить..." />
+                                </div></span>
+                    </strong></tr>
+                <tr style="width: 100%; "><strong>
+                        <li style="margin:10px;"><span style="font-size: 13pt;">13. Опишите свой идеальный тип по внешности и характеру<div>Выберите слова, подходящие вам</div>
+                                <p></p>
+                           <div class="details">
+            <details style="color: #d880d1;">
+                <summary><span style="font-size: 13pt;"><strong>Внешность</strong></span></summary>
+                 <p></p>
+<div class="radio-buttons"><div>Рост</div>
+    <div style=" display:flex; flex-wrap: wrap; flex-direction: row; align-content: space-around; gap:2px 2px;">
+        
+  <input type="radio" id="tall" name="theirheight">
   <label for="tall" class="button">Высокий</label>
 
-  <input type="radio" id="mid" name="height">
+  <input type="radio" id="mid" name="theirheight">
   <label for="mid" class="button">Средний</label>
 
-  <input type="radio" id="short" name="height">
+  <input type="radio" id="short" name="theirheight">
   <label for="short" class="button">Низкий</label>
                 </div>
          <p></p>
          <div>Телосложение</div>
-   <div style=" display:flex; flex-wrap: wrap; flex-direction: row; align-content: space-around; ">
+   <div style=" display:flex; flex-wrap: wrap; flex-direction: row; align-content: space-around;gap:2px 2px; ">
   <input type="radio" id="slim" name="bodytype">
   <label for="slim" class="button">Стройное</label>
 
@@ -162,7 +390,7 @@
              </div>    
          <p></p>
                <div>Цвет волос</div>
-  <div style=" display:flex; flex-wrap: wrap; flex-direction: row; align-content: space-around;">
+  <div style=" display:flex; flex-wrap: wrap; flex-direction: row; align-content: space-around;gap:2px 2px;">
   <input type="radio" id="blonde" name="haircolor">
   <label for="blonde" class="button">Блондин</label>
 
@@ -177,7 +405,7 @@
                                </div>
          <p></p>
         <div>Тип волос</div>
-   <div style=" display:flex; flex-wrap: wrap; flex-direction: row; align-content: space-around;">
+   <div style=" display:flex; flex-wrap: wrap; flex-direction: row; align-content: space-around;gap:2px 2px;">
   <input type="radio" id="straight" name="hairtype">
   <label for="straight" class="button">Прямые</label>
 
@@ -189,7 +417,7 @@
                                </div>
          <p></p>
          <div>Цвет глаз</div>
-        <div style=" display:flex; flex-wrap: wrap; flex-direction: row; align-content: space-around;">
+        <div style=" display:flex; flex-wrap: wrap; flex-direction: row; align-content: space-around;gap:2px 2px;">
   <input type="radio" id="blue" name="eyecolor">
   <label for="blue" class="button">Голубые</label>
 
@@ -204,7 +432,7 @@
                                </div>
          <p></p>
          <div>Цвет кожи</div>
-        <div style=" display:flex; flex-wrap: wrap; flex-direction: row; align-content: space-around;">
+        <div style=" display:flex; flex-wrap: wrap; flex-direction: row; align-content: space-around;gap:2px 2px;">
   <input type="radio" id="fair" name="skin">
   <label for="fair" class="button">Очень светлая</label>
 
@@ -215,37 +443,125 @@
                                </div>    
          <p></p>
          <div>Тип лица</div>
-        <div style=" display:flex; flex-wrap: wrap; flex-direction: row; align-content: space-around;">
+        <div style=" display:flex; flex-wrap: wrap; flex-direction: row; align-content: space-around;gap:2px 2px;">
   <input type="radio" id="slimface" name="facetype">
   <label for="slimface" class="button">Выразительные скулы</label>
 
   <input type="radio" id="puffyface" name="facetype">
   <label for="puffyface" class="button">Пухлые щеки</label>
+                               </div> 
+        <p></p>
+        <div>Татуировки</div>
+        <div style=" display:flex; flex-wrap: wrap; flex-direction: row; align-content: space-around;gap:2px 2px;">
+  <input type="radio" id="tatooyes" name="tatoo">
+  <label for="tatooyes" class="button">Есть</label>
+
+  <input type="radio" id="tatoono" name="tatoo">
+  <label for="tatoono" class="button">Нет</label>
                                </div>       
                                 </div>
-                           
-                            <div><input type="text" id="describe"
-                                        placeholder="Опиши себя" />
-                                </div></span>
-                    </strong></tr>
-                <tr style="width: 100%; "><strong>
-                        <li style="margin:10px;"><span style="font-size: 13pt;">11. Что вы бы могли предложить будущему подобранному
-                                человеку? <div>(Например, заботу, ласку, поддержку или финансы)</div><div><input type="text"
-                                        id="give" placeholder="Могу предложить..." />
-                                </div></span>
-                    </strong></tr>
-                <tr style="width: 100%; "><strong>
-                        <li style="margin:10px;"><span style="font-size: 13pt;">12. Что вы бы хотели получить от подобранного человека?<div>(Например,
-                                поддержка во всех начинаниях)</div><div><input type="text" id="get"
-                                        placeholder="Хочу получить..." />
-                                </div></span>
-                    </strong></tr>
-                <tr style="width: 100%; "><strong>
-                        <li style="margin:10px;"><span style="font-size: 13pt;">13. Опишите свой идеальный тип<div> Какие качества хотели бы видеть в
-                                подобранном человеке?</div> Это может быть внешность, характер и тд. <div>(Например, важно, чтобы человек был заботливый)</div>
-                                <div><input type="text" id="ideal" placeholder="Мой идеал..." />
-                                </div>
-                            </span>
+            </details>
+                            </div>
+
+                            <div class="details">
+            <details style="color: #d880d1;">
+                <summary><span style="font-size: 13pt;"><strong>Характер</strong></span></summary>
+                 <p></p>
+<div class="radio-buttons">
+    <div style=" display:flex; flex-wrap: wrap; flex-direction: row; align-content: space-around; gap:2px 2px;">
+        
+  <input type="radio" id="kind" name="char">
+  <label for="kind" class="button">Отзывчивый</label>
+
+  <input type="radio" id="ego" name="char">
+  <label for="ego" class="button">Эгоцентричный</label>
+                </div> 
+                  <p></p>
+  <div style=" display:flex; flex-wrap: wrap; flex-direction: row; align-content: space-around; gap:2px 2px;">
+        
+  <input type="radio" id="happy" name="fun">
+  <label for="happy" class="button">Веселый</label>
+
+  <input type="radio" id="serious" name="fun">
+  <label for="serious" class="button">Серьезный</label>
+                </div> 
+                <p></p>
+  <div style=" display:flex; flex-wrap: wrap; flex-direction: row; align-content: space-around; gap:2px 2px;">
+        
+  <input type="radio" id="extravert" name="introextra">
+  <label for="extravert" class="button">Открытый</label>
+
+  <input type="radio" id="introvert" name="introextra">
+  <label for="introvert" class="button">Замкнутый</label>
+                </div> 
+    <p></p>
+  <div style=" display:flex; flex-wrap: wrap; flex-direction: row; align-content: space-around; gap:2px 2px;">
+        
+  <input type="radio" id="ambitious" name="achieve">
+  <label for="ambitious" class="button">Амбициозный</label>
+
+  <input type="radio" id="relaxed" name="achieve">
+  <label for="relaxed" class="button">Расслабленный</label>
+                </div> 
+                 <p></p>
+  <div style=" display:flex; flex-wrap: wrap; flex-direction: row; align-content: space-around; gap:2px 2px;">
+        
+  <input type="radio" id="romantic" name="lifestyle">
+  <label for="romantic" class="button">Романтичный</label>
+
+  <input type="radio" id="practic" name="lifestyle">
+  <label for="practic" class="button">Практичный</label>
+                </div> 
+     <p></p>
+  <div style=" display:flex; flex-wrap: wrap; flex-direction: row; align-content: space-around; gap:2px 2px;">
+        
+  <input type="radio" id="calm" name="energy">
+  <label for="calm" class="button">Спокойный</label>
+
+  <input type="radio" id="energetic" name="energy">
+  <label for="energetic" class="button">Энергичный</label>
+                </div>
+    <p></p>
+  <div style=" display:flex; flex-wrap: wrap; flex-direction: row; align-content: space-around; gap:2px 2px;">
+        
+  <input type="radio" id="patient" name="temperament">
+  <label for="patient" class="button">Терпеливый</label>
+
+  <input type="radio" id="boom" name="temperament">
+  <label for="boom" class="button">Вспыльчивый</label>
+                </div>
+    <p></p>
+  <div style=" display:flex; flex-wrap: wrap; flex-direction: row; align-content: space-around; gap:2px 2px;">
+        
+  <input type="radio" id="happy" name="personality">
+  <label for="happy" class="button">Ответственный</label>
+
+  <input type="radio" id="serious" name="personality">
+  <label for="serious" class="button">Легкий на подъем</label>
+                </div>
+    <p></p>
+  <div style=" display:flex; flex-wrap: wrap; flex-direction: row; align-content: space-around; gap:2px 2px;">
+        
+  <input type="radio" id="bright" name="charisma">
+  <label for="bright" class="button">Уверенный</label>
+
+  <input type="radio" id="shy" name="charisma">
+  <label for="shy" class="button">Скромный</label>
+                </div>
+    <p></p>
+  <div style=" display:flex; flex-wrap: wrap; flex-direction: row; align-content: space-around; gap:2px 2px;">
+        
+  <input type="radio" id="loner" name="motto">
+  <label for="loner" class="button">Независимый</label>
+
+  <input type="radio" id="family" name="motto">
+  <label for="family" class="button">Семейный</label>
+                </div>
+    
+                </div>
+            </details>
+                            </div>    
+                </span>
                     </strong></tr>
                  <!-- Поле для ссылки на соцсеть 
                 <input type="radio" value="1" name="height">Высокий

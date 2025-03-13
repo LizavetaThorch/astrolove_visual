@@ -189,7 +189,6 @@ input::placeholder {
 }
 /* выборные кнопки */
 .radio-buttons {
-  
   flex-wrap: wrap;
   flex-direction: row;
   align-content: space-around;
