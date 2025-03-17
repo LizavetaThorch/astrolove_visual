@@ -251,12 +251,9 @@ document.addEventListener("DOMContentLoaded", () => {
         const agegap = document.getElementById("agegap").value;
         const status = document.getElementById("status").value;
         const distance = document.getElementById("distance").value;
-        const describe = document.getElementById("describe").value;
-        const give = document.getElementById("give").value;
-        const get = document.getElementById("get").value;
-        const ideal = document.getElementById("ideal").value;
+        
 
-         if (!name || !sex || !social ||  !sign || !day || !year || !month || !birthplace || !place  || !orientation || !searching || !gapage || !agegap || !status || !distance || !describe || !give || !get || !ideal) {
+         if (!name || !sex || !social ||  !sign || !day || !year || !month || !birthplace || !place  || !orientation || !searching || !gapage || !agegap || !status || !distance ) {
              alert("Заполните все поля!");
              return;
          }
@@ -278,10 +275,7 @@ document.addEventListener("DOMContentLoaded", () => {
             agegap: agegap,
             status: status,
             distance: distance,
-            describe: describe,
-            give: give,
-            get: get,
-            ideal: ideal,
+            
             photo_id: userData.photo_id
         };
 
