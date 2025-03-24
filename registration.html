@@ -85,29 +85,36 @@
                                 <div><input type="text" id="place" placeholder="Введи место" /></div>
                             </span>
                     </strong></tr>
+				 <tr style="width: 100%; "><strong>
+                        <li style="margin:10px;"><span style="font-size: 13pt;">4. Готовы ли вы к отношениям на расстоянии?<div id="birthday">
+                                    <select id="distance">
+                                        <option value="">Выбор ответа</option>
+                                    </select>
+                                </div></span>
+                    </strong></tr>
                 <tr style="width: 100%; "><strong>
-                        <li style="margin:10px;"><span style="font-size: 13pt;">4. Ваша ориентация?<div id="birthday">
+                        <li style="margin:10px;"><span style="font-size: 13pt;">5. Ваша ориентация?<div id="birthday">
                                     <select id="orientation">
                                         <option value="">Ориентация</option>
                                     </select>
                                 </div></span>
                     </strong></tr>
                 <tr style="width: 100%; "><strong>
-                        <li style="margin:10px;"><span style="font-size: 13pt;">5. Ваша цель астро-любви?<div id="birthday">
+                        <li style="margin:10px;"><span style="font-size: 13pt;">6. Ваша цель астро-любви?<div id="birthday">
                                     <select id="searching">
                                         <option value="">Найти...</option>
                                     </select>
                                 </div></span>
                     </strong></tr>
                 <tr style="width: 100%; "><strong>
-                        <li style="margin:10px;"><span style="font-size: 13pt;">6. В каком статусе вы находитесь?<div id="birthday">
+                        <li style="margin:10px;"><span style="font-size: 13pt;">7. В каком статусе вы находитесь?<div id="birthday">
                                     <select id="status">
                                         <option value="">Выбор статуса</option>
                                     </select>
                                 </div></span>
                     </strong></tr>
                 <tr style="width: 100%; "><strong>
-                       <li style="margin:10px;"><span style="font-size: 13pt;">7. Допустимая разница в возрасте? (старше вас)<div
+                       <li style="margin:10px;"><span style="font-size: 13pt;">8. Допустимая разница в возрасте? (старше вас)<div
                                     id="birthday">
                                     <select id="gapage">
                                         <option value="">Выбор ответа</option>
@@ -115,22 +122,118 @@
                                 </div></span>
                     </strong></tr>
                 <tr style="width: 100%; "><strong>
-                        <li style="margin:10px;"><span style="font-size: 13pt;">8. Допустимая разница в возрасте? (младше вас)<div
+                        <li style="margin:10px;"><span style="font-size: 13pt;">9. Допустимая разница в возрасте? (младше вас)<div
                                     id="birthday">
                                     <select id="agegap">
                                         <option value="">Выбор ответа</option>
                                     </select>
                                 </div></span>
                     </strong></tr>
-                <tr style="width: 100%; "><strong>
-                        <li style="margin:10px;"><span style="font-size: 13pt;">9. Готовы ли вы к отношениям на расстоянии?<div id="birthday">
-                                    <select id="distance">
-                                        <option value="">Выбор ответа</option>
-                                    </select>
-                                </div></span>
+				<tr style="width: 100%; "><strong>
+                        <li style="margin:10px;"><span style="font-size: 13pt;">10. Что вы бы могли предложить будущему подобранному
+                                человеку? <div>Выберите слова, подходящие вам</div> 
+							 <p></p>
+							<div class="details">
+            <details style="color: #d880d1;">
+                <summary><span style="font-size: 13pt;"><strong>Могу предложить</strong></span></summary>
+				 <p></p>
+<div class="radio-buttons">
+    <div style=" display:flex; flex-wrap: wrap; flex-direction: row; align-content: space-around; gap:2px 2px;">
+        
+		<label class="checkbox">
+    <input class="checkbox-input" type="checkbox" id="myCheckbox">
+
+    <div class="checkbox-new" aria-hidden="true">
+      <div class="checkbox-new_checked">
+       Любовь
+      </div>
+      <div class="checkbox-new_unchecked">
+        U
+        <span class="eye">x</span>
+        <span class="nose">ᴥ</span>
+        <span class="eye">x</span>U
+      </div>
+    </div>
+  </label>
+		
+  <input type="radio" id="love" name="give">
+  <label for="love" class="button">Любовь</label>
+
+  <input type="radio" id="support" name="give">
+  <label for="support" class="button">Поддержку </label>
+                </div> 
+                  <p></p>
+  <div style=" display:flex; flex-wrap: wrap; flex-direction: row; align-content: space-around; gap:2px 2px;">
+        
+  <input type="radio" id="loyalty" name="give">
+  <label for="loyalty" class="button">Верность</label>
+
+  <input type="radio" id="care" name="give">
+  <label for="care" class="button">Заботу</label>
+                </div> 
+                <p></p>
+  <div style=" display:flex; flex-wrap: wrap; flex-direction: row; align-content: space-around; gap:2px 2px;">
+        
+  <input type="radio" id="trust" name="introextra">
+  <label for="trust" class="button">Доверие</label>
+
+  <input type="radio" id="respect" name="introextra">
+  <label for="respect" class="button">Уважение</label>
+                </div> 
+    <p></p>
+  <div style=" display:flex; flex-wrap: wrap; flex-direction: row; align-content: space-around; gap:2px 2px;">
+        
+  <input type="radio" id="stability" name="achieve">
+  <label for="stability" class="button">Стабильность</label>
+
+  <input type="radio" id="honesty" name="achieve">
+  <label for="honesty" class="button">Честность</label>
+                </div> 
+                 <p></p>
+  <div style=" display:flex; flex-wrap: wrap; flex-direction: row; align-content: space-around; gap:2px 2px;">
+        
+  <input type="radio" id="passion" name="lifestyle">
+  <label for="passion" class="button">Страсть</label>
+
+  <input type="radio" id="growtogether" name="lifestyle">
+  <label for="growtogether" class="button">Совместное развитие</label>
+                </div> 
+     <p></p>
+  <div style=" display:flex; flex-wrap: wrap; flex-direction: row; align-content: space-around; gap:2px 2px;">
+        
+  <input type="radio" id="warmth" name="energy">
+  <label for="warmth" class="button">Тепло</label>
+
+  <input type="radio" id="growth" name="energy">
+  <label for="growth" class="button">Развитие</label>
+                </div>
+    <p></p>
+  <div style=" display:flex; flex-wrap: wrap; flex-direction: row; align-content: space-around; gap:2px 2px;">
+        
+  <input type="radio" id="money" name="temperament">
+  <label for="money" class="button">Финансы</label>
+
+  <input type="radio" id="pain" name="temperament">
+  <label for="pain" class="button">Боль</label>
+                </div>
+    <p></p>
+  <div style=" display:flex; flex-wrap: wrap; flex-direction: row; align-content: space-around; gap:2px 2px;">
+        
+  <input type="radio" id="destroy" name="personality">
+  <label for="destroy" class="button">Разрушение</label>
+
+  <input type="radio" id="suffering" name="personality">
+  <label for="suffering" class="button">Страдание</label>
+  
+               </div>
+    
+                </div>
+            </details>
+                            </div>    
+                </span>
                     </strong></tr>
                 <tr style="width: 100%; "><strong>
-                        <li style="margin:10px;"><span style="font-size: 13pt;">10. Как бы вы описали самого себя? <div>Выберите слова, подходящие вам</div>
+                        <li style="margin:10px;"><span style="font-size: 13pt;">11. Как бы вы описали самого себя? <div>Выберите слова, подходящие вам</div>
                              <p></p>
                            <div class="details">
             <details style="color: #d880d1;">
@@ -344,12 +447,6 @@
                 </span>
                     </strong></tr>
                 <tr style="width: 100%; "><strong>
-                        <li style="margin:10px;"><span style="font-size: 13pt;">11. Что вы бы могли предложить будущему подобранному
-                                человеку? <div>Выберите слова, подходящие вам</div><div><input type="text"
-                                        id="give" placeholder="Могу предложить..." />
-                                </div></span>
-                    </strong></tr>
-                <tr style="width: 100%; "><strong>
                         <li style="margin:10px;"><span style="font-size: 13pt;">12. Что вы бы хотели получить от подобранного человека?<div>Выберите слова, подходящие вам</div><div><input type="text" id="get"
                                         placeholder="Хочу получить..." />
                                 </div></span>
@@ -387,7 +484,16 @@
        
    <input type="radio" id="thick" name="bodytype">
   <label for="thick" class="button">Полное</label>  
-             </div>    
+             </div>  
+	 <p></p>
+         <div>Важно ли для вас телосложение будущего партнера?</div>
+        <div style=" display:flex; flex-wrap: wrap; flex-direction: row; align-content: space-around;gap:2px 2px;">
+  <input type="radio" id="important" name="body">
+  <label for="important" class="button">Важно</label>
+
+  <input type="radio" id="no" name="body">
+  <label for="no" class="button">Неважно</label>
+                               </div> 
          <p></p>
                <div>Цвет волос</div>
   <div style=" display:flex; flex-wrap: wrap; flex-direction: row; align-content: space-around;gap:2px 2px;">
