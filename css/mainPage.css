@@ -311,6 +311,7 @@ buttonnew {
     border-radius: 5px;
     cursor: pointer;
     font-weight: 600;
+	text-align: center;
 }
 
 button:hover {
@@ -335,7 +336,7 @@ details {
   display: block;
 }
 .checkbox-btn-group label {
-	display: inline-block;
+	display: flex;
 	float: left;  
 	margin: 0;
 	user-select: none;
@@ -368,17 +369,6 @@ details {
 background-color: #d880d1;
   color: #fff;
 }
- 
-/* Focus */
-.checkbox-btn-group .focused span {
-	box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
-}
- 
-/* Hover */
-.checkbox-btn-group label:hover {
-	color: #666;
-}
- 
 /* Active */
 .checkbox-btn-group input[type=checkbox]:active:not(:disabled) + span {
 	background-color: #9964b8;
@@ -387,7 +377,6 @@ background-color: #d880d1;
  
 /* Disabled */
 .checkbox-btn-group input[type=checkbox]:disabled + span {
-	background: #efefef;
 	color: #666;
 	cursor: default;
 }
@@ -428,8 +417,9 @@ background-color: #d880d1;
         margin-top: 20px;
     }
     buttonnew  {
-        width: 100%;
-        margin-top: 20px;
+		display: flex;
+       justify-content: space-around;
+       
     }
 }
 
