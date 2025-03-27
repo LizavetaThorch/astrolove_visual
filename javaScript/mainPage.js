@@ -9,6 +9,7 @@ if (!userId) {
 
 console.log("user_id:", userId); // Проверка user_id
 
+
 // Заполнение списка с днями (от 1 до 31)
 const daysSelect = document.getElementById("day");
 for (let i = 1; i <= 31; i++) {
@@ -172,12 +173,20 @@ document.getElementById("return1").addEventListener("click",
         document.getElementById("return").style.display = "block";
         document.getElementById("return1").style.display = "none";
     });
-
-// Профиль в разработке
-document.getElementById("profile").addEventListener("click",
-    function profile() {
-    alert("Раздел находится в разработке");
-    });
+ 
+var f = document.forms.Form;
+f.onchange = function () {
+  var n = f.querySelectorAll('[type="checkbox"]'),
+      l = f.querySelectorAll('[type="checkbox"]:checked');
+  for (var j=0; j<n.length; j++)
+    if (l.length >= 3) { // если отметить три и более галочки
+      n[j].disabled = true; // все чекбоксы становятся disabled
+      for(var i=0; i<l.length; i++)
+        l[i].disabled = false; // но disabled убирается с помеченных галочками чекбоксов
+    } else {
+      n[j].disabled = false; // если выделить менее трёх галочек, то disabled снимается со всех чекбоксов
+    }
+}
 
 // Функция выбора фото
 document.getElementById("yourphoto").addEventListener("click", () => {

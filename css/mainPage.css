@@ -326,62 +326,7 @@ details {
   margin-bottom:.5rem;
 }
 
-.checkbox {
-	appearance: none;
-  position: relative;
-  width: fit-content;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
-.checkbox-input,input[type="checkbox"]
- {
-  appearance: none;
-  font-family: 'Montserrat Light', Microsoft YaHei Light, sans-serif !important;
-    background-color: #d880d1;
-    color: white;
-    font-size: 16px;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: 600;
-}
-
-.checkbox-new{
-  font-family: 'Montserrat Light', Microsoft YaHei Light, sans-serif !important;
-    background-color: #d880d1;
-    color: white;
-    font-size: 16px;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: 600;
-}
-
-.checkbox-new_checked,
-.checkbox-input:checked + .checkbox-new > .checkbox-new_unchecked
-{
-  display: none;
-}
-
-.checkbox-input:checked
- {
-  background: #C56FFF;
-}
-
-.checkbox-input:checked + .checkbox-new
- {
-  color: #000000;
-}
-
-.checkbox-input:checked + .checkbox-new > .checkbox-new_checked,
-.checkbox-input:not(:checked) + .checkbox-new > .checkbox-new_unchecked
- {
-  display: initial;
-}
 
 
 /* Оборачиваем кнопку в контейнер для выравнивания по правому краю */

@@ -12,7 +12,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    
     <table class="table-bordered">
         <tbody>
             <td style="width: 33%; text-align: center;">
@@ -27,7 +26,6 @@
         </tbody>
     </table>
     <img src="./photos/logo_neon_cut.png" alt="INTRO" />
-
     <div id="regist1">
         <p style="text-align:center;color:#d880d1;font-size: 13pt;">Всего у нас 3 раздела☝🏻</p>
 <p style="text-align:center;color:#d2ccff;font-size: 13pt;">1 - общая информация,чтобы мы проверили на фейковость</p>
@@ -53,9 +51,8 @@
          <button class="button-28" role="button"id="next" onclick="regist();">Далее</button>
     
     <div id="regist2">
-        <table class="table-bordered">
-            <tbody>
-                <tr style="width: 100%; "><strong>
+       
+                <div style="width: 100%; "><strong>
                        <li style="margin:10px;"> <span style="font-size: 13pt; ">1. Ваша полная дата рождения <div>(дата, время и место)</div><div>(например, 18.08.1999 22:40 Москва)</div><div>
                                    
                             <div id="birthday">
@@ -72,7 +69,7 @@
             <div><input type="text" id="birthtime" placeholder="Введи время рождения" /><!-- <input type="time"value="12:00">--></div>
                                     <input type="text" id="birthplace" placeholder="Введи место рождения" />
                                 </div></span>
-                    </strong></tr>
+                    </strong></div>
                 <tr style="width: 100%; "><strong>
                         <li style="margin:10px;"><span style="font-size: 13pt;">2. Ваш знак зодиака?<div id="birthday">
                                     <select id="sign">
@@ -130,105 +127,23 @@
                                 </div></span>
                     </strong></tr>
 				<tr style="width: 100%; "><strong>
-                        <li style="margin:10px;"><span style="font-size: 13pt;">10. Что вы бы могли предложить будущему подобранному
+                        <li style="margin:10px;">
+		<span style="font-size: 13pt;">10. Что вы бы могли предложить будущему подобранному
                                 человеку? <div>Выберите слова, подходящие вам</div> 
 							 <p></p>
 							<div class="details">
             <details style="color: #d880d1;">
                 <summary><span style="font-size: 13pt;"><strong>Могу предложить</strong></span></summary>
 				 <p></p>
-<div class="radio-buttons">
-    <div style=" display:flex; flex-wrap: wrap; flex-direction: row; align-content: space-around; gap:2px 2px;">
-        
-		<label class="checkbox">
-    <input class="checkbox-input" type="checkbox" id="myCheckbox">
 
-    <div class="checkbox-new" aria-hidden="true">
-      <div class="checkbox-new_checked">
-       Любовь
-      </div>
-      <div class="checkbox-new_unchecked">
-        U
-        <span class="eye">x</span>
-        <span class="nose">ᴥ</span>
-        <span class="eye">x</span>U
-      </div>
-    </div>
-  </label>
-		
-  <input type="radio" id="love" name="give">
-  <label for="love" class="button">Любовь</label>
-
-  <input type="radio" id="support" name="give">
-  <label for="support" class="button">Поддержку </label>
-                </div> 
-                  <p></p>
-  <div style=" display:flex; flex-wrap: wrap; flex-direction: row; align-content: space-around; gap:2px 2px;">
-        
-  <input type="radio" id="loyalty" name="give">
-  <label for="loyalty" class="button">Верность</label>
-
-  <input type="radio" id="care" name="give">
-  <label for="care" class="button">Заботу</label>
-                </div> 
-                <p></p>
-  <div style=" display:flex; flex-wrap: wrap; flex-direction: row; align-content: space-around; gap:2px 2px;">
-        
-  <input type="radio" id="trust" name="introextra">
-  <label for="trust" class="button">Доверие</label>
-
-  <input type="radio" id="respect" name="introextra">
-  <label for="respect" class="button">Уважение</label>
-                </div> 
-    <p></p>
-  <div style=" display:flex; flex-wrap: wrap; flex-direction: row; align-content: space-around; gap:2px 2px;">
-        
-  <input type="radio" id="stability" name="achieve">
-  <label for="stability" class="button">Стабильность</label>
-
-  <input type="radio" id="honesty" name="achieve">
-  <label for="honesty" class="button">Честность</label>
-                </div> 
-                 <p></p>
-  <div style=" display:flex; flex-wrap: wrap; flex-direction: row; align-content: space-around; gap:2px 2px;">
-        
-  <input type="radio" id="passion" name="lifestyle">
-  <label for="passion" class="button">Страсть</label>
-
-  <input type="radio" id="growtogether" name="lifestyle">
-  <label for="growtogether" class="button">Совместное развитие</label>
-                </div> 
-     <p></p>
-  <div style=" display:flex; flex-wrap: wrap; flex-direction: row; align-content: space-around; gap:2px 2px;">
-        
-  <input type="radio" id="warmth" name="energy">
-  <label for="warmth" class="button">Тепло</label>
-
-  <input type="radio" id="growth" name="energy">
-  <label for="growth" class="button">Развитие</label>
-                </div>
-    <p></p>
-  <div style=" display:flex; flex-wrap: wrap; flex-direction: row; align-content: space-around; gap:2px 2px;">
-        
-  <input type="radio" id="money" name="temperament">
-  <label for="money" class="button">Финансы</label>
-
-  <input type="radio" id="pain" name="temperament">
-  <label for="pain" class="button">Боль</label>
-                </div>
-    <p></p>
-  <div style=" display:flex; flex-wrap: wrap; flex-direction: row; align-content: space-around; gap:2px 2px;">
-        
-  <input type="radio" id="destroy" name="personality">
-  <label for="destroy" class="button">Разрушение</label>
-
-  <input type="radio" id="suffering" name="personality">
-  <label for="suffering" class="button">Страдание</label>
-  
-               </div>
-    
-                </div>
-            </details>
+<form name="Form">
+  <input type="checkbox"/>
+  <input type="checkbox"/>
+  <input type="checkbox"/>
+  <input type="checkbox"/>
+  <input type="checkbox"/>
+</form>
+		</details>
                             </div>    
                 </span>
                     </strong></tr>
@@ -668,7 +583,7 @@
             </details>
                             </div>    
                 </span>
-                    </strong></tr>
+                    </strong>
                  <!-- Поле для ссылки на соцсеть 
                 <input type="radio" value="1" name="height">Высокий
     <input type="radio" value="2" name="height">Средний 
@@ -678,8 +593,7 @@
     <input type="radio" value="3" name="bodytype">Полный-->
                 <!-- Если что поменять: просить не фото а ссылки на фото из соцсетей -->
                 
-            </tbody>
-        </table>
+            
         <button id="next1" class="button-28" role="button" onclick="reg();">Далее</button>
         <button id="return"  class="button-28" role="button" onclick="back1();">Назад</button>
     </div>
