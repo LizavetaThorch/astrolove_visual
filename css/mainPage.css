@@ -325,8 +325,75 @@ details {
   display:block;
   margin-bottom:.5rem;
 }
+/* Стиль чекбоксов */
+.checkbox-btn-group {
+	display: inline-block;
+}
+.checkbox-btn-group:after { 
+  content: ""; 
+  clear: both; 
+  display: block;
+}
+.checkbox-btn-group label {
+	display: inline-block;
+	float: left;  
+	margin: 0;
+	user-select: none;
+	position: relative;
+	flex-wrap: wrap;
+  flex-direction: row;
+  align-content: space-around;
+  grid-row-gap: 10px;
+}
+.checkbox-btn-group input[type=checkbox] {
+	z-index: -1;
+	opacity: 0;
+	display: block;
+	width: 0;
+	height: 0;
+}
+.checkbox-btn-group span {
+  padding: 10px 20px;
+  border: 1px solid #d880d1;
+  border-radius: 15px;
+  color: #d2ccff;
+  cursor: pointer;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  font-size: 15px;
+}
 
-
+ 
+/* Checked */
+.checkbox-btn-group input[type=checkbox]:checked + span {
+background-color: #d880d1;
+  color: #fff;
+}
+ 
+/* Focus */
+.checkbox-btn-group .focused span {
+	box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+ 
+/* Hover */
+.checkbox-btn-group label:hover {
+	color: #666;
+}
+ 
+/* Active */
+.checkbox-btn-group input[type=checkbox]:active:not(:disabled) + span {
+	background-color: #9964b8;
+  color: #fff;
+}
+ 
+/* Disabled */
+.checkbox-btn-group input[type=checkbox]:disabled + span {
+	background: #efefef;
+	color: #666;
+	cursor: default;
+}
+.checkbox-btn-group input[type=checkbox]:checked:disabled + span {
+	background: #f7efdc;
+}
 
 
 /* Оборачиваем кнопку в контейнер для выравнивания по правому краю */
