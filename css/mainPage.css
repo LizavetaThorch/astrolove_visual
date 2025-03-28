@@ -342,9 +342,8 @@ details {
 	user-select: none;
 	position: relative;
 	flex-wrap: wrap;
-  flex-direction: row;
-  align-content: space-around;
-  grid-row-gap: 10px;
+  justify-content: flex-start;
+  flex-direction: column-reverse;
 }
 .checkbox-btn-group input[type=checkbox] {
 	z-index: -1;
