@@ -174,17 +174,17 @@ document.getElementById("return1").addEventListener("click",
         document.getElementById("return1").style.display = "none";
     });
  // Выбор что хотим предложить
-var f = document.forms.Form;
-f.onchange = function () {
-  var n = f.querySelectorAll('[type="checkbox"]'),
-      l = f.querySelectorAll('[type="checkbox"]:checked');
-  for (var j=0; j<n.length; j++)
-    if (l.length >= 5) { // если отметить пять и более галочки
-      n[j].disabled = true; // все чекбоксы становятся disabled
-      for(var i=0; i<l.length; i++)
-        l[i].disabled = false; // но disabled убирается с помеченных галочками чекбоксов
+var s = document.forms.Form2;
+s.onchange = function () {
+  var t = s.querySelectorAll('[type="checkbox"]'),
+      g = s.querySelectorAll('[type="checkbox"]:checked');
+  for (var m=0; m<t.length; m++)
+    if (g.length >= 5) { // если отметить пять и более галочки
+      t[m].disabled = true; // все чекбоксы становятся disabled
+      for(var e=0; e<g.length; e++)
+        g[e].disabled = false; // но disabled убирается с помеченных галочками чекбоксов
     } else {
-      n[j].disabled = false; // если выделить менее пяти галочек, то disabled снимается со всех чекбоксов
+      t[m].disabled = false; // если выделить менее пяти галочек, то disabled снимается со всех чекбоксов
     }
 }
 
