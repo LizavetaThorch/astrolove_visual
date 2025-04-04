@@ -3,5 +3,10 @@ let tg = window.Telegram.WebApp;
 let btn = document.getElementById("profile");
 
 btn.addEventListener("click", () => {
-  tg.close();
+  if (tg.isExpanded) {
+    tg.close();
+  } else {
+    tg.expand();
+    setTimeout(() => tg.close(), 50);
+  }
 });
