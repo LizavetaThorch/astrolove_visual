@@ -281,26 +281,7 @@ document.addEventListener("DOMContentLoaded", () => {
              return;
          }
 
-        userData = {
-            name: name,
-            sex: sex,
-            day: day,
-            year:year,
-            sign: sign,
-            month: month,
-            social: social,
-            birthplace: birthplace,
-            birthtime: birthtime,
-            place: place,
-            orientation: orientation,
-            searching: searching,
-            gapage: gapage,
-            agegap: agegap,
-            status: status,
-            distance: distance,
-            
-            photo_id: userData.photo_id
-        };
+        
 
 
         console.log("Отправляем данные в бота: ", JSON.stringify(userData));
